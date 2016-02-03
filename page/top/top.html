@@ -1,0 +1,83 @@
+<div>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--导航条头部：brand + btn-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">浣花水榭</a>
+                <button data-toggle="collapse" data-target="#my-collapse" class="navbar-toggle" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!--导航条折叠菜单：菜单、表单、按钮、链接、文字-->
+            <div id="my-collapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="admin">Home</a></li>
+                    <li><a href="http://home.cnblogs.com/u/qinglingyue/">Diary</a></li>
+                    <li><a ui-sref="admin.nav.me">Me</a></li>
+                    <li>
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Works<span class="caret"></span></a>
+                        <select class="dropdown-menu">
+                            <option><a href="#">html5</a></option>
+                            <option><a href="#">css3</a></option>
+                            <option><a href="#">Javascript</a></option>
+                            <option><a href="#">jquery</a></option>
+                            <option><a href="#">bootstrap</a></option>
+                        </select>
+                    </li>
+                </ul>
+
+                <a class="navbar-link navbar-text navbar-right" href="#">REGISTER</a>
+                <span class="navbar-text navbar-right">|</span>
+                <button class="navbar-btn navbar-right btn btn-success" type="button">LOGIN</button>
+
+                <form class="navbar-form navbar-right" action="">
+                    <!--输入框中放置的图标，称为“反馈图标”-->
+                    <div class="form-group has-feedback">
+                        <label class="sr-only" for="kw">搜索：</label>
+                        <input class="form-control" id="kw" type="text" placeholder="Search...">
+                        <span class="form-control-feedback glyphicon glyphicon-search"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" ui-view="viewCon">
+        <div id="myad" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/2.jpg" alt="">
+
+                    <div class="carousel-caption">
+                        <h4 class="lg-header">浣花水榭</h4>
+                        <i>A programmer who have feelings......</i>
+                    </div>
+                </div>
+                <!--<div class="item">-->
+                <!--<img src="img/4.jpg" alt="">-->
+
+                <!--<div class="carousel-caption">-->
+                <!--<h4>时光流逝</h4>-->
+                <!--<span>这是一副时光流逝的画</span>-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+
+            <a class="carousel-control left" data-slide="prev" href="#myad">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" data-slide="next" href="#myad">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+            <ul class="carousel-indicators">
+                <li data-slide-to="2" data-target="#myad" class="active"></li>
+                <li data-slide-to="4" data-target="#myad"></li>
+                <li data-slide-to="4" data-target="#myad"></li>
+            </ul>
+        </div>
+    </div>
+</div>

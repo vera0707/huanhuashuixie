@@ -1,0 +1,160 @@
+body{
+    margin-top: 64px;
+}
+.carousel > .carousel-inner > .item > img {
+    width: 100%;
+    height: 800px;
+}
+#photo{
+    width:100%;
+    height:800px;
+    position:relative;
+    top:-800px;
+}
+/*.photo{*/
+    /*opacity: 0.4;*/
+    /*background-color:#000;*/
+/*}*/
+/*.dropdown-menu>li{*/
+    /*padding:3px 5px;*/
+/*}*/
+.l-nav{
+    width:98%;
+    height:100px;
+    position: absolute;
+    top:770px;
+    z-inde:5;
+    background: rgba(24,29,40,0.9);
+    /*border-bottom:1px solid #EBEDF0;*/
+
+}
+.carousel-indicators{
+    top:2%;
+    left:47%
+}
+.carousel-caption{
+    top:65%;
+    left:57%;
+    text-align: left;;
+    font-family:"微软雅黑";
+    color:#fff;
+}
+
+.lg-header{
+    font-size:50px;
+}
+.list-view{
+    padding:10px 200px;
+    text-align:center;
+}
+.list-text{
+    font-size: 22px;
+}
+.navbar{
+    padding:7px;
+}
+.footer{
+    width:100%;
+    height:150px;
+    background-color: #393f4d;
+}
+/*.f-node{*/
+    /*font-size: 14px;*/
+    /*font-family:"楷体";*/
+    /*padding:10 50px;*/
+/*}*/
+.wrap {
+    width: 650px;
+    height: 365px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slidepic {
+    position: relative;
+    height: 365px;
+}
+.toggle {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.toggle a {
+    position: absolute;
+    left: -100px;
+    top: 40%;
+    width: 76px;
+    height: 112px;
+    background: url(/img/prev.png) 0 0 no-repeat;
+}
+.me{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #666;
+    text-align:center;
+    padding-top:15px;
+}
+.slidepic>ul>li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#myself {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background-color: #DEDEDE;
+}
+.slidepic ul {
+    position: absolute;
+    left: 0;
+    top:0px;
+    z-index: 1;
+    list-style-type: none;
+}
+ul,menu,dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.toggle .next{
+    right:0px;
+    left:670px;
+    background-image: url(/img/next.png);
+}
+div {
+    display: block;
+}
+body {
+    overflow-x: hidden;
+}
+div#aboutme, div#case1 {
+    width: 292px;
+    height: 127px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+}
+#myself p, #case p {
+    width: 800px;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 10px;
+    color: #8C8C8C;
+}
+.slidepic li {
+    position: absolute;
+    width: 450px;
+    height: 253px;
+    left: 0px;
+    top: 0;
+    background-color: #6475ae;
+    list-style-type: none;
+}
+
