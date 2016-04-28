@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蜡笔同步-日志</title>
+    <link rel="stylesheet" href="cssStyle/normalize.css">
+    <link rel="stylesheet" href="cssStyle/reset.css">
+    <link rel="stylesheet" href="cssStyle/index.css">
+
+</head>
+<body>
+<header>
+    <div class="header-top flex">
+        <div class="header-log"></div>
+        <div class=" header-list flex">
+            <div class="header-help flex">
+                <span class="header-help-img"></span>
+                <span class="header-help-list">HTC HTC Wlldfire</span>
+                <span class="header-help-icon"></span>
+            </div>
+            <div class="header-other">
+                <span class="header-other-icon"></span>
+            </div>
+            <div class="header-user flex">
+                <span class="header-user-img"></span>
+                    <span class="header-username">
+                        jhcs000
+                    </span>
+                <span class="header-toggle"></span>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav flex">
+        <div class="haeder-nav-list">
+            <a href="#">联系人</a>
+            <a href="#">通讯</a>
+            <a href="#" class="active">日历</a>
+            <a href="#">相册</a>
+            <a href="#">推送</a>
+            <a href="#">群组 <span class="header-nav-list-icon">新</span></a>
+        </div>
+        <div class="haeder-nav-search">
+            <input type="search" placeholder="搜索日程...">
+            <b></b>
+            <span class="haeder-nav-search-icon"></span>
+        </div>
+    </div>
+</header>
+<setion>
+    <!--         月           -->
+    <div class="month">
+
+        <div class="setion-data">
+            <div class="flex setion-data-title">
+                <div>
+                    <span class="icon-prev"></span>
+                    <span class="setion-data-month data-title">2016年</span>
+                    <span class="icon-next"></span>
+                </div>
+                <div class="flex setion-data-choose-month">
+                    <div class="month-click"><a class="month-effect" href="#">1月</a><span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">2月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">3月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#" class="active">4月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">5月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">6月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">7月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">8月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">9月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">10月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">11月</a> <span class="month-line"></span></div>
+                    <div class="month-click"><a class="month-effect" href="#">12月</a></div>
+                </div>
+            </div>
+            <div class="data-table-month-2 flex">
+                <div class="data-month-title-1 flex text-center">
+                    <div class="bg-white week">日</div>
+                    <div class="bg-blue week">一</div>
+                    <div class="bg-blue week">二</div>
+                    <div class="bg-blue week">三</div>
+                    <div class="bg-blue week">四</div>
+                    <div class="bg-blue week ">五</div>
+                    <div class="week" style="border-right: 1px solid rgb(183,208,255);">六</div>
+                </div>
+                <div class="data-month-group-list">
+                    <!--<div class="data-month-col">-->
+                        <!--1-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;2&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;3&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;4&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;5&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;6&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;7&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="data-month-col">-->
+                        <!--&lt;!&ndash;1&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;2&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;3&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;4&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;5&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;6&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;7&ndash;&gt;-->
+                        <!--<div class="data-month-block">-->
+                            <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                                <!--<span>1</span>-->
+                                <!--<span class="data-month-number">2</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-month-block bg-blue-dark">-->
+                        <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                            <!--<span class="data-month-icon-1 data-clound"></span>-->
+                            <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                            <!--<span>1</span>-->
+                            <!--<span class="data-month-number">2</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-month-block">-->
+                    <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                    <!--<span class="data-month-icon-1 data-clound"></span>-->
+                    <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                    <!--<span>1</span>-->
+                    <!--<span class="data-month-number">2</span>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="data-month-block">-->
+                    <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                    <!--<span class="data-month-icon-1 data-clound"></span>-->
+                    <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                    <!--<span>1</span>-->
+                    <!--<span class="data-month-number">2</span>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+                <!--1-->
+                <!--<div class="data-month-title-1 data-month-note flex second-month-first">-->
+                <!--<div class="bg-blue-dark"></div>-->
+                <!--<div class="bg-blue-dark"></div>-->
+                <!--<div class="bg-blue-dark"></div>-->
+                <!--<div class="bg-blue-dark"></div>-->
+                <!--<div class="bg-blue-dark"></div>-->
+                <!--<div>-->
+                <!--<div class="text-right bg-blue-lighter data-text-border">-->
+                <!--<span>十六</span>-->
+                <!--<span class="data-month-number">24</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<div class="text-right bg-blue-lighter data-text-border"-->
+                <!--style="margin-right: -10px;padding-right: 10px;">-->
+                <!--<span>十七</span>-->
+                <!--<span class="data-month-number">25</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--1-->
+                <!--<div class="data-month-title-1 text-right flex bg-blue-lighter data-month-text-1">-->
+                <!--<div>-->
+                <!--<span>廿六</span>-->
+                <!--<span class="data-month-number">3</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                <!--<span>清明</span>-->
+                <!--<span class="data-month-number">4</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>廿八</span>-->
+                <!--<span class="data-month-number">5</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>廿九</span>-->
+                <!--<span class="data-month-number">6</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>三月</span>-->
+                <!--<span class="data-month-number">7</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>初二</span>-->
+                <!--<span class="data-month-number">8</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>初三</span>-->
+                <!--<span class="data-month-number">9</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--2-->
+                <!--<div class="data-month-title-1 data-month-note flex">-->
+                <!--<div></div>-->
+                <!--<div>-->
+                <!--<div class="data-month-group">-->
+                <!--<b class="data-month-note-number">8</b>-->
+                <!--<span>lll</span>-->
+                <!--</div>-->
+                <!--<div class="data-month-group">-->
+                <!--<b class="data-month-note-number">8</b>-->
+                <!--<span>qwer的生日</span>-->
+                <!--</div>-->
+                <!--<div class="data-month-group">-->
+                <!--<b class="data-month-note-number">16</b>-->
+                <!--<span>test</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--</div>-->
+                <!--2-->
+                <!--<div class="flex data-month-group-list">-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter text-right">-->
+                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                <!--<span>初五</span>-->
+                <!--<span class="data-month-number">14</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+                <!--<div class="data-month-block">-->
+                <!--<div class="data-month-block-time bg-blue-lighter"></div>-->
+                <!--</div>-->
+
+                <!--<div class="data-month-title-1 text-right flex bg-blue-lighter data-month-text-1">-->
+                <!--<div>-->
+                <!--<span>初四</span>-->
+                <!--<span class="data-month-number">10</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                <!--<span>初五</span>-->
+                <!--<span class="data-month-number">11</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>初六</span>-->
+                <!--<span class="data-month-number">12</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>初七</span>-->
+                <!--<span class="data-month-number">13</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>初八</span>-->
+                <!--<span class="data-month-number">14</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>初九</span>-->
+                <!--<span class="data-month-number">15</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>初十</span>-->
+                <!--<span class="data-month-number">16</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;3&ndash;&gt;-->
+                <!--<div class="data-month-title-1 data-month-note flex">-->
+                <!--<div></div>-->
+                <!--<div>-->
+                <!--<div class="data-month-group">-->
+                <!--<b class="data-month-note-number">8</b>-->
+                <!--<span>lll</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--3-->
+                <!--<div class="data-month-title-1 text-right flex bg-blue-lighter data-month-text-1">-->
+                <!--<div>-->
+                <!--<span>十一</span>-->
+                <!--<span class="data-month-number">17</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                <!--<span>十二</span>-->
+                <!--<span class="data-month-number">18</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>谷雨</span>-->
+                <!--<span class="data-month-number">19</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>十四</span>-->
+                <!--<span class="data-month-number">20</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>十五</span>-->
+                <!--<span class="data-month-number">21</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>十六</span>-->
+                <!--<span class="data-month-number">22</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>十七</span>-->
+                <!--<span class="data-month-number">23</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;4&ndash;&gt;-->
+                <!--<div class="data-month-title-1 data-month-note flex">-->
+                <!--<div></div>-->
+                <!--<div>-->
+                <!--<div class="data-month-group">-->
+                <!--<b class="data-month-note-number">8</b>-->
+                <!--<span>lll</span>-->
+                <!--</div>-->
+                <!--<div class="data-month-group">-->
+                <!--<b class="data-month-note-number">16</b>-->
+                <!--<span>text</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--</div>-->
+                <!--4-->
+                <!--<div class="data-month-title-1 text-right flex bg-blue-lighter data-month-text-1">-->
+                <!--<div>-->
+                <!--<span>十八</span>-->
+                <!--<span class="data-month-number">24</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span class="data-month-icon-1 data-clound"></span>-->
+                <!--<span class="data-month-icon-1 data-cycle"></span>-->
+                <!--<span>十九</span>-->
+                <!--<span class="data-month-number">25</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>二十</span>-->
+                <!--<span class="data-month-number">26</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>廿一</span>-->
+                <!--<span class="data-month-number">27</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>廿二</span>-->
+                <!--<span class="data-month-number">28</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>廿三</span>-->
+                <!--<span class="data-month-number">29</span>-->
+                <!--</div>-->
+                <!--<div>-->
+                <!--<span>廿四</span>-->
+                <!--<span class="data-month-number">30</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;5&ndash;&gt;-->
+                <!--<div class="data-month-title-1 data-month-note flex month-second-choose">-->
+                <!--<div></div>-->
+                <!--<div>-->
+                <!--<div class="data-month-group">-->
+                <!--<b class="data-month-note-number">8</b>-->
+                <!--<span>lll</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div>-->
+                <!--<div class="data-month-group">-->
+                <!--<span>LabourDay</span>-->
+                <!--</div>-->
+                <!--<div class="data-month-group">-->
+                <!--<b class="data-month-note-number">8</b>-->
+                <!--<span>uuuu</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--5-->
+            </div>
+        </div>
+    </div>
+
+    <!--           周               -->
+    <!--<div class="week">-->
+    <!--<div class="setion-data">-->
+    <!--<div class="flex setion-data-title">-->
+    <!--<div class="setion-data-month">3月13日-4月9日</div>-->
+    <!--<div class="setion-data-choose flex">-->
+    <!--<a href="#" class="active choose-month">月</a>-->
+    <!--<a href="#" class="choose-week">周</a>-->
+    <!--<a href="#" lass="choose-data">日程</a>-->
+    <!--<a href="#" class="choose-add">添加 </a>-->
+    <!--<span class="header-icon-add"></span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;<div class="data-week-timer flex">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="data-week-ahead"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="data-week-chart"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="data-week-back"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+</setion>
+<footer>
+    <div class="footer-list">
+        <div class="footer-about text-center">
+            <span>关于我们</span>
+            <span>下载客户端</span>
+            <span>会员中心</span>
+            <span>服务条款</span>
+            <span>隐私政策</span>
+            <span>官方微博</span>
+            <span>官方微信</span>
+            <span>官方论坛</span>
+            <span>意见反馈</span>
+            <span>帮助中心</span>
+        </div>
+        <div class="footer-others text-center">
+            <img src="img/gozap-logo-50_15.gif" alt="">
+            <span>旗下站点</span>
+            <span>&copy;2016 labi.com</span>
+            <small class="color-grey">
+                京ICP备 09053974号-2 京公网安备 110102004562
+            </small>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="javaScript/jquery-1.11.3.js"></script>
+<script src="javaScript/juicer.js"></script>
+<script src="javaScript/calConverter.js"></script>
+
+<script src="javaScript/index.js"></script>
+</html>
