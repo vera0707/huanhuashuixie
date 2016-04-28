@@ -2,7 +2,7 @@
 
 @(welcome)[前端菜鸟|掘金中]
 
-**Hello Word **我是一枚前端初学者，编程是一件很奇妙的事，只需一台电脑,整个世界都会开放在眼前.我喜欢指点轻触键盘时，就能即刻就能自己创建的那个帝国的感觉，它是带有我气息和风格的我的帝国.当然还有,在探索未知领域时,那小小几个字符就能带来的神奇的事~!
+**Hello Word **我是一枚前端初学者，编程是一件很奇妙的事，只需一台电脑,整个世界都会开放在眼前.我喜欢指点轻触键盘时，就能即刻就能自己创建的那个帝国，它带着我的气息和我的风格,真的很棒.当然还有,探索未知领域时,那小小几个字符就能带来的神气的事~
 
 
 
@@ -25,7 +25,6 @@
 -  [图标库](http://www.iconfont.cn/collections/)
 -  [超棒的面试题](http://blog.csdn.net/kongjiea/article/details/46341575)
 -  [jQuery瀑布流布局异步图片加载](http://www.htmleaf.com/Demo/2014100223.html)
-
 
 -  [backboneJS](http://www.css88.com/doc/backbone/)
 -  [underscoreJS](http://www.css88.com/doc/underscore/)
