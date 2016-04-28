@@ -1,202 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56e89187-e806-404b-84e2-efb1e3de5359" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/img/arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/img/calendar_19_86.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/img/gozap-logo-50_15.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/img/icon_common.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/img/labi_calendar3_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/img/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/img/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/img/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/img/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/img/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/date.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/icon_h5_01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/icon_h5_04.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/icon_h5_06.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon_03.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon_07.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon_10.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon_12.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon_14.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon_16.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon_22.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_icon_24.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/pc_toutu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/two-year.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/.idea/蜡笔日历页面.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/cssStyle/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/cssStyle/month.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/cssStyle/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/javaScript/calConverter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/javaScript/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/labiDate/javaScript/juicer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loadImage/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loadImage/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loadImage/javaScript/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loadImage/javaScript/vendor/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loadImage/javaScript/vendor/juicer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/remark.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/JSXTransformer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/browser.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/console-polyfill.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/es5-sham.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/es5-shim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/react-dom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/react-with-addons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/react-with-addons.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/react.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark/javascript/render/react.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/css/h5css.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/css/mycss.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/css/normalize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/h5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/img/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/js/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/js/vendor/jquery-1.9.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/js/vendor/juicer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/twoYear/top/js/vendor/modernizr-2.6.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSite/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webSite/js/vendor/jquery-1.11.3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/admin.css" afterPath="$PROJECT_DIR$/webSite/css/admin.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/webSite/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/webSite/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/webSite/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/webSite/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/webSite/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/webSite/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/webSite/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/webSite/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/1.jpg" afterPath="$PROJECT_DIR$/webSite/img/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/2.jpg" afterPath="$PROJECT_DIR$/webSite/img/2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/3.jpg" afterPath="$PROJECT_DIR$/webSite/img/3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/4.jpg" afterPath="$PROJECT_DIR$/webSite/img/4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/5.jpg" afterPath="$PROJECT_DIR$/webSite/img/5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/6.jpg" afterPath="$PROJECT_DIR$/webSite/img/6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/aboutme.png" afterPath="$PROJECT_DIR$/webSite/img/aboutme.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/bg_1.jpg" afterPath="$PROJECT_DIR$/webSite/img/bg_1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lb1.jpg" afterPath="$PROJECT_DIR$/webSite/img/lb1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lb2.jpg" afterPath="$PROJECT_DIR$/webSite/img/lb2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lb3.jpg" afterPath="$PROJECT_DIR$/webSite/img/lb3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lb4.jpg" afterPath="$PROJECT_DIR$/webSite/img/lb4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/lb5.jpg" afterPath="$PROJECT_DIR$/webSite/img/lb5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/next.png" afterPath="$PROJECT_DIR$/webSite/img/next.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/prev.png" afterPath="$PROJECT_DIR$/webSite/img/prev.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/core/app.js" afterPath="$PROJECT_DIR$/webSite/js/core/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/core/boot.js" afterPath="$PROJECT_DIR$/webSite/js/core/boot.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/core/mainRouter.js" afterPath="$PROJECT_DIR$/webSite/js/core/mainRouter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/route/navRoute.js" afterPath="$PROJECT_DIR$/webSite/js/route/navRoute.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-animate.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-animate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-aria.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-aria.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-cookies.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-cookies.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-loader.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-loader.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-message-format.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-message-format.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-messages.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-messages.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-mocks.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-mocks.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/.bower.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-require/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/Gulpfile.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-require/Gulpfile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/README.md" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-require/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/angular-require.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-require/angular-require.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/angular-require.min.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-require/angular-require.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/bower.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-require/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/package.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-require/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/src/angular-require.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-require/src/angular-require.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/.bower.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/README.md" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/angular-resource.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource/angular-resource.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/angular-resource.min.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource/angular-resource.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/angular-resource.min.js.map" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource/angular-resource.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/bower.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/index.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/package.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-resource/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-route.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-route.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-sanitize.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-sanitize.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-scenario.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-scenario.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-touch.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-touch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/.bower.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/CHANGELOG.md" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/CHANGELOG.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/CONTRIBUTING.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/LICENSE" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/README.md" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/api/angular-ui-router.d.ts" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/api/angular-ui-router.d.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/bower.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/release/angular-ui-router.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/release/angular-ui-router.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/release/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/release/angular-ui-router.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/common.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/common.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/resolve.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/resolve.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/state.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/state.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/stateDirectives.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/stateDirectives.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/stateFilters.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/stateFilters.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/templateFactory.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/templateFactory.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/urlMatcherFactory.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/urlMatcherFactory.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/urlRouter.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/urlRouter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/view.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/view.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/viewDirective.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/viewDirective.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/viewScroll.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular-ui-router/src/viewScroll.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/angular.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/angular.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/bootlint.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/bootlint.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/bootstrap.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/bootstrap.min.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/html5shiv.min.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/html5shiv.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/jquery-1.11.3.js" afterPath="$PROJECT_DIR$/labiDate/javaScript/jquery-1.11.3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/move3.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/move3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/require.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/require.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/requirejs/.bower.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/requirejs/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/requirejs/README.md" afterPath="$PROJECT_DIR$/webSite/js/vendor/requirejs/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/requirejs/bower.json" afterPath="$PROJECT_DIR$/webSite/js/vendor/requirejs/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/requirejs/require.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/requirejs/require.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/vendor/respond.min.js" afterPath="$PROJECT_DIR$/webSite/js/vendor/respond.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/body/body.html" afterPath="$PROJECT_DIR$/webSite/page/body/body.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/body/body.js" afterPath="$PROJECT_DIR$/webSite/page/body/body.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/footer/footer.html" afterPath="$PROJECT_DIR$/webSite/page/footer/footer.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/footer/footer.js" afterPath="$PROJECT_DIR$/webSite/page/footer/footer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/nav/controllers/me.js" afterPath="$PROJECT_DIR$/webSite/page/nav/controllers/me.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/nav/views/me.html" afterPath="$PROJECT_DIR$/webSite/page/nav/views/me.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/nav/views/nav.html" afterPath="$PROJECT_DIR$/webSite/page/nav/views/nav.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/top/top.html" afterPath="$PROJECT_DIR$/webSite/page/top/top.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/page/top/top.js" afterPath="$PROJECT_DIR$/webSite/page/top/top.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
-    <ignored path="huanhuashuixie.iws" />
+    <list default="true" id="65d63bd6-b275-450a-b528-26e1e20c8340" name="Default" comment="" />
+    <ignored path="loadImage.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -211,17 +18,108 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="huanhuashuixie" />
+    <favorites_list name="loadImage" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.63380283">
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cssStyle/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.416666">
+              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ceshi3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ceshi3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-31.166666">
+              <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="3" />
+              <folding>
+                <marker date="1458706799000" expanded="true" signature="1328:1385" placeholder="..." />
+                <marker date="1458706799000" expanded="true" signature="1360:1380" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ceshi2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ceshi2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.125">
+              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#2;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#3;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#4;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#5;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#6;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#7;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#8;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#9;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#10;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#11;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#12;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#13;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#14;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#15;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#16;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#17;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#18;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#19;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#20;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ceshi1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ceshi1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="55.708332">
+              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javaScript/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+                <marker date="1458713159000" expanded="true" signature="856:923" placeholder="..." />
+                <marker date="1458713159000" expanded="true" signature="1768:1855" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
     </option>
   </component>
   <component name="GradleLocalSettings">
@@ -232,12 +130,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/webSite/README.md" />
-        <option value="$PROJECT_DIR$/loadImage/README.md" />
-        <option value="$PROJECT_DIR$/labiDate/README.md" />
-        <option value="$PROJECT_DIR$/remark/README.md" />
-        <option value="$PROJECT_DIR$/twoYear/top/README.md" />
+        <option value="$PROJECT_DIR$/index.css" />
+        <option value="$PROJECT_DIR$/reset.html" />
+        <option value="$PROJECT_DIR$/cssStyle/reset.css" />
+        <option value="$PROJECT_DIR$/jsvaScript/main.js" />
+        <option value="$PROJECT_DIR$/ceshi1.html" />
+        <option value="$PROJECT_DIR$/ceshi2.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/javaScript/main.js" />
+        <option value="$PROJECT_DIR$/cssStyle/index.css" />
+        <option value="$PROJECT_DIR$/ceshi3.html" />
+        <option value="$PROJECT_DIR$/javaScript/index.js" />
       </list>
     </option>
   </component>
@@ -247,7 +150,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="72" />
+    <option name="x" value="6" />
     <option name="y" value="23" />
     <option name="width" value="1848" />
     <option name="height" value="1057" />
@@ -277,46 +180,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="huanhuashuixie" />
+              <option name="myItemId" value="loadImage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="huanhuashuixie" />
+              <option name="myItemId" value="loadImage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="huanhuashuixie" />
+              <option name="myItemId" value="loadImage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../longdai-ms" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/twoYear/top" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/loadImage" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/webSite" />
+      <recent name="$PROJECT_DIR$/cssStyle" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/javaScript/vendor" />
+      <recent name="$PROJECT_DIR$/jsvaScript/vendor" />
     </key>
   </component>
   <component name="RunManager">
@@ -636,7 +541,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="huanhuashuixie" />
+      <module name="loadImage" />
       <envs />
       <method />
     </configuration>
@@ -711,6 +616,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -732,20 +642,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="56e89187-e806-404b-84e2-efb1e3de5359" name="Default" comment="" />
-      <created>1454480628965</created>
+      <changelist id="65d63bd6-b275-450a-b528-26e1e20c8340" name="Default" comment="" />
+      <created>1458283393579</created>
       <option name="number" value="Default" />
-      <updated>1454480628965</updated>
-      <workItem from="1454480633078" duration="1073000" />
-      <workItem from="1461810405207" duration="3985000" />
+      <updated>1458283393579</updated>
+      <workItem from="1458283395195" duration="12483000" />
+      <workItem from="1458526022144" duration="19000" />
+      <workItem from="1458528324552" duration="2621000" />
+      <workItem from="1458626569109" duration="16883000" />
+      <workItem from="1458699612837" duration="11805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5058000" />
+    <option name="totallyTimeSpent" value="43811000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="23" width="1848" height="1057" extended-state="0" />
+    <frame x="6" y="23" width="1848" height="1057" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -755,9 +668,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -783,7 +696,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -796,6 +709,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -807,111 +728,178 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/cssStyle/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaScript/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+            <marker date="1458713159000" expanded="true" signature="856:923" placeholder="..." />
+            <marker date="1458713159000" expanded="true" signature="1768:1855" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaScript/vendor/jquery-1.10.2.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaScript/vendor/juicer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06403415">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaScript/vendor/jquery-1.10.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/7.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/5.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45783132">
+          <caret line="31" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ceshi1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="55.708332">
+          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ceshi2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.125">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#1;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#2;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#3;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#4;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#5;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#6;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#7;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#8;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#9;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#10;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#11;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#12;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#13;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#14;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#15;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#16;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#17;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#18;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#19;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#20;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ceshi3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.166666">
+          <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="3" />
+          <folding>
+            <marker date="1458706799000" expanded="true" signature="1328:1385" placeholder="..." />
+            <marker date="1458706799000" expanded="true" signature="1360:1380" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cssStyle/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.416666">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaScript/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="21" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+            <marker date="1458713159000" expanded="true" signature="856:923" placeholder="..." />
+            <marker date="1458713159000" expanded="true" signature="1768:1855" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loadImage/javaScript/vendor/juicer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loadImage/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labiDate/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loadImage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36144578">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webSite/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.115384616">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/labiDate/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twoYear/top/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twoYear/top/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0989011">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remark/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remark/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41073385">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.63380283">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
           <folding />
         </state>
       </provider>
