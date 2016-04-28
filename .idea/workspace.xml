@@ -2,104 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e89187-e806-404b-84e2-efb1e3de5359" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/admin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/aboutme.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/lb1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/lb2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/lb3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/lb4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/lb5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/prev.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/core/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/core/boot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/core/mainRouter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/route/navRoute.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-aria.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-cookies.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-loader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-message-format.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-messages.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/Gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/angular-require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/angular-require.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-require/src/angular-require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/angular-resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/angular-resource.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/angular-resource.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-resource/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-route.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-scenario.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/api/angular-ui-router.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/release/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/release/angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/resolve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/state.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/stateDirectives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/stateFilters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/templateFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/urlMatcherFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/urlRouter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/view.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/viewDirective.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular-ui-router/src/viewScroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/bootlint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/html5shiv.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/jquery-1.11.3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/move3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/requirejs/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/requirejs/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/requirejs/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/requirejs/require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/body/body.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/body/body.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/footer/footer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/footer/footer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/nav/controllers/me.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/nav/views/me.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/nav/views/nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/top/top.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/page/top/top.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -123,7 +26,45 @@
     <favorites_list name="huanhuashuixie" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49484536">
+              <caret line="16" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.25">
+              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="huanhuashuixie.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/huanhuashuixie.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,12 +82,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/webSite/README.md" />
         <option value="$PROJECT_DIR$/loadImage/README.md" />
         <option value="$PROJECT_DIR$/labiDate/README.md" />
         <option value="$PROJECT_DIR$/remark/README.md" />
         <option value="$PROJECT_DIR$/twoYear/top/README.md" />
+        <option value="$PROJECT_DIR$/ceshi.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -155,9 +97,17 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../property/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="72" />
-    <option name="y" value="111" />
+    <option name="y" value="23" />
     <option name="width" value="1848" />
     <option name="height" value="948" />
   </component>
@@ -172,7 +122,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scratches" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -186,6 +136,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,7 +147,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huanhuashuixie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huanhuashuixie" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
@@ -202,12 +168,6 @@
         <subPane subId="Project Files" />
         <subPane subId="Default" />
         <subPane subId="Tests" />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches">
-        <subPane />
       </pane>
     </panes>
   </component>
@@ -218,6 +178,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -654,16 +615,17 @@
       <workItem from="1454480633078" duration="1073000" />
       <workItem from="1461810405207" duration="5666000" />
       <workItem from="1461819465060" duration="1154000" />
-      <workItem from="1461823658898" duration="1000" />
+      <workItem from="1461823658898" duration="741000" />
+      <workItem from="1461832309638" duration="2008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7894000" />
+    <option name="totallyTimeSpent" value="10642000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="111" width="1848" height="948" extended-state="0" />
-    <editor active="false" />
+    <frame x="72" y="23" width="1848" height="948" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -671,9 +633,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37062937" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37062937" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -719,5 +681,31 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/huanhuashuixie.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49484536">
+          <caret line="16" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
