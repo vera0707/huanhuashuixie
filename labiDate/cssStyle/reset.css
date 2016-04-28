@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    padding:0px;
+    font-size:12px;
+}
+
+/*弹性布局*/
+.flex{
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    outline:none;
+}
+.bg-blue{
+    background-color: rgb(183,208,255);
+}
+.bg-blue-lighter{
+    background-color: rgb(228,236,248);
+}
+.bg-white{
+    background-color: #fff;
+}
+.bg-yellow{
+    background-color: rgb(255,255,190);
+}
+.bg-blue-dark{
+    background-color: rgb(242,242,242);
+}
+.text-center{
+    text-align:center;
+}
+.text-right{
+    text-align: right;
+}
+.color-grey{
+    color:#666;
+}
