@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="56e89187-e806-404b-84e2-efb1e3de5359" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="huanhuashuixie.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,8 +116,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="192" />
-    <option name="y" value="23" />
+    <option name="x" value="256" />
+    <option name="y" value="62" />
     <option name="width" value="1848" />
     <option name="height" value="948" />
   </component>
@@ -630,16 +629,16 @@
       <workItem from="1461832309638" duration="3747000" />
       <workItem from="1461916854040" duration="1465000" />
       <workItem from="1462265217292" duration="1000" />
-      <workItem from="1463020009560" duration="445000" />
+      <workItem from="1463020009560" duration="1116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14292000" />
+    <option name="totallyTimeSpent" value="14963000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="192" y="23" width="1848" height="948" extended-state="0" />
-    <editor active="false" />
+    <frame x="256" y="62" width="1848" height="948" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

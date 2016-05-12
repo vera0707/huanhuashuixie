@@ -20,8 +20,7 @@
 - [免费CDN](http://www.cdnjs.net/)
 - [weinre远程调试工具](http://www.tuicool.com/articles/mAzmq2)
 - [图标库](http://www.iconfont.cn/collections/)
-
--  [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+- [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
 
 
 #####JS库
