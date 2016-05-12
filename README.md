@@ -43,6 +43,9 @@
 
 #####jQuery插件及特效
 -  [jQuery-瀑布流布局异步图片加载](http://www.htmleaf.com/Demo/2014100223.html)
+-  [后台管理模板WrapBootstrap](http://www.jq22.com/jquery-info7282)
+-  [jQuery3d幻灯片翻页效果](http://www.jq22.com/jquery-info4216)
+-  [jQuery-unslider图片轮播](http://www.bootcss.com/p/unslider/)
 
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
