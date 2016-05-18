@@ -18,9 +18,11 @@
 
 #####前端工具
 - [免费CDN](http://www.cdnjs.net/)
+- [BootCDN](http://www.bootcdn.cn/)
 - [weinre远程调试工具](http://www.tuicool.com/articles/mAzmq2)
 - [图标库](http://www.iconfont.cn/collections/)
 - [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
+- [公司后台直通车](http://git.gozap.com/longdai/longdai)
 
 
 #####JS库
@@ -59,6 +61,7 @@
 - [console的特性完全版](http://www.yyyweb.com/3541.html)
 - [超棒的面试题](http://blog.csdn.net/kongjiea/article/details/46341575)
 - [gulp与grunt对比](https://segmentfault.com/a/1190000002491282)
+- [大型JavaScript应用程序架构模式](http://www.cnblogs.com/TomXu/archive/2011/12/14/2286225.html)
 
 #####前端搭建工具
 - [nodeJS官网](https://nodejs.org/en/foundation/)
