@@ -23,6 +23,9 @@
 - [图标库](http://www.iconfont.cn/collections/)
 - [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
 - [公司后台直通车](http://git.gozap.com/longdai/longdai)
+- [WeUI-微信官方网页开发样式库](http://blog.wpjam.com/m/weui/)
+- [Babel-支持ES6](http://babeljs.cn/docs/setup/)
+- [翻墙工具](https://shadowsocks.org/en/config/quick-guide.html)
 
 
 #####JS库
@@ -46,6 +49,7 @@
 #####jQuery插件及特效
 -  [jQuery-瀑布流布局异步图片加载](http://www.htmleaf.com/Demo/2014100223.html)
 -  [后台管理模板WrapBootstrap](http://www.jq22.com/jquery-info7282)
+-  [jQuery WeUI](http://lihongxun945.github.io/jquery-weui/)
 -  [jQuery3d幻灯片翻页效果](http://www.jq22.com/jquery-info4216)
 -  [jQuery-unslider图片轮播](http://www.bootcss.com/p/unslider/)
 
@@ -58,10 +62,12 @@
 - [yeomanl](http://yeoman.io/)
 
 #####深度好文
+- [JavaSript模块规范 AMD规范与CMD规范](http://blog.chinaunix.net/uid-26672038-id-4112229.html)
 - [console的特性完全版](http://www.yyyweb.com/3541.html)
 - [超棒的面试题](http://blog.csdn.net/kongjiea/article/details/46341575)
 - [gulp与grunt对比](https://segmentfault.com/a/1190000002491282)
 - [大型JavaScript应用程序架构模式](http://www.cnblogs.com/TomXu/archive/2011/12/14/2286225.html)
+- [前端模块管理器介绍-阮一峰](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
 
 #####前端搭建工具
 - [nodeJS官网](https://nodejs.org/en/foundation/)
