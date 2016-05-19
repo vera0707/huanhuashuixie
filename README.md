@@ -75,3 +75,4 @@
 - [grunt](http://www.gruntjs.net/)
 - [gulp教程](http://www.gulpjs.com.cn/)
 - [npm](https://www.npmjs.com/)
+- [廖雪峰官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
