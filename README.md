@@ -28,6 +28,9 @@
 - [翻墙工具](https://shadowsocks.org/en/config/quick-guide.html)
 - [取色卡](http://w3schools.bootcss.com/colors/colors_picker.html)
 - [网站安全色](http://www.bootcss.com/p/websafecolors/)
+- [MDN-分享知识](https://developer.mozilla.org/zh-CN/)
+- [JSDoc-生成js文档](https://github.com/jsdoc3/jsdoc)
+- [jekyll-在git上制作个人博客](http://jekyll.bootcss.com/)
 
 #####JS库
 -  [jQuery中文文档](http://jquery.cuishifeng.cn/)
@@ -59,11 +62,17 @@
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
 - [HTML5 Boilerplate--快速搭建前端网站](http://www.bootcss.com/p/html5boilerplate/)
-- [Modernizr--实现优雅降级](https://modernizr.com/docs/)
 - [Fla UI-扩充bootstrap的样式组件库](http://www.bootcss.com/p/flat-ui/)
+
+#####代码优化
+-  [CSS LINK-在线css优化工具](http://csslint.net/)
+-  [JSHint-js在线验证或使用Grunt整合](http://jshint.com/)
 
 #####快速搭建项目
 - [yeomanl](http://yeoman.io/)
+- [Function](http://foundation.zurb.com/templates.html)
+- [Modernizr--实现优雅降级](https://modernizr.com/docs/)
+- [UIkit](http://www.getuikit.net/)
 
 #####深度好文
 - [JavaSript模块规范 AMD规范与CMD规范](http://blog.chinaunix.net/uid-26672038-id-4112229.html)

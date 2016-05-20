@@ -1,0 +1,31 @@
+                    JavaScript的this用法汇总
+
+  一门语言在运行的时候需要一个环境,叫做宿主环境,对于JavaScript来说,宿主环境最常见的就是web浏览器.浏览器提供了一个JavaScript运行的魂精,在这个环境里,需要提供一些接口,好让JavaScript引擎能够和宿主环境对接。JavaScript引擎才是真正执行JavaScript代码的地方，常见的引擎有V8(目前最快JavaScript引擎、Google生产)、JavaScript core。JavaScript引擎主要做了下面几件事情：
+    ① 一套与宿主环境相联系的规则
+    ② JavaScript引擎内核
+    ③ 一组内置对象和API
+    ④ 其他的约定
+  但是环境不是唯一的，也就是JavaScript不仅仅能够在浏览器里面跑，也能在其他提供了宿主环境的程序里面跑，最常见的就是nodejs。同样作为一个宿主环境，nodejs也有自己的JavaScript引擎--V8。根据官方的定义:
+    Node.js is a platform built on Chrome’s JavaScript runtime for easily building fast, scalable network applications
+
+
+
+
+
+    一 .global this
+
+        在浏览器里面this是老大，它等价于window对象，如果你声明一些全局变量(不管在任何地方)，这些变量都会作为this的属性。在node里面，有两种执行JavaScript代码的方式，一种是直接执行写好的JavaScript文件，另外一种是直接在里面执行一行行代码。对于直接运行一行行JavaScript代码的方式，global才是老大，this和它是等价的。在这种情况下，和浏览器比较相似，也就是声明一些全局变量会自动添加给老大global，顺带也会添加给this。但是在node里面直接脚本文件就不一样了，你声明的全局变量不会自动添加到this，但是会添加到global对象。所以相同点是，在全局范围内，全局变量终究是属于老大的。
+
+
+    二 .function this
+
+        函数里面的this其实相对比较好理解，如果我们在一个函数里面使用this，需要注意的就是我们调用函数的方式，如果是正常的方式调用函数，this指代全局的this，如果我们加一个new，这个函数就变成了一个构造函数，我们就创建了一个实例，this指代这个实例，这个和其他面向对象的语言很像。另外，写JavaScript很常做的一件事就是绑定事件处理程序，也就是诸如button.addEventListener(‘click’, fn, false)之类的，如果在fn里面需要使用this，this指代事件处理程序对应的对象，也就是button。
+
+    三 .prototype this
+
+
+
+
+
+
+
