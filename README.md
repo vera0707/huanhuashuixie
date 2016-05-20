@@ -31,6 +31,7 @@
 - [MDN-分享知识](https://developer.mozilla.org/zh-CN/)
 - [JSDoc-生成js文档](https://github.com/jsdoc3/jsdoc)
 - [jekyll-在git上制作个人博客](http://jekyll.bootcss.com/)
+- [思维导图](http://www.xmind.net/)
 
 #####JS库
 -  [jQuery中文文档](http://jquery.cuishifeng.cn/)
@@ -63,6 +64,9 @@
 - [BootStrap](http://www.bootcss.com/)
 - [HTML5 Boilerplate--快速搭建前端网站](http://www.bootcss.com/p/html5boilerplate/)
 - [Fla UI-扩充bootstrap的样式组件库](http://www.bootcss.com/p/flat-ui/)
+- [Normalize.css--重置样式](http://necolas.github.io/normalize.css/)
+- [less](http://www.lesscss.net/)
+- [sass](http://sass.bootcss.com/)
 
 #####代码优化
 -  [CSS LINK-在线css优化工具](http://csslint.net/)
@@ -81,6 +85,7 @@
 - [gulp与grunt对比](https://segmentfault.com/a/1190000002491282)
 - [大型JavaScript应用程序架构模式](http://www.cnblogs.com/TomXu/archive/2011/12/14/2286225.html)
 - [前端模块管理器介绍-阮一峰](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
+- [前端知识大全](http://www.w3cfuns.com/notes/18186/714fccfb15f26c9858a163918b39a944.html)
 
 #####前端搭建工具
 - [nodeJS官网](https://nodejs.org/en/foundation/)
@@ -90,5 +95,12 @@
 - [npm](https://www.npmjs.com/)
 - [廖雪峰官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
 
+#####前端服务器\
+- [apache](http://httpd.apache.org/)
+- [nginx](http://nginx.org/)
+
 #####关于mac
 - [mac数据迁移-迁移助理](http://www.pc6.com/edu/80832.html)
+
+#####编辑软件
+- [WebStorm](http://www.jetbrains.com/webstorm/)
