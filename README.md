@@ -26,6 +26,7 @@
 - [WeUI-微信官方网页开发样式库](http://blog.wpjam.com/m/weui/)
 - [Babel-支持ES6](http://babeljs.cn/docs/setup/)
 - [翻墙工具](https://shadowsocks.org/en/config/quick-guide.html)
+- [取色卡](http://w3schools.bootcss.com/colors/colors_picker.html)
 
 
 #####JS库
@@ -76,3 +77,6 @@
 - [gulp教程](http://www.gulpjs.com.cn/)
 - [npm](https://www.npmjs.com/)
 - [廖雪峰官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
+
+#####关于mac
+- [mac数据迁移-迁移助理](http://www.pc6.com/edu/80832.html)
