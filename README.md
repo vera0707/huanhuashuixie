@@ -86,6 +86,7 @@
 - [大型JavaScript应用程序架构模式](http://www.cnblogs.com/TomXu/archive/2011/12/14/2286225.html)
 - [前端模块管理器介绍-阮一峰](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
 - [前端知识大全](http://www.w3cfuns.com/notes/18186/714fccfb15f26c9858a163918b39a944.html)
+- [什么是web服务器](http://www.html5cn.org/article-6776-1.html)
 
 #####前端搭建工具
 - [nodeJS官网](https://nodejs.org/en/foundation/)
@@ -95,7 +96,7 @@
 - [npm](https://www.npmjs.com/)
 - [廖雪峰官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
 
-#####前端服务器\
+#####前端服务器
 - [apache](http://httpd.apache.org/)
 - [nginx](http://nginx.org/)
 
