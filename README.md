@@ -27,7 +27,7 @@
 - [Babel-支持ES6](http://babeljs.cn/docs/setup/)
 - [翻墙工具](https://shadowsocks.org/en/config/quick-guide.html)
 - [取色卡](http://w3schools.bootcss.com/colors/colors_picker.html)
-
+- [网站安全色](http://www.bootcss.com/p/websafecolors/)
 
 #####JS库
 -  [jQuery中文文档](http://jquery.cuishifeng.cn/)
@@ -46,6 +46,8 @@
 -  [ECharts2.0-网页图表](http://echarts.baidu.com/echarts2/index.html)
 -  [CoffeeScript-简化编写JS](http://coffee-script.org/)
 -  [D3js-扁平化图表](https://d3js.org/)
+-  [BUTTONS-详尽的按钮样式](http://www.bootcss.com/p/buttons/)
+-  [Lodash-超越undersore的js库](http://lodashjs.com/docs/)
 
 #####jQuery插件及特效
 -  [jQuery-瀑布流布局异步图片加载](http://www.htmleaf.com/Demo/2014100223.html)
@@ -58,6 +60,7 @@
 - [BootStrap](http://www.bootcss.com/)
 - [HTML5 Boilerplate--快速搭建前端网站](http://www.bootcss.com/p/html5boilerplate/)
 - [Modernizr--实现优雅降级](https://modernizr.com/docs/)
+- [Fla UI-扩充bootstrap的样式组件库](http://www.bootcss.com/p/flat-ui/)
 
 #####快速搭建项目
 - [yeomanl](http://yeoman.io/)
