@@ -32,6 +32,7 @@
 - [JSDoc-生成js文档](https://github.com/jsdoc3/jsdoc)
 - [jekyll-在git上制作个人博客](http://jekyll.bootcss.com/)
 - [思维导图](http://www.xmind.net/)
+- [站酷](http://sucai.zcool.com.cn/)
 
 #####JS库
 -  [jQuery中文文档](http://jquery.cuishifeng.cn/)
@@ -79,7 +80,7 @@
 - [UIkit](http://www.getuikit.net/)
 
 #####深度好文
-- [JavaSript模块规范 AMD规范与CMD规范](http://blog.chinaunix.net/uid-26672038-id-4112229.html)
+- [JavaSript模块规范 AMD规范与CMD规范](http://www.ruanyifeng.com/blog/2012/10/javascript_module.html)
 - [console的特性完全版](http://www.yyyweb.com/3541.html)
 - [超棒的面试题](http://blog.csdn.net/kongjiea/article/details/46341575)
 - [gulp与grunt对比](https://segmentfault.com/a/1190000002491282)
