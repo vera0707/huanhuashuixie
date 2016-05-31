@@ -8,7 +8,7 @@
 
 
 ### 常用学习网站
- #####技术网站
+#####技术网站
 - [博客园](http://www.cnblogs.com/)
 - [前端观察](https://www.qianduan.net/)
 - [前端网](http://www.w3cfuns.com/)
@@ -45,6 +45,7 @@
 -  [ES6入门](http://es6.ruanyifeng.com/)
 -  [TypeScript-基于ES6](https://www.typescriptlang.org/)
 -  [handlebars-DOM拼接](http://juicer.name/)
+-  [移动端开发框架](http://www.css88.com/doc/zeptojs_api/)
 -  [artTemplate-DOM拼接](http://aui.github.io/artTemplate/)
 -  [ReactJS](http://www.reactjs.cn/)
 -  [ECharts1.0-网页图表](http://echarts.baidu.com/index.html)
@@ -88,6 +89,7 @@
 - [前端模块管理器介绍-阮一峰](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
 - [前端知识大全](http://www.w3cfuns.com/notes/18186/714fccfb15f26c9858a163918b39a944.html)
 - [什么是web服务器](http://www.html5cn.org/article-6776-1.html)
+- [移动端WEB资源整合](http://www.daqianduan.com/6281.html)
 
 #####前端搭建工具
 - [nodeJS官网](https://nodejs.org/en/foundation/)
