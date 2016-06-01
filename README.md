@@ -20,6 +20,7 @@
 - [免费CDN](http://www.cdnjs.net/)
 - [BootCDN](http://www.bootcdn.cn/)
 - [weinre远程调试工具](http://www.tuicool.com/articles/mAzmq2)
+- [JSLint](http://www.jslint.com/)
 - [图标库](http://www.iconfont.cn/collections/)
 - [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
 - [公司后台直通车](http://git.gozap.com/longdai/longdai)
@@ -97,6 +98,7 @@
 - [grunt](http://www.gruntjs.net/)
 - [gulp教程](http://www.gulpjs.com.cn/)
 - [npm](https://www.npmjs.com/)
+- [Express](http://www.expressjs.com.cn/)
 - [廖雪峰官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
 
 #####前端服务器
