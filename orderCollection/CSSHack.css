@@ -1,0 +1,63 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*浮动*/
+.f-l{
+    float: left;
+}
+.f-r{
+    float: right;
+}
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:".";
+    visibility:hidden;
+    height:0;
+}
+.clearfloat{
+    zoom:1;
+}
+
+/*border-radius*/
+.border-radius{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/*box-shadow*/
+.box-shadow{
+    -webkit-box-shadow: inset 5px 5px  3px red;
+    -moz-box-shadow: inset 5px 5px  3px red;
+    box-shadow: inset 5px 5px  3px red;
+}
+
+/*text-overflow*/
+.text-overflow{
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+}
+
+/*透明度兼容*/
+.opacity{
+    /* older safari/Chrome browsers */
+    -webkit-opacity: 0.2;
+    /* Netscape and Older than Firefox 0.9 */
+    -moz-opacity: 0.2;
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/
+    -khtml-opacity: 0.2;
+    /* IE9 + etc...modern browsers */
+    opacity: .2;
+    /* IE 4-9 */
+    filter:alpha(opacity=20);
+    /*This works in IE 8 & 9 too*/
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    /*IE4-IE9*/
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+}
