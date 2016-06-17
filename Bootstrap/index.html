@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+
+    <title>栅格布局</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">TARENA</div>
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Products
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">tv</a></li>
+                        <li><a href="#">camputer</a></li>
+                        <li><a href="#">camera</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">milkpower</a></li>
+                        <li><a href="#">babyclothers</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="navbar-text navbar-link navbar-right" href="#">REGISTER</a>
+            <span class="navbar-text navbar-right">|</span>
+            <button class="navbar-btn btn btn-success navbar-right">搜索</button>
+            <form action="" class="navbar-form navbar-right">
+                <div class="form-group has-feedback">
+                    <label for="kw" class="sr-only">搜索:</label>
+                    <input type="text" class="form-control" id="kw">
+                    <span class="form-control-feedback glyphicon glyphicon-search"></span>
+                </div>
+                <!--<button class="btn btn-success">搜索</button>-->
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container" style="margin-top: 50px;">
+    <ol class="breadcrumb">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li class="active">PRODUCTS</li>
+    </ol>
+    <h1>栅格布局</h1>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-10">
+            <h4 id="c1">一. 栅格系统介绍</h4>
+            <div class="text-justify mytext">
+                <div>
+                    Boostrap的栅格布局(网格系统)通过使用media查询,对不同屏幕(主要分为手机、平板、小PC屏幕、大PC屏幕)做不同的样式显示,从而实现响应式效果。栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局,系统自动分为(最多)12列,可多层嵌套。
+                </div>
+                <div>
+                    我认为相较于其他主流布局系统,栅格系统对实现响应式和快速布局有着极强的优势,栅格系统简单易上手,响应效果明显并几乎一份代码可适配所有终端,使其得到了广大的推崇。但栅格系统也有它的瑕疵,栅格布局并不能精准的控制元素所在位置,过于复杂的压面布局也并不适合于全部通过栅格系统来构建。
+                </div>
+                <div>
+                    但是利用栅格系统的思路,我们也可以快速构建自己的"网格布局",或在其它布局中穿插栅格布局.当我们的页面需要精准的控制多个信息时,可以根据实际情况划分2*N的行内格子,并根据实际情况控制单间格大小(px单位还是%),利用媒体查询做更精准和更符合项目的响应布局。
+                </div>
+            </div>
+
+            <h4 id="c2" class="mt20">二. 轮播图</h4>
+            <div>
+                <div id="myBanner" class="carousel slide col-xs-offset-1 col-lg-offset-2  col-xs-10 col-lg-8"
+                     data-ride="carousel" data-interval="3000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myBanner" data-slide-to="0" class="active"></li>
+                        <li data-target="#myBanner" data-slide-to="1"></li>
+                        <li data-target="#myBanner" data-slide-to="2"></li>
+                        <li data-target="#myBanner" data-slide-to="3"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/1.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h5>First Thumbnail label</h5>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                    elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/2.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h5>Second Thumbnail label</h5>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                    elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/3.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h5>Third Thumbnail label</h5>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                    elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/4.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h5>First Thumbnail label</h5>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                    elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#myBanner" class="carousel-control left" data-slide="prev" role="button">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#myBanner" class="carousel-control right" data-slide="next" role="button">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="clearfloat pt20">
+                    <div class="col-xs-2 col-xs-offset-3 btn btn-primary carousel-pause">暂停</div>
+                    <div class="col-xs-2 col-xs-offset-1 btn btn-success carousel-play">播放</div>
+                </div>
+            </div>
+
+            <h4 id="c3" class="clearfloat pt20">三. 三种表单</h4>
+            <div class="col-xs-offset-1 col-xs-10">
+                <div class="row">
+                    <div class="mt25">
+                        <h4 class="color-orange">-- 默认表单</h4>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="phone" class="control-label">手机号：</label>
+                                <input type="text" class="form-control" id="phone">
+                                <span class="help-block">请输入您的真实手机号码</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="control-label">密码：</label>
+                                <input type="text" id="password" class="form-control">
+                                <span class="help-block">密码必须为数字、_和字母</span>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">我已阅读并接受龙贷服务协议
+                                </label>
+                            </div>
+                            <input class="btn btn-success" type="button" value="登录">
+                            <input class="btn btn-primary" type="button" value="注册">
+                        </form>
+                    </div>
+                    <div class="mt40">
+                        <h4 class="color-orange">-- 内联表单</h4>
+                        <form action="" class="form-inline">
+                            <div class="form-group">
+                                <label for="inline-phone" class="control-label">手机号：</label>
+                                <input type="text" class="form-control" id="inline-phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="inline-password" class="control-label">密码：</label>
+                                <input type="text" id="inline-password" class="form-control">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox">我已阅读并接受龙贷服务协议
+                                </label>
+                            </div>
+                            <input class="btn btn-success ml10 btn-sm" type="button" value="登录">
+                            <input class="btn btn-primary btn-sm" type="button" value="注册">
+                        </form>
+                    </div>
+
+                    <div class="mt40">
+                        <h4 class="color-orange">-- 水平表单</h4>
+                        <form action="" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="hor-phone" class="hidden-sm col-md-2 control-label">手机号：</label>
+                                <div class="col-xs-12 col-sm-8 col-md-6">
+                                    <input type="text" id="hor-phone" class="form-control"
+                                           placeholder="your phone number...">
+                                </div>
+                                <div class="hidden-xs col-sm-4">
+                                    <span class="help-block">请输入您的真实手机号码</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="hor-password" class="hidden-sm col-md-2 control-label">密码：</label>
+                                <div class="col-xs-12 col-sm-8 col-md-6">
+                                    <input type="text" id="hor-password" class="form-control"
+                                           placeholder="your password...">
+                                </div>
+                                <div class="hidden-xs col-sm-4">
+                                    <span class="help-block">密码必须为数字、_和字母</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-2">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">我已阅读并接受龙贷服务协议
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-2 mt20">
+                                    <input class="btn btn-success" type="button" value="登录">
+                                    <input class="btn btn-primary" type="button" value="注册">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <h4 id="c4" class="clearfloat pt30">四. 响应式表格</h4>
+            <h5>网站公告管理</h5>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-condensed table-hover">
+                    <thead>
+                    <tr>
+                        <th>选中</th>
+                        <th>序号</th>
+                        <th>标题</th>
+                        <th>类型</th>
+                        <th>发表人</th>
+                        <th>时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>1</td>
+                        <td>关于龙贷与冠群中誉合作的公告</td>
+                        <td>系统公告</td>
+                        <td>gozap</td>
+                        <td>2016-04-08 16:16:53.0</td>
+                        <td>
+                            <a class="btn btn-success btn-xs" href="#">编辑</a>
+                            <a class="btn btn-danger btn-xs" href="#">删除</a>
+                            <a class="btn btn-primary btn-xs" href="#">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>2</td>
+                        <td>关于龙贷与冠群中誉合作的公告</td>
+                        <td>系统公告</td>
+                        <td>gozap</td>
+                        <td>2016-04-08 16:16:53.0</td>
+                        <td>
+                            <a class="btn btn-success btn-xs" href="#">编辑</a>
+                            <a class="btn btn-danger btn-xs" href="#">删除</a>
+                            <a class="btn btn-primary btn-xs" href="#">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>3</td>
+                        <td>关于龙贷与冠群中誉合作的公告</td>
+                        <td>系统公告</td>
+                        <td>gozap</td>
+                        <td>2016-04-08 16:16:53.0</td>
+                        <td>
+                            <a class="btn btn-success btn-xs" href="#">编辑</a>
+                            <a class="btn btn-danger btn-xs" href="#">删除</a>
+                            <a class="btn btn-primary btn-xs" href="#">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>4</td>
+                        <td>关于龙贷与冠群中誉合作的公告</td>
+                        <td>系统公告</td>
+                        <td>gozap</td>
+                        <td>2016-04-08 16:16:53.0</td>
+                        <td>
+                            <a class="btn btn-success btn-xs" href="#">编辑</a>
+                            <a class="btn btn-danger btn-xs" href="#">删除</a>
+                            <a class="btn btn-primary btn-xs" href="#">预览</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>5</td>
+                        <td>关于龙贷与冠群中誉合作的公告</td>
+                        <td>系统公告</td>
+                        <td>gozap</td>
+                        <td>2016-04-08 16:16:53.0</td>
+                        <td>
+                            <a class="btn btn-success btn-xs" href="#">编辑</a>
+                            <a class="btn btn-danger btn-xs" href="#">删除</a>
+                            <a class="btn btn-primary btn-xs" href="#">预览</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 id="c5" class="clearfloat">五. 下拉菜单</h4>
+
+            <div class="dropdown">
+                <!--通过父元素控制下拉方向 dropdown dropup-->
+                <button class="btn btn-default dropdown-toggle" id="dropdownMen1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                    下拉按钮
+                    <span class="caret"></span>
+                    <!--这是一个小三角-->
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMen1">
+                    <li class="dropdown-header">图书</li>
+                    <li><a href="#">电器</a></li>
+                    <li><a href="#">服饰</a></li>
+                    <li class="divider" role="separator"></li>
+                    <li><a href="#">手机</a></li>
+                    <li><a href="#">电脑</a></li>
+                    <li class="disabled"><a href="#">冰箱</a></li>
+                    <li><a href="#">洗衣机</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>按钮组</h4>
+                <div class="btn-group">
+                    <button class="btn btn-default" type="button">确定</button>
+                    <button class="btn btn-default" type="button">取消</button>
+                    <button class="btn btn-default" type="button">删除</button>
+                </div>
+                <br><br>
+                <div class="btn-group-vertical">
+                    <!--竖向排列-->
+                    <button class="btn btn-default" type="button">确定</button>
+                    <button class="btn btn-default" type="button">取消</button>
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle btn btn-default" data-toggle="dropdown">
+                            下拉列表
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">管理员</a></li>
+                            <li><a href="#">服务员</a></li>
+                            <li><a href="#">会计</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 id="c6">六. 加图标的样式</h4>
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control" placeholder="username">
+                    <span class="input-group-addon">$</span>
+                </div>
+                <br><br>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class=""><a href="#">Proty</a></li>
+                    <li class=""><a href="#">This</a></li>
+                </ul>
+                <br>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class=""><a href="#">Proty</a></li>
+                    <li class=""><a href="#">This</a></li>
+                </ul>
+                <br><br>
+                <h4 id="c7">七. 警告框 进度条 分页符</h4>
+                <div>
+                    <div class="alert alert-danger">Are you OK ?</div>
+                    <div class="alert alert-warning alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div>this is a good day!</div>
+                    </div>
+                    <div class="alert alert-info alert-dismissable">
+                        <button class="close" type="button">
+                            <span>&times;</span>
+                        </button>
+                        <strong>warning! </strong> Let me play together!
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped " style="width: 40%"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active"
+                             style="width: 10%"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped active"
+                             style="width: 80%"></div>
+                    </div>
+                    <br>
+                    <nav>
+                        <ul class="pagination">
+                            <li><a href="#"><span>&laquo;</span></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#"><span>&raquo;</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <br><br>
+
+                <h4 id="c8">八. 面板</h4>
+                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">What will you do?</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ducimus eos, esse eveniet
+                                laudantium neque placeat porro possimus, reiciendis reprehenderit suscipit tempore velit
+                                voluptatibus? Dolorum error hic officiis ratione voluptates?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">What will you do?</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse facere iusto molestiae
+                                nemo. Consectetur consequatur explicabo, ipsa, laboriosam maxime molestias nemo omnis
+                                optio praesentium quisquam quod repellendus ullam veritatis!
+                            </p>
+                        </div>
+                        <div class="panel-footer">that's all!</div>
+                    </div>
+                </div>
+                <h4 id="c9">九. 模态框 标签页 工具条</h4>
+                <div>
+                    <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal">点我点我</button>
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1"
+                            data-whatever="@校花">传参数的模态框
+                    </button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal">
+                                        <span>&times;</span>
+                                    </button>
+                                    <h4 class="modal-title">模态框标题</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto culpa cum,
+                                        cupiditate eligendi eveniet, exercitationem in itaque laborum minima nisi non
+                                        nulla pariatur provident quae, quasi quis quod soluta vel.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save change</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" type="button" data-dismiss="modal"></button>
+                                    <h4 class="modal-title">标题党</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="name" class="control-label">发送人:</label>
+                                            <input type="text" id="name" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message" class="control-label">内容:</label>
+                                            <textarea name="" id="message" cols="30" rows="10"
+                                                      class="form-control"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save change</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#d1" data-toggle="tab">Home</a></li>
+                            <li><a href="#d2" data-toggle="tab">This</a></li>
+                            <li><a href="#d3" data-toggle="tab">That</a></li>
+                        </ul>
+                        <br>
+                        <div class="tab-content">
+                            <div class="tab-pane active fade in" id="d1">
+                                <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate et illo in
+                                    maxime nesciunt possimus velit? Illum labore, magni. Consequuntur dolore nulla omnis
+                                    quia, quidem rem repellat similique voluptatem.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="d2">
+                                <p class="text-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate et illo in
+                                    maxime nesciunt possimus velit? Illum labore, magni. Consequuntur dolore nulla omnis
+                                    quia, quidem rem repellat similique voluptatem.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="d3">
+                                <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cupiditate et illo in
+                                    maxime nesciunt possimus velit? Illum labore, magni. Consequuntur dolore nulla omnis
+                                    quia, quidem rem repellat similique voluptatem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="咬我咬我丫~">我在哪?</button>
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="咬我咬我丫~">我在哪?</button>
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="咬我咬我丫~">我在哪?</button>
+                    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="咬我咬我丫~">我在哪?</button>
+                    <br><br>
+                    <button type="button" class="btn btn-lg btn-default" data-container="body" data-toggle="popover" title="标题党" data-content="好紧张,说点什么呢,都别看我啦!!" data-placement="right">点点我试试/弹出框</button>
+                    <button type="button" class="btn btn-lg btn-success" data-container="body" data-toggle="popover" title="标题党" data-content="好紧张,说点什么呢,都别看我啦!!" data-placement="top" data-trigger="focus">点点我试试/可隐藏</button>
+                </div>
+                <br><br>
+
+            </div>
+            <!--<a href="grid/index.html" class="btn btn-danger">效果页</a>-->
+        </div>
+
+        <div class="hidden-xs hidden-sm col-md-2">
+            <div id="myScrollspy" data-spy="affix" data-offset-top="250">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#c1">栅格系统介绍</a></li>
+                    <li><a href="#c2">轮播图</a></li>
+                    <li><a href="#c3">三种表单</a></li>
+                    <li><a href="#c4">响应式表格</a></li>
+                    <li><a href="#c5">下拉菜单</a></li>
+                    <li><a href="#c6">加图标的样式</a></li>
+                    <li><a href="#c7">警告框 进度条 分页符</a></li>
+                    <li><a href="#c8">面板</a></li>
+                    <li><a href="#c9">模态框 标签页 工具条</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+    (function ($) {
+//        var s = document.createElement("script");
+//        s.onload = function () {
+//            bootlint.showLintReportForCurrentDocument([]);
+//        };
+//        s.src = "js/bootlint.js";
+//        document.body.appendChild(s);
+
+        //    $('body').scrollspy({target:"#"})
+
+        $(function () {
+            $(".carousel-pause").click(function () {
+                $("#myBanner").carousel('pause');
+            });
+            $(".carousel-play").click(function () {
+                $("#myBanner").carousel('cycle');
+            });
+        });
+
+        $('#myModal1').on('show.bs.modal', function (event) {
+            var text = $(event.relatedTarget).data('whatever');
+            var modal = $(this);
+            modal.find('.modal-title').text('发消息给 ' + text.slice(1));
+            modal.find('.modal-body input').val(text);
+        });
+
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+
+
+    })(jQuery);
+
+</script>
+</body>
+</html>
