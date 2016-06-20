@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum=1.0" />
+
+    <!--
+    你明明写的一串数字没加链接样式，而iPhone会自动把你这个文字加链接样式、并且点击这个数字还会自动拨号！想去掉这个拨号链接该如何操作呢？这时我们的meta又该大显神通了，代码如下：
+    telephone=no就禁止了把数字转化为拨号链接！
+    telephone=yes就开启了把数字转化为拨号链接，要开启转化功能，这个meta就不用写了,在默认是情况下就是开启！
+    -->
+    <meta name="format-detection" content="telephone=no,email=no,adress=no"/>
+
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+    <!--塞班移动设备 ，android不知用哪个-->
+    <link rel="short icon" href="/touch-icon-ipad-retina.png">
+
+
+    <titile>一个标准的html5页面模板</title>
+        <style>
+            /*避免html文本字体样式重置使用该条样式*/
+            html {
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                text-size-adjust: 100%;
+            }
+        </style>
+        </head>
+<body>
+
+<div>
+    <h2>一些需要注意的点</h2>
+    <ul>
+        <li>1，请使用Modernizr这个库来夸浏览器</li>
+        <li>2，使用normalize.css来重置浏览器样式</li>
+        <li>3，灵活使用媒体查询 @media screen and (min-width: 800px) {}</li>
+        <li>4，可以通过界面图标启动web应用在header中加一个meta标签,系统会根据尺寸选择不同的icon <br/>
+            使用apple-touch-icon属性为“增加高光光亮的图标”；</br>
+            使用apple-touch-icon-precomposed属性为“设计原图图标”；
+        </li>
+        <li>
+            5，为了避免文本字体样式重置 使用 text-size-adjust
+        </li>
+        <li>6，引入meta标签解决字体突然变大的问题,同时通过一些手段保证依然可以缩放。</li>
+        <li>7，启动浏览器原生应用启动原生应用<a href="https://developer.apple.com/library/safari/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html" target="_blank">移动版safari的URL Scheme</a><br/>
+            <h1>例子</h1>
+            <ul>
+                <li><a href="mailto:frank@wwdcdemo.example.com">John Frank</a></li>
+                <li><a href="tel:1-408-555-5555">1-408-555-5555</a></li>
+                <li>
+                    <a href="facetime:14085551234">Connect using FaceTime</a><br/>
+                    <a href="facetime:user@example.com">Connect using FaceTime</a><br/>
+                    <a href="facetime-audio:14085551234">Connect using FaceTime</a><br/>
+                    <a href="facetime-audio:user@example.com">Connect using FaceTime</a><br/>
+                </li>
+                <li><a href="sms:1-408-555-1212">New SMS Message</a></li>
+                <li>
+                    <!--maps 相关api有很多可以看下-->
+                    <a href="http://maps.apple.com/?q=Mexican+Restaurant">Maps Link</a>
+                </li>
+                <li><a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?i=156093464&id=156093462&s=143441">itunes</a></li>
+                <li>
+                    <a href="http://www.youtube.com/watch?v=VIDEO_IDENTIFIER">Play Video</a>
+                    <a href="http://www.youtube.com/v/VIDEO_IDENTIFIER">Play Video</a>
+                </li>
+            </ul>
+        </li>
+        <li>8，iPhone下的全屏模式，查看<a href="#">全屏链接 studycollection/HTML5/public/html/</a></li>
+        <li>9，防止ios的input聚焦时的自动缩放 扔查看上面的链接</li>
+        <li>10，对于连接定义一条css -webkit-touch-callout: none; 将不打开是否复制或打开连接的提问，实际没用<br/>
+            查看 -webkit-user-select: text; 控制是否能选择文本<br/>
+            -webkit-tap-highlight-color: rgba(0,0,0,0); 改写iOS Safari中可点击元素的高亮颜色。该属性可以只设置透明度。 <br/>
+            -webkit-apperance: none; <br/>
+        </li>
+        <li>11，加速按钮反馈，创建的手机网页反应比pc要慢，使用html5boilerplate中的helper.js中的fastButton可以加速响应</li>
+        <li>12，隐藏地址栏 <a href="https://github.com/h5bp/mobile-boilerplate/blob/master/js/helper.js">使用MBP.hideUrlBar()这个方法来隐藏url地址栏</a></li>
+        <li>13，网络存储 Local Storage, IndexDB， Web SQL</li>
+        <li>14，Web Worker js实现多线程，目前安卓不支持，ios支持</li>
+        <li>15，调试网页
+            <ul>
+                <li>1,使用Opera分别下载桌面版和移动版来进行调试</li>
+                <li>2，使用weinre 调试移动页面包括 nodejs版本，和jar包版本 点击<a href="">该链接查看</a></li>
+                <li>3,在移动设备上面使用firebug  引入这段js可以再 移动页面打开firebug https://getfirebug.com/firebug-lite.js</li>
+                <li>4,使用jsconsole.com进行调试 连接地址 http://jsconsole.com/?%3Alisten</li>
+            </ul>
+        </li>
+        <li>16,性能测试网站 http://www.blaze.io/mobile/</li>
+    </ul>
+</div>
+</body>
+<script>
+    var metas = document.getElementsByTagName('meta');
+    var i;
+    if( navigator,userAgent.match(/iPhone/) ) {
+        for( i = 0; i < metas.length; i++ ) {
+            if( metas[i].name == "viewport" ) {
+                metas[i].content= "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+            }
+        }
+        document.addEventListener("gesturestart", gestureStart, false);
+    }
+    function gestureStart() {
+        var metas = document.getElementsByTagName('meta');
+        var i;
+        for( i = 0; i < metas.length; i++ ) {
+            if( metas[i].name == "viewport" ) {
+                metas[i].content= "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+            }
+        }
+    }
+    //a better version
+    // My rewritten version
+    // 1) won't restrict viewport if JS is disabled
+    // 2) uses capture phase
+    // 3) assumes last viewport meta is the one to edit (incase for some odd reason there is more than one)
+    // 4) feature inference (no sniffs, behavior should be ignored on other enviros)
+    // 5) removes event handler after fired
+    !function(doc) {
+        var addEvent = 'addEventListener',
+                type = 'gesturestart',
+                qsa = 'querySelectorAll',
+                scales = [1, 1],
+                meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+        function fix() {
+            meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+            doc.removeEventListener(type, fix, !0);
+        }
+        if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+            fix();
+            scales = [.25, 1.6];
+            doc[addEvent](type, fix, !0);
+        }
+    }(document);
+</script>
+</html>
