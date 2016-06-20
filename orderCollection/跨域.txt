@@ -1,0 +1,39 @@
+跨域（JavaScript高级程序设计第三版 582页)
+    跨域是源于安全策略,XHR对象只能访问与包含它的页面位于同一域的资源
+    即:端口 域名 协议
+
+    一. CORS(跨源资源共享)
+                   是W3C的一个工作草草案,定义了在必须访问跨源资源时,浏览器与服务器应该如何沟通。
+        基本原理:   使用自定义的HTTP头部让浏览器与服务器进行沟通,从而决定请求或响应是应该成功,还是应该失败
+
+        比如: 一个普通的get/post请求,没有自定义头部,而主体内容是text/lain,在发送该请求时,需要给它附加一个额外的Origin头部,其中包括请求页面的源信息（协议,域名和端口),以便服务器根据这个头部信息来决定是否给予响应
+        Origin:http://www.nczonline.net
+
+        注意:请求和响应都不包含cookie
+
+    二. 图像Ping
+                    图像Ping是与服务器进行简单、单向的跨域通信的一直方式
+        基本原理:    img 标签的src
+
+                    var img = new Image();
+                    img.onload = img.onerror = function(){
+                        alert('Done!');
+                    };
+                    img.src = 'http://example.com/test?name=Micholas';
+
+        使用场景:    常用语追踪用户点击页面或者动态广告曝光次数;
+        缺点:       只能发送GET请求,无法访问服务器的响应文本
+
+
+    三. JSONP
+
+        基本原理:   通过动态 script 标签来使用的,使用时为 src 属性指定一个跨域URL
+
+        function handleResponse(response){
+            alert('your are at ip address ' + response.ip + ',which is in ' + response.city + "," + response.region_name);
+        }
+
+        var script = document.createElement("script");
+        script.src = 'http://freegeoip.net/json?callback=handleResponse';
+        document.body.insertBefore(script,document.body.firstChild);
+
