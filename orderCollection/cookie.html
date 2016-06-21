@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie方法封装及调用</title>
+</head>
+<body>
+<script src="../Bootstrap/js/jquery-1.11.3.js"></script>
+<script>
+    (function ($) {
+        $(function () {
+            var CookieUtil = {
+
+                //获取cookie
+                get : function (name) {
+                    var cookieName = encodeURIComponent(name) + "=",
+                            cookieStart = document.cookie.indexOf(cookieName),
+                            cookieValue = null;
+
+                    if(cookieStart > -1){
+                        var cookieEnd = document.cookie.indexOf(";",cookieStart);
+                        if(cookieEnd == -1){
+                            cookieEnd = document.cookie.length;
+                        }
+                        cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length,cookieEnd));
+                    }
+
+                    return cookieValue;
+
+                },
+                //设置cookie
+                set : function (name,value,expires,path,domain,secure) {
+                    var cookieText = encodeURIComponent(name) + "=" +encodeURIComponent(value);
+
+                    if(expires instanceof  Date){
+                        cookieText += ";expires=" + expires.toUTCString();
+                    }
+
+                    if(path){
+                        cookieText += ";path=" + path;
+                    }
+
+                    if(domain){
+                        cookieText += ";domian=" +domain;
+                    }
+                    if(secure){
+                        cookieText += ";secure=";
+                    }
+
+                    document.cookie = cookieText;
+                },
+                //删除cookie
+                unset : function (name,psth,domain,secure) {
+                    var self = this;
+                    self.set(name,"",new Date(0),path,domain,secure)
+                }
+
+            };
+
+
+
+            CookieUtil.set('name','ali');
+            CookieUtil.set('book','阿拉伯的囚徒');
+
+            alert(CookieUtil.get('name'));
+            alert(CookieUtil.get('book'));
+
+            //完整设置cookie
+            CookieUtil.set('key','value','路径','域','失效日期');
+            CookieUtil.set('username','what ','/books/projs/','www.longdai.com',new Date('January 1,2016'));
+
+
+
+
+        })
+    })(jQuery)
+</script>
+</body>
+</html>

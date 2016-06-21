@@ -55,6 +55,7 @@
 -  [D3js-扁平化图表](https://d3js.org/)
 -  [BUTTONS-详尽的按钮样式](http://www.bootcss.com/p/buttons/)
 -  [Lodash-超越undersore的js库](http://lodashjs.com/docs/)
+-  [video.js](https://github.com/videojs/video.js)
 
 #####jQuery插件及特效
 -  [jQuery-瀑布流布局异步图片加载](http://www.htmleaf.com/Demo/2014100223.html)
@@ -62,6 +63,7 @@
 -  [jQuery WeUI](http://lihongxun945.github.io/jquery-weui/)
 -  [jQuery3d幻灯片翻页效果](http://www.jq22.com/jquery-info4216)
 -  [jQuery-unslider图片轮播](http://www.bootcss.com/p/unslider/)
+-  [插件库](http://www.jq22.com/)
 
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
@@ -82,15 +84,20 @@
 - [UIkit](http://www.getuikit.net/)
 
 #####深度好文
+- [H5兼容解决方案-polyfill](http://blog.csdn.net/wang16510/article/details/8960312)
+- [HTML5 Cross Browser Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills)
 - [JavaSript模块规范 AMD规范与CMD规范](http://www.ruanyifeng.com/blog/2012/10/javascript_module.html)
+- [REST架构风格](http://www.infoq.com/cn/articles/understanding-restful-style/)
 - [console的特性完全版](http://www.yyyweb.com/3541.html)
 - [超棒的面试题](http://blog.csdn.net/kongjiea/article/details/46341575)
 - [gulp与grunt对比](https://segmentfault.com/a/1190000002491282)
 - [大型JavaScript应用程序架构模式](http://www.cnblogs.com/TomXu/archive/2011/12/14/2286225.html)
 - [前端模块管理器介绍-阮一峰](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
 - [前端知识大全](http://www.w3cfuns.com/notes/18186/714fccfb15f26c9858a163918b39a944.html)
+- [REST架构风格深入理解](http://www.infoq.com/cn/articles/understanding-restful-style/)
 - [什么是web服务器](http://www.html5cn.org/article-6776-1.html)
 - [移动端WEB资源整合](http://www.daqianduan.com/6281.html)
+- [手写ajax](http://littleblack.cc/2016/05/04/Javascript/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AAAjax/)
 
 #####前端搭建工具
 - [nodeJS官网](https://nodejs.org/en/foundation/)
