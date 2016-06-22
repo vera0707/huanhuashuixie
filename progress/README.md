@@ -13,3 +13,14 @@
 
 > Bootstrap效果图-局部.
 
+#### Backbone
+
+* MVC模型
+* 适合大型项目开发的Backbone
+* 解决数据自动刷新问题
+* 只是一个基础项目
+
+![](images/backbone.png)
+
+> Bootstrap效果图-局部.
+
