@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+<div id="books">
+    <form action="#" id="addBook">
+        <div>
+            <!--封面图片-->
+            <label for="coverImage">CoverImage</label>
+            <input type="file" id="coverImage">
+
+            <!--书名-->
+            <label for="title">Title:</label>
+            <input type="text" id="title">
+
+            <!--作者-->
+            <label for="author">Author:</label>
+            <input type="text" id="author">
+
+            <!--出版日期-->
+            <label for="releaseDate">Date:</label>
+            <input type="text" id="releaseDate">
+
+            <!--关键字-->
+            <label for="keywords">Keywords:</label>
+            <input type="text" id="keywords">
+
+            <button id="add">Add</button>
+        </div>
+    </form>
+</div>
+
+<!--<div class="bookContainer">-->
+    <!--<img src="img/1.jpg" alt="">-->
+    <!--<ul>-->
+        <!--<li>dfkjaks</li>-->
+        <!--<li>dfkjaks</li>-->
+        <!--<li>dfkjaks</li>-->
+        <!--<li>dfkjaks</li>-->
+    <!--</ul>-->
+    <!--<button class="delete">删除</button>-->
+<!--</div>-->
+
+<!--定义模板,用于显示每一本书-->
+<script id="bookTemplate" type="text/template">
+    <img src="<%= coverImage %>" alt="" />
+    <ul>
+        <li><%= title %></li>
+        <li><%= author %></li>
+        <li><%= releaseDate %></li>
+        <li><%= keywords %></li>
+    </ul>
+    <button class="delete">Delete</button>
+</script>
+
+
+
+<script src="js/lib/jquery-1.11.3.js"></script>
+<script src="js/lib/underscore.js"></script>
+<script src="js/lib/backbone.js"></script>
+<script src="js/models/book.js"></script>
+<script src="js/collections/library.js"></script>
+<script src="js/views/book.js"></script>
+<script src="js/views/library.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
