@@ -9,7 +9,7 @@
 * 页面简洁美观
 * 缺少真正的交互
 
-![](images/bootstrap.jpg)
+![](images/bootstrap.png)
 
 > Bootstrap效果图-局部.
 
