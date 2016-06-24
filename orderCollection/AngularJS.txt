@@ -1,0 +1,15 @@
+
+AngularJS
+    1. AngularJS同其他JavaScript框架最主要的一个区别就是,控制器并不适合用来执行DOM操作、格式化或数据操作,以及除存储数据模型之外的状态维护操作。它只是视图和$scope之间的桥梁。
+    2. 引用需要声明的有$scope,$rootScope,$parse,$interpolate,$filter,$http,
+
+1. $apply
+2. angular.directive()
+3. angular.factory()
+4. $scope
+     尽管有angularJS的脏循环来为我们清理$scope,但是知道是谁创建了这个作用域还是有用的,因为你可以使用这个$scope上叫做$destory()的方法来清理这个作用域。
+5. $parse
+     作用：将一个AngularJS表达式转换成一个函数
+6. $interpolate
+     作用: 要在字符串模板中做插值操作时,在你的对象中注入$interpolate服务
+     将默认的插值{{}}更改为自定义效果

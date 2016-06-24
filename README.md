@@ -34,6 +34,9 @@
 - [jekyll-在git上制作个人博客](http://jekyll.bootcss.com/)
 - [思维导图](http://www.xmind.net/)
 - [站酷](http://sucai.zcool.com.cn/)
+- [Bootstrap在线制作](http://www.layoutit.com/)
+- [Bootstrap本地编辑器Jetstrap](https://jetstrap.com)
+
 
 #####JS库
 -  [jQuery中文文档](http://jquery.cuishifeng.cn/)

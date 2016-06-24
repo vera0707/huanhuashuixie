@@ -36,3 +36,27 @@
 
 > 下载项目运行index即可.
 
+* 掌握情况
+  + 可以简单并配置前端工具:npm,grunt,bower等
+  + 掌握基本的命令行操作,包括liunx命令,git,nginx操作等
+  + 学习较多方面的前端知识: H5新属性,RESTful架构风格,ES6,nodeJS搭建前端服务器等
+  + 常用库、插件掌握情况:
+    * Bootstrap: 可根据要求基本完成页面设计
+    * jQuery: 熟练使用常用api
+    * angularJS: 能正确理解angularJS特性和实现简单功能
+    * juicer: 基本掌握了juicer的使用
+    * backboneJS: 能仿写功能,存在逻辑缺陷
+    * requireJS: 能理解并简单仿写
+    * reactJS: 简单了解其特点
+  + 深入过的点
+    * 原生XMLHttpRequest和封装它的jQuery与angularJS
+    * 熟悉Bootstrap的样式与组件
+    * AngularJS
+  + 完成项目情况
+    * 能基本独立完成页面效果
+    * 能通过JS实现基本的页面交互效果
+    * 还不能很好的与后台完成交互
+
+
+
+
