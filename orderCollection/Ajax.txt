@@ -1,0 +1,258 @@
+一. 原生的ajax
+    1. 创建核心对象
+        兼容IE的核心对象创建函数
+
+         function createXHR() {
+             if (typeof XMLHttpRequest != "undefined") {
+                 return new XMLHttpRequest();
+             } else if (typeof ActiveXObject != "undefined") {
+                 if (typeof arguments.callee.activeXString != "string") {
+                     var versions = ["MSXML2.XMLHttp.6.0", "MSXML2.XMLHttp.3.0", "MSXML2.XMLHttp"],
+                         i,
+                         len;
+                     for (i = 0, len = versions.length; i < len; i++) {
+                         try {
+                             new ActiveXObject(versions[i]);
+                             arguments.callee.activeXString = versions[i];
+                             break;
+                         } catch (ex) {
+                             //跳过
+                         }
+                     }
+                 }
+
+                 return new ActiveXObject(arguments.call.activeXString);
+             }else {
+                 throw new Error('No XHR object available');
+             }
+         }
+
+        调用
+            var xhr = createXHR();
+    2. 请求头
+        ①. 默认的情况下,在发送XHR请求的同时,还会发送下列头部信息
+            Accept: 浏览器能够处理的内容类型
+            Accept-Charset: 浏览器能够显示的字符集
+            Accept-Encoding: 浏览器能够处理的压缩编码
+            Accept-Language: 浏览器当前设置的语言
+            Connection: 浏览器与服务器之间的连接类型
+            Cookie: 当前页面的设置的任何Cookie
+            Host: 发送请求的页面所在域
+            Referer: 发送请求的页面URL
+            User-Agent: 浏览器的用户代理字符串
+        ②. 设置自定义请求头信息
+            用法:必须在调用open()方法之后且调用send()方法之前调用setRequestHeader()
+
+             var xhr = createXHR();    //书接上回
+
+             xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4){
+                    if((xhr.status >= 200 && xhr.status < 300) || xhr.string == 304){
+                        alert(xhr.responseText);
+                    }else{
+                        alert("Requert was unsuccessful: " +xhr.status);
+                    }
+                }
+             };
+
+             xhr.open("get","example.php",true);
+             xhr.方法之前调用setRequestHeader("MyHeader","MyValue");
+             xhr.send(null);
+
+             注: 可以发送默认的请求头信息 xhr.getAllResponseHeader(),然而不建议如此,否则会影响服务器的响应
+
+    3. POST请求
+        XHR.open("POST","服务器响应/页面",true);
+
+        ①. 比GET方法多一步设置请求头
+        ②. 数据是通过send方法发送的。
+            xhr.send("qs=true&userName=abc&pwd=123456");
+
+
+        例子:
+            var xhr = createXHR();
+            xhr.open("post","test.php",true);
+            xhr.onreadystatechange = function(){
+
+            xhr.onreadystatechange = function(){
+                            if(xhr.readyState == 4){
+                                if((xhr.status >= 200 && xhr.status < 300) || xhr.string == 304){
+                                    alert(xhr.responseText);
+                                }else{
+                                    alert("Requert was unsuccessful: " +xhr.status);
+                                }
+                            }
+                         };
+             //比GET请求多了一步
+                xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+             //另外,数据是通过send方法发送的
+                 xhr.send("qs=true&userName=abc&pwd=123456");
+
+二. jQuery封装的Ajax
+    ①  $.ajax(url,[settings]) setting可选,$.ajax() 可以不带任何参数直接使用,所有的选项都可以通过 $.ajaxSetup() 函数来全局设置
+    ②  $.ajax() 返回其创建的 XMLHttpRequest 对象。
+
+    理解jQuery的ajax
+        1. 封装了兼容不同浏览器的创建XMLHttpRequest核心对象的方法
+        2. 底层设置了默认参数【默认type = post ,dataType = text等】
+        3. 底层调用核心对象并根据type类型发送服务器请求
+        4. 根据dataType将不同类型的响应数据统一返回到函数中【success,error】
+
+    简单模拟封装jQuery的ajax
+        function ajax(params){
+        	params = params||{};
+        	if (!params.url) {
+                throw new Error('Necessary parameters are missing.'); //必要参数未填
+            }
+        	var options = {
+        		url: params.url||'',	//接口地址
+        		type: (params.type||'GET').toUpperCase(),	//请求方式
+        		timeout: params.timeout||5000,	//超时等待时间
+        		async : true,	//是否异步
+        		xhrFields:{},	//设置XHR对象属性键值对。如果需要，可设置withCredentials为true的跨域请求。
+        		dataType: params.dataType||'json',	//请求的数据类型
+        		data: params.data||{},	//参数
+        		jsonp:'callback',
+        		jsonpCallback:('jsonp_' + Math.random()).replace('.',''),
+        		error: params.error||function() {},
+        		success: params.success||function(){},
+        		complete: params.complete||function(){}
+        	};
+        	var formatParams = function(json) {
+                var arr = [];
+                for(var i in json) {
+                    arr.push(encodeURIComponent(i) + '=' + encodeURIComponent(json[i]));
+                }
+                return arr.join("&");
+            };
+        	if(options.dataType=='jsonp'){
+        		//插入动态脚本及回调函数
+        		var $head = document.getElementsByTagName('head')[0];
+        		var $script = document.createElement('script');
+        		$head.appendChild($script);
+                window[options.jsonpCallback] = function (json) {
+                    $head.removeChild($script);
+                    window[options.jsonpCallback] = null;
+                    hander && clearTimeout(hander);
+                    options.success(json);
+                    options.complete();
+                };
+                //发送请求
+                options.data[options.jsonp] = options.jsonpCallback;
+                $script.src = options.url + '?' + formatParams(options.data);
+                //超时处理
+                var hander = setTimeout(function(){
+                    $head.removeChild($script);
+                    window[options.jsonpCallback] = null;
+                    options.error();
+                    options.complete();
+                }, options.timeout);
+        	}else{
+        		//创建xhr对象
+        		var xhr = new (self.XMLHttpRequest||ActiveXObject)("Microsoft.XMLHTTP");
+        		if(!xhr){
+        			return false;
+        		}
+        		//发送请求
+        		options.data = formatParams(options.data);
+        		if (options.type == 'POST') {
+        			xhr.open(options.type, options.url, options.async);
+        			xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+        		}else{
+        			options.url += options.url.indexOf('?')>-1?'&'+options.data:'?'+options.data;
+        			options.data = null;
+        			xhr.open(options.type, options.url + '?'+ options.data, options.async);
+        		}
+        		if(options.xhrFields){
+        			for(var field in options.xhrFields){
+        				xhr[field]= options.xhrFields[field];
+        			}
+        		}
+        		xhr.send(options.data);
+        		//超时处理
+        		var requestDone = false;
+        		setTimeout(function() {
+        			requestDone = true;
+        			if(xhr.readyState != 4){
+        				xhr.abort();
+        			}
+        		}, options.timeout);
+        		//状态处理
+        		xhr.onreadystatechange = function(){
+        			if(xhr.readyState == 4&&!requestDone) {
+        				if(xhr.status>=200 && xhr.status<300) {
+        					var data = options.dataType == "xml" ? xhr.responseXML : xhr.responseText;
+        					if (options.dataType == "json") {
+        						try{
+        							data =  JSON.parse(data);
+        						}catch(e){
+        							data = eval('(' + data + ')');
+        						}
+        					}
+        					options.success(data);
+        				} else {
+        					options.error();
+        				}
+        				options.complete();
+        			}
+        		};
+        	}
+        }
+
+    ③. 与原生的Ajax相比       -- 纯属个人看法
+        1. 不用关心兼容问题
+        2. 不用关心get/post等类型的差异
+        3. 不用关心响应数据的差异
+        4. 不用关心请求和响应步骤
+        5. post不需要设置响应头
+        6. 设置了超时处理
+        7. 实现了跨域
+
+
+三. angularJS的$http
+    1. $http
+        ① AngularJS 中的一个核心服务，用于读取远程服务器的数据
+        ② 返回一个promise对象
+        ③ 语法:
+           var promise = $http({
+                    method:'请求方法',
+                    url:'请求地址'
+                    }).success(data,header,config,status){
+                        //当响应准备就绪时调用
+                    }}.error(fdata,header,config,status){
+                        //当响应以错误状态返回时调用
+                    }}
+
+            由于$http方法返回一个promise对象,我们可以在响应返回时用then方法来处理回调,也可以分别用success和error
+            promise.then(function(resp){
+                //resp是一个响应对象
+            }).function(resp){
+                //带有错误信息的resp
+            }
+
+            或者我们的熟悉写法
+            promise.success(function(data,header,config,status){  }});
+            promise.error(function(data,header,config,status){  }});
+
+        ④. $http.get()
+            语法:
+                 $http.get('url',{cache: true}).success(data,header,config,status){}
+        ⑤. $http.post()
+            语法:
+                  $http.post('url', postData, config)
+                  .success(function(data, status, headers, config) {
+                      //成功之后做一些事情
+                  }).error(function(data, status, headers, config) {
+                      //处理错误
+                  });
+            默认请求头
+            Content-Type: application/json
+            可以在.config()函数中对post请求的头进行修改或扩充
+            angular.module('myApp',[]).config(function($httpProvider){
+                $httpProvider.defaults.headers
+                    .put['X-Posted-By'] = 'MyAngularApp';
+            })
+
+
+
+

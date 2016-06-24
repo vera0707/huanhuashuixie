@@ -56,6 +56,7 @@
 -  [BUTTONS-详尽的按钮样式](http://www.bootcss.com/p/buttons/)
 -  [Lodash-超越undersore的js库](http://lodashjs.com/docs/)
 -  [video.js](https://github.com/videojs/video.js)
+-  [Loading动画](https://connoratherton.com/loaders)
 
 #####jQuery插件及特效
 -  [jQuery-瀑布流布局异步图片加载](http://www.htmleaf.com/Demo/2014100223.html)
