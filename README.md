@@ -60,6 +60,7 @@
 -  [Lodash-超越undersore的js库](http://lodashjs.com/docs/)
 -  [video.js](https://github.com/videojs/video.js)
 -  [Loading动画](https://connoratherton.com/loaders)
+-  [G2-图表插件](http://g2.alipay.com/)
 
 #####jQuery插件及特效
 -  [jQuery-瀑布流布局异步图片加载](http://www.htmleaf.com/Demo/2014100223.html)
@@ -98,10 +99,12 @@
 - [大型JavaScript应用程序架构模式](http://www.cnblogs.com/TomXu/archive/2011/12/14/2286225.html)
 - [前端模块管理器介绍-阮一峰](http://www.ruanyifeng.com/blog/2014/09/package-management.html)
 - [前端知识大全](http://www.w3cfuns.com/notes/18186/714fccfb15f26c9858a163918b39a944.html)
+- [前端爱玩网仓库](http://www.iwan0.com/#column6)
 - [REST架构风格深入理解](http://www.infoq.com/cn/articles/understanding-restful-style/)
 - [什么是web服务器](http://www.html5cn.org/article-6776-1.html)
 - [移动端WEB资源整合](http://www.daqianduan.com/6281.html)
 - [手写ajax](http://littleblack.cc/2016/05/04/Javascript/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AAAjax/)
+- [前端调试方式](http://www.css88.com/archives/6137#more-6137)
 
 #####前端搭建工具
 - [nodeJS官网](https://nodejs.org/en/foundation/)
@@ -121,3 +124,6 @@
 
 #####编辑软件
 - [WebStorm](http://www.jetbrains.com/webstorm/)
+
+#####前后端通道
+- [Thymeleaf](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html/)

@@ -236,7 +236,7 @@
 
         ④. $http.get()
             语法:
-                 $http.get('url',{cache: true}).success(data,header,config,status){}
+                 $http.get('url',{cache: true}).success(data,status,header,config){}
         ⑤. $http.post()
             语法:
                   $http.post('url', postData, config)
