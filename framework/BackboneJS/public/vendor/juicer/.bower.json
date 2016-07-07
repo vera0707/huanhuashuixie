@@ -1,0 +1,14 @@
+{
+  "name": "juicer",
+  "homepage": "https://github.com/PaulGuo/Juicer",
+  "version": "0.4.0",
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.0",
+    "commit": "a1fcef00cb77c145cbdc2b8058df0a3124d861b5"
+  },
+  "_source": "https://github.com/PaulGuo/Juicer.git",
+  "_target": "~0.4.0",
+  "_originalSource": "juicer"
+}
