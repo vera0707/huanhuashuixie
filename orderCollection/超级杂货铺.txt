@@ -1,0 +1,180 @@
+一. 那几个总是用来用去的css重置
+    * {
+        border: none;
+    }
+    div {
+        display: block;
+    }
+    body {
+        font-family: '微软雅黑',YaHei,tahoma,arial;
+        color: #666;
+        margin: 0;
+    }
+    header {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    section {
+        background-color: #F2F2F2;
+        min-height: 400px;
+        height: auto!important;
+        overflow: visible;
+    }
+    a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code,datalist, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, source, span, strike, strong, sub, sup, table, tbody, tfoot, th, thead, tr, tt, u, ul, var {
+        background: 0 0;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: top;
+    }
+    embed, img {
+        vertical-align: top;
+    }
+    .f-l {
+        float: left;
+        display: inline;
+    }
+
+    .f-r {
+        float: right;
+        display: inline;
+    }
+
+    .clearfloat:after {
+        display: block;
+        clear: both;
+        content: ".";
+        visibility: hidden;
+        height: 0;
+    }
+
+    .clearfloat {
+        zoom: 1;
+    }
+
+二 . 图片压缩
+      PNG:  https://tinypng.com/
+
+三 . 就是那个检索存在问题
+
+    var str = '一个数组,比如说就看看有逗号么,有就把它们分开';
+
+    if(str.indexOf(",") > -1){
+        str.split(',');     //现在str是一个数组了
+    }
+
+    str.join('系不系傻')    //现在又被我拼成字符串了
+
+四. 要闭着眼都会写的
+    （function($){
+           $(function(){
+                function name (){
+                    this.access_token = "";
+
+                };
+
+           $.extend(name.prototype, {
+                 init: function () {
+                     var self = this;
+                     self.events();
+
+                     //判断用户状态
+                     var locationSearch = location.search,queryStr;
+
+                                     if(locationSearch.indexOf("query=")>-1){
+                                         if(locationSearch.indexOf("&") > -1){
+                                             var urlArr = locationSearch.split("&");
+                                             $.each(urlArr,function (k,v) {
+                                                 if(v.indexOf("query=") > -1){
+                                                     queryStr = v.split("query=")[1];
+                                                 }
+                                             });
+                                         }else{
+                                             queryStr = locationSearch.split("query=")[1];
+                                         }
+                                     }
+
+                                     if(queryStr == "nologin"){
+                                         $(".dragonBoat-prize-chance").hide();
+                                         window.maskControl("tip", "请登录后尝试", 2000);
+
+                                     }else if(queryStr == "update"){
+                                         $(".dragonBoat-prize-chance").hide();
+                                         window.maskControl("tip", "版本过低,请更新至最高版本", 2000);
+
+                                     }else if(queryStr == "null"){
+                                         $(".dragonBoat-prize-chance").hide();
+
+                                         window.maskControl("tip", "请登录后尝试", 2000);
+
+                                     }else{
+                                         if(!!queryStr){
+                                             self.isLogin = true;
+                                             self.access_token = queryStr;
+                                             $(".dragonBoat-prize-chance").show();
+
+                                         }
+                                     }
+
+                 },
+                 events : function(){
+                    var self = this;
+
+                    $('').on('click',function(){
+
+                    })
+                 },
+
+                 getAjax : function(){
+                    url :   "/address?access_token=" + self.access_token;
+                    ...
+                 })
+           })
+    })(jQuery)
+
+六 . backboneJS记不住的梗
+    1. 模型中的数据 this.model.attributes.name
+    2. _.clone() .off() 可能会用到哟
+    3. $this = $(e.currentTarget);
+    4. this.model.set
+    5. Backbone.history.start({pushState: true, root : "/"});6
+    6. 就是那个牛掰的异步
+        var studentView = Backbone.View.extend({
+
+                el: '.wrapper-contain-body',
+                initialize: function () {
+                    var that = this;
+                    //开始了
+                    this.getAjax(function (data) {
+                                            that.render(data);
+                                        });
+                    that.bindEvent();
+                },
+                render: function (data) {
+
+                },
+                bindEvent: function () {
+                    var that = this;
+                },
+
+                getAjax : function(){
+                    $.ajax({
+                        url : '',
+                        type : 'GET',
+                        data : {},
+                        success : function(data){
+
+                            //获取到数据就这么做
+                            var studentList = [];
+
+                            if (callBack && typeof callBack == "function") {
+                                studentList = res;
+                                callBack(studentList);
+                            }
+                        }
+                    })
+                }
+
+            });
