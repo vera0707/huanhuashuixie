@@ -1,36 +1,31 @@
 一. 那几个总是用来用去的css重置
-    * {
-        border: none;
-    }
-    div {
-        display: block;
+    *{
+        margin: 0;
+        padding: 0;
     }
     body {
         font-family: '微软雅黑',YaHei,tahoma,arial;
+        color: #fff;
+        margin: 0;
+        background-color: rgb(242,238,233);
+        font-size: 14px;
+        max-width: 750px;
         color: #666;
-        margin: 0;
+        margin: 0 auto;
     }
-    header {
-        font-size: 18px;
-        letter-spacing: 2px;
+    a,a:hover,a:active{
+        color: #666;
+        text-decoration: none;
+        -webkit-outline:none;
+        -moz-outline:none;
+        -ms-outline:none;
+        -o-outline:none;
+        outline:none;
     }
-    section {
-        background-color: #F2F2F2;
-        min-height: 400px;
-        height: auto!important;
-        overflow: visible;
-    }
-    a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code,datalist, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, source, span, strike, strong, sub, sup, table, tbody, tfoot, th, thead, tr, tt, u, ul, var {
-        background: 0 0;
-        font-size: 100%;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        vertical-align: top;
-    }
-    embed, img {
-        vertical-align: top;
+    a,img,button,input,textarea,span,div{
+        -webkit-tap-highlight-color:rgba(255,255,255,0);
+        -webkit-user-select: none;/*禁用手机浏览器的用户选择功能 */
+        -moz-user-select: none;
     }
     .f-l {
         float: left;
@@ -70,12 +65,12 @@
 四. 要闭着眼都会写的
     （function($){
            $(function(){
-                function name (){
+                function Name (){
                     this.access_token = "";
 
                 };
 
-           $.extend(name.prototype, {
+           $.extend(Name.prototype, {
                  init: function () {
                      var self = this;
                      self.events();

@@ -62,6 +62,7 @@
 -  [Loading动画](https://connoratherton.com/loaders)
 -  [G2-图表插件](http://g2.alipay.com/)
 
+
 #####jQuery插件及特效
 -  [jQuery-瀑布流布局异步图片加载](http://www.htmleaf.com/Demo/2014100223.html)
 -  [后台管理模板WrapBootstrap](http://www.jq22.com/jquery-info7282)
