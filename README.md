@@ -36,6 +36,7 @@
 - [站酷](http://sucai.zcool.com.cn/)
 - [Bootstrap在线制作](http://www.layoutit.com/)
 - [Bootstrap本地编辑器Jetstrap](https://jetstrap.com)
+- [远程工作teamviewer下载](http://rj.baidu.com/soft/detail/25729.html?ald)
 
 
 #####JS库
@@ -61,6 +62,7 @@
 -  [video.js](https://github.com/videojs/video.js)
 -  [Loading动画](https://connoratherton.com/loaders)
 -  [G2-图表插件](http://g2.alipay.com/)
+-  [网页幻灯片impressJS](http://www.webhek.com/misc/impress-js/)
 
 
 #####jQuery插件及特效
@@ -70,6 +72,7 @@
 -  [jQuery3d幻灯片翻页效果](http://www.jq22.com/jquery-info4216)
 -  [jQuery-unslider图片轮播](http://www.bootcss.com/p/unslider/)
 -  [插件库](http://www.jq22.com/)
+-  [各种模态框](http://tympanus.net/Development/ModalWindowEffects/)
 
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
@@ -106,8 +109,10 @@
 - [移动端WEB资源整合](http://www.daqianduan.com/6281.html)
 - [手写ajax](http://littleblack.cc/2016/05/04/Javascript/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AAAjax/)
 - [前端调试方式](http://www.css88.com/archives/6137#more-6137)
+- [jQuery的deferred](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
 
 #####前端搭建工具
+- [webpack](http://webpack.github.io/)
 - [nodeJS官网](https://nodejs.org/en/foundation/)
 - [nodeJS中文网](http://nodejs.cn/)
 - [grunt](http://www.gruntjs.net/)
