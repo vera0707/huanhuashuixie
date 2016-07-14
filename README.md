@@ -63,6 +63,7 @@
 -  [Loading动画](https://connoratherton.com/loaders)
 -  [G2-图表插件](http://g2.alipay.com/)
 -  [网页幻灯片impressJS](http://www.webhek.com/misc/impress-js/)
+-  [数据操作lodashJS](http://lodashjs.com/docs/)
 
 
 #####jQuery插件及特效
