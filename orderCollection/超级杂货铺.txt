@@ -173,3 +173,24 @@
                 }
 
             });
+
+七. 获取用户状态--封装的方法
+    function getUrlParameter(sParam) {
+                    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                        sURLVariables = sPageURL.split('&'),
+                        sParameterName,
+                        i;
+
+                    for (i = 0; i < sURLVariables.length; i++) {
+                        sParameterName = sURLVariables[i].split('=');
+
+                        if (sParameterName[0] === sParam) {
+                            return sParameterName[1] === undefined ? true : sParameterName[1];
+                        }
+                    }
+
+                };
+
+
+     使用方法:
+       if( getUrlParameter(access_token) && getUrlParameter(access_token)!=null)

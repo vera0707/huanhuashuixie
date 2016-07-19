@@ -23,7 +23,7 @@
 - [JSLint](http://www.jslint.com/)
 - [图标库](http://www.iconfont.cn/collections/)
 - [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
-- [公司后台直通车](http://git.gozap.com/longdai/longdai)
+- [公司后台直通车](http://git.longdai.com/longdai/longdai)
 - [WeUI-微信官方网页开发样式库](http://blog.wpjam.com/m/weui/)
 - [Babel-支持ES6](http://babeljs.cn/docs/setup/)
 - [翻墙工具](https://shadowsocks.org/en/config/quick-guide.html)
@@ -37,6 +37,8 @@
 - [Bootstrap在线制作](http://www.layoutit.com/)
 - [Bootstrap本地编辑器Jetstrap](https://jetstrap.com)
 - [远程工作teamviewer下载](http://rj.baidu.com/soft/detail/25729.html?ald)
+- [开发APP的设计利器SKETCH](http://www.sketchcn.com/)
+- [云IDE--CODEPEN](http://codepen.io/pen/)
 
 
 #####JS库
@@ -74,6 +76,7 @@
 -  [jQuery-unslider图片轮播](http://www.bootcss.com/p/unslider/)
 -  [插件库](http://www.jq22.com/)
 -  [各种模态框](http://tympanus.net/Development/ModalWindowEffects/)
+-  [跨浏览器复制jQuery.zlip]()
 
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
@@ -85,7 +88,7 @@
 
 #####代码优化
 -  [CSS LINK-在线css优化工具](http://csslint.net/)
--  [JSHint-js在线验证或使用Grunt整合](http://jshint.com/)
+-  [JSHint-js检测工具](http://jshint.com/)
 
 #####快速搭建项目
 - [yeomanl](http://yeoman.io/)
@@ -111,6 +114,8 @@
 - [手写ajax](http://littleblack.cc/2016/05/04/Javascript/%E8%87%AA%E5%B7%B1%E5%8A%A8%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AAAjax/)
 - [前端调试方式](http://www.css88.com/archives/6137#more-6137)
 - [jQuery的deferred](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
+- [前端职业发展之路](http://www.w3cfuns.com/notes/28851/cc4837a17338dc9691ac3653f5da9771.html)
+- [angularJS之directive](http://blog.51yip.com/jsjquery/1607.html)
 
 #####前端搭建工具
 - [webpack](http://webpack.github.io/)
@@ -121,6 +126,9 @@
 - [npm](https://www.npmjs.com/)
 - [Express](http://www.expressjs.com.cn/)
 - [廖雪峰官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
+- [初级webpack配置](http://webpackdoc.com/plugin.html)
+- [.jshintrc常用配置](http://my.oschina.net/wjj328938669/blog/637433?p=1)
+- [package.json配置中文文档](http://www.mujiang.info/translation/npmjs/files/package.json.html)
 
 #####前端服务器
 - [apache](http://httpd.apache.org/)

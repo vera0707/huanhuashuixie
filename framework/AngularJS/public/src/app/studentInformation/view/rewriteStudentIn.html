@@ -1,0 +1,28 @@
+<form action="" class="form-horizontal">
+    <div class="form-group">
+        <label for="studentId" class="control-label col-xs-2">学 号 :</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" id="studentId" placeholder="{{student.studentId}}" ng-model="student.studentId">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="name" class="control-label col-xs-2">姓 名 :</label>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder="{{student.name}}" id="name" ng-model="student.name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="sex" class="control-label col-xs-2">性 别 :</label>
+        <div class="col-xs-4">
+                <input type="text" class="form-control" placeholder="{{student.sex}}" id="sex" ng-model="student.sex">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="birthDay" class="control-label col-xs-2">出生日期 :</label>
+        <div class="col-xs-4">
+            <input type="date" class="form-control" placeholder="{{student.birthTime}}" id="birthDay" ng-model="student.birthTime">
+        </div>
+    </div>
+    <button class="btn btn-success col-xs-offset-2" ng-click="update()">确 认</button>
+    <button class="btn btn-warning" ui-sref="admin.viewContainer.studentInformation">返 回</button>
+</form>

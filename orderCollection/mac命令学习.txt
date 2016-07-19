@@ -282,3 +282,9 @@
 
             ye:拷贝当单词的末尾
 
+10. 更改电脑host
+        sudo su    //
+        vim /private/etc/hosts    //
+        在host文件里面写 "解析域名 域名"   172.16.1.162 git.longdai.com
+        ZZ     //推出.如有改动则保存推出
+

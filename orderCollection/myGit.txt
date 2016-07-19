@@ -69,3 +69,7 @@
     ⑥ 删除本地文件         rm 文件名
     ⑦ 删除版本库文件        git rm 文件名
     ⑧ 查看分支的合并情况    git log --graph --pretty=oneline --abbrev-commit
+
+十. 更改项目地址
+    git remote -v         //查看
+     git remote set-url origin +项目地址
