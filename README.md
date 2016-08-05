@@ -15,6 +15,8 @@
 - [推酷](http://www.tuicool.com/)
 - [大前端](http://www.daqianduan.com/)
 - [web前端开发](http://www.css88.com/)
+- [web骇客](http://www.webhek.com/)
+- [掘金](http://gold.xitu.io/explore/frontend)
 
 #####前端工具
 - [免费CDN](http://www.cdnjs.net/)
@@ -39,6 +41,7 @@
 - [远程工作teamviewer下载](http://rj.baidu.com/soft/detail/25729.html?ald)
 - [开发APP的设计利器SKETCH](http://www.sketchcn.com/)
 - [云IDE--CODEPEN](http://codepen.io/pen/)
+- [HipChat](https://www.hipchat.com/sign_up)
 
 
 #####JS库
@@ -127,6 +130,7 @@
 - [Express](http://www.expressjs.com.cn/)
 - [廖雪峰官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/)
 - [初级webpack配置](http://webpackdoc.com/plugin.html)
+- [webpack菜鸟配置](https://zhuanlan.zhihu.com/p/20367175)
 - [.jshintrc常用配置](http://my.oschina.net/wjj328938669/blog/637433?p=1)
 - [package.json配置中文文档](http://www.mujiang.info/translation/npmjs/files/package.json.html)
 
