@@ -68,7 +68,9 @@
 -  [Loading动画](https://connoratherton.com/loaders)
 -  [G2-图表插件](http://g2.alipay.com/)
 -  [网页幻灯片impressJS](http://www.webhek.com/misc/impress-js/)
--  [数据操作lodashJS](http://lodashjs.com/docs/)
+-  [数据操作lodashJS]( )
+-  [VueJS中文](http://cn.vuejs.org/api/)
+-  [Vue-router中文](http://router.vuejs.org/zh-cn/)
 
 
 #####jQuery插件及特效
