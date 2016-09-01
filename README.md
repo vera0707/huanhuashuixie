@@ -42,7 +42,7 @@
 - [开发APP的设计利器SKETCH](http://www.sketchcn.com/)
 - [云IDE--CODEPEN](http://codepen.io/pen/)
 - [HipChat](https://www.hipchat.com/sign_up)
-
+- [git](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 #####JS库
 -  [jQuery中文文档](http://jquery.cuishifeng.cn/)
@@ -121,6 +121,8 @@
 - [jQuery的deferred](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)
 - [前端职业发展之路](http://www.w3cfuns.com/notes/28851/cc4837a17338dc9691ac3653f5da9771.html)
 - [angularJS之directive](http://blog.51yip.com/jsjquery/1607.html)
+- [Vue-router思维导图](http://m.blog.csdn.net/article/details?id=51890406)
+- [我是如何利用一个周末时间成为前端工程师的](http://www.oschina.net/translate/being-a-frontend-developer-for-a-weekend)
 
 #####前端搭建工具
 - [webpack](http://webpack.github.io/)
@@ -135,12 +137,13 @@
 - [webpack菜鸟配置](https://zhuanlan.zhihu.com/p/20367175)
 - [.jshintrc常用配置](http://my.oschina.net/wjj328938669/blog/637433?p=1)
 - [package.json配置中文文档](http://www.mujiang.info/translation/npmjs/files/package.json.html)
+- [.gitignore文件模板-全](https://github.com/github/gitignore)
 
 #####前端服务器
 - [apache](http://httpd.apache.org/)
 - [nginx](http://nginx.org/)
 
-#####关于mac
+#####关于工具
 - [mac数据迁移-迁移助理](http://www.pc6.com/edu/80832.html)
 
 #####编辑软件
