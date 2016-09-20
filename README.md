@@ -71,6 +71,8 @@
 -  [数据操作lodashJS]( )
 -  [VueJS中文](http://cn.vuejs.org/api/)
 -  [Vue-router中文](http://router.vuejs.org/zh-cn/)
+-  [Vue-组件1](http://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651551200&idx=1&sn=6a13dbb6f661611194a570c819735a45&scene=2&srcid=0905DiSxVOXbeWarFYItkdFg&from=timeline&isappinstalled=0#wechat_redirect)
+-  [Vue-组件2](http://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651551218&idx=1&sn=04d735ec778b2e046f1ae7e2f4d20c62&scene=2&srcid=0905RPDNJolYOHATUPgFQMJ7&from=timeline&isappinstalled=0#wechat_redirect)
 
 
 #####jQuery插件及特效
@@ -145,6 +147,7 @@
 
 #####关于工具
 - [mac数据迁移-迁移助理](http://www.pc6.com/edu/80832.html)
+- [翻墙Shadowsocks](https://shadowsocks.com/client.html)
 
 #####编辑软件
 - [WebStorm](http://www.jetbrains.com/webstorm/)
