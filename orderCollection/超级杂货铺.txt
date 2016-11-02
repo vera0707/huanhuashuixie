@@ -193,4 +193,108 @@
 
 
      使用方法:
-       if( getUrlParameter(access_token) && getUrlParameter(access_token)!=null)
+       if( getUrlParameter(access_token) && getUrlParameter(access_token)!=null);
+
+八 时间处理
+       //个人成果
+
+        window.timeTransform = function (time) {
+            var passTime = (new Date() - new Date(time)) / 1000;
+
+            if (passTime < 60) {
+                return '刚刚';
+            } else if ((passTime / 60) < 60) {
+                var minute = parseInt(passTime / 60);
+                return minute + '分钟前';
+            } else if ((passTime / 3600) < 24) {
+                var hour = parseInt(passTime / 3600);
+                return hour + '小时前';
+            } else if ((passTime / 86400) < 30) {
+                var day = parseInt(passTime / 86400);
+                return day + '天前';
+            } else if ((passTime / 2592000) < 12) {
+                var month = parseInt(passTime / 2592000);
+                return month + '个月前';
+            } else {
+                var createTime = new Date(time),
+                    year = createTime.getFullYear(),
+                    month = createTime.getMonth() + 1,
+                    date = createTime.getDate();
+
+                return year + '年' + month + '月' + date + '日';
+            }
+        };
+
+九 本地浏览记录去重和添加元素
+             //个人成果
+             //这里是对localHistory.historyData做了插入和去重检测
+          window.localHistory = function (str) {
+              var userSearch = localStorage.historyData,
+                  newUserSearch = [];
+
+              if (!!userSearch) {
+                  newUserSearch = JSON.parse(userSearch);
+                  if (newUserSearch.length > 0) {
+                      if (arguments.length == 1) {
+                          newUserSearch.unshift(str);
+                      }
+
+                      if (newUserSearch.length > 2) {
+                          var hash = {},
+                              len = newUserSearch.length,
+                              result = [];
+                          for (var i = 0; i < len; i++) {
+                              if (!hash[newUserSearch[i]]) {
+                                  hash[newUserSearch[i]] = true;
+                                  result.push(newUserSearch[i]);
+                              }
+                          }
+                          newUserSearch = result;
+                      }
+
+                  } else {
+                      if (arguments.length == 1) {
+                          newUserSearch[0] = str;
+                      } else {
+                          return false;
+                      }
+                  }
+              } else {
+                  if (arguments.length == 1) {
+                      newUserSearch[0] = str;
+                  } else {
+                      return false;
+                  }
+              }
+
+              userSearch = JSON.stringify(newUserSearch);
+              localStorage.historyData = userSearch;
+          };
+
+十  数据克隆
+          window.clone = function(obj) {
+              var o;
+              if (typeof obj == "object") {
+                  if (obj === null) {
+                      o = null;
+                  } else {
+                      if (obj instanceof Array) {
+                          o = [];
+                          for (var i = 0, len = obj.length; i < len; i++) {
+                              o.push(clone(obj[i]));
+                          }
+                      } else {
+                          o = {};
+                          for (var j in obj) {
+                              o[j] = clone(obj[j]);
+                          }
+                      }
+                  }
+              } else {
+                  o = obj;
+              }
+              return o;
+          };
+
+
+          用法 var str = clone('json格式的数据');

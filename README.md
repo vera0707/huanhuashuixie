@@ -85,6 +85,11 @@
 -  [各种模态框](http://tympanus.net/Development/ModalWindowEffects/)
 -  [跨浏览器复制jQuery.zlip]()
 
+#####插件库
+-  [express](http://expressjs.com/)
+-  [vue-drapload上拉加载下拉刷新](https://www.npmjs.com/package/vue-drapload)
+-  [vue插件集合](https://github.com/vuejs/awesome-vue)
+
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
 - [HTML5 Boilerplate--快速搭建前端网站](http://www.bootcss.com/p/html5boilerplate/)
@@ -102,6 +107,7 @@
 - [Function](http://foundation.zurb.com/templates.html)
 - [Modernizr--实现优雅降级](https://modernizr.com/docs/)
 - [UIkit](http://www.getuikit.net/)
+- [微信应用制作](http://www.w2bc.com/article/173135)
 
 #####深度好文
 - [H5兼容解决方案-polyfill](http://blog.csdn.net/wang16510/article/details/8960312)
@@ -125,6 +131,7 @@
 - [angularJS之directive](http://blog.51yip.com/jsjquery/1607.html)
 - [Vue-router思维导图](http://m.blog.csdn.net/article/details?id=51890406)
 - [我是如何利用一个周末时间成为前端工程师的](http://www.oschina.net/translate/being-a-frontend-developer-for-a-weekend)
+- [angular2.0](http://div.io/topic/801)
 
 #####前端搭建工具
 - [webpack](http://webpack.github.io/)
@@ -148,6 +155,7 @@
 #####关于工具
 - [mac数据迁移-迁移助理](http://www.pc6.com/edu/80832.html)
 - [翻墙Shadowsocks](https://shadowsocks.com/client.html)
+- [HipChat](https://longdai.hipchat.com/chat)
 
 #####编辑软件
 - [WebStorm](http://www.jetbrains.com/webstorm/)
