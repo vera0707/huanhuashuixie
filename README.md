@@ -17,6 +17,7 @@
 - [web前端开发](http://www.css88.com/)
 - [web骇客](http://www.webhek.com/)
 - [掘金](http://gold.xitu.io/explore/frontend)
+- [百度FEX](http://fex.baidu.com/)
 
 #####前端工具
 - [免费CDN](http://www.cdnjs.net/)
@@ -89,6 +90,7 @@
 -  [express](http://expressjs.com/)
 -  [vue-drapload上拉加载下拉刷新](https://www.npmjs.com/package/vue-drapload)
 -  [vue插件集合](https://github.com/vuejs/awesome-vue)
+-  [jade-js的模板](https://segmentfault.com/a/1190000000357534#articleHeader0)
 
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
@@ -131,7 +133,8 @@
 - [angularJS之directive](http://blog.51yip.com/jsjquery/1607.html)
 - [Vue-router思维导图](http://m.blog.csdn.net/article/details?id=51890406)
 - [我是如何利用一个周末时间成为前端工程师的](http://www.oschina.net/translate/being-a-frontend-developer-for-a-weekend)
-- [angular2.0](http://div.io/topic/801)
+- [Echarts在线案例](http://echarts.baidu.com/demo.html#geo-lines)
+- [微信小程序开发入门文档](http://gold.xitu.io/entry/57e8fed3816dfa005ef47439)
 
 #####前端搭建工具
 - [webpack](http://webpack.github.io/)
@@ -162,3 +165,4 @@
 
 #####前后端通道
 - [Thymeleaf](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html/)
+- [Spring Cloud微服务解决方案](http://springcloud.cn/)
