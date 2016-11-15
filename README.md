@@ -18,6 +18,14 @@
 - [web骇客](http://www.webhek.com/)
 - [掘金](http://gold.xitu.io/explore/frontend)
 - [百度FEX](http://fex.baidu.com/)
+- [segmentfault](https://segmentfault.com/)
+- [优设](http://www.uisdc.com/)
+
+#####全栈修炼
+- [阮一峰全栈修炼营](https://github.com/ruanyf/jstraining)
+- [一个全栈增长工程师的练手项目集](https://github.com/phodal/ideabook)
+- [百度前端技术学院开发任务](http://ife.baidu.com/task/all)
+- [FreeCodeCamp中文网](https://www.freecodecamp.cn/map)
 
 #####前端工具
 - [免费CDN](http://www.cdnjs.net/)
@@ -88,9 +96,17 @@
 
 #####插件库
 -  [express](http://expressjs.com/)
+-  [vue组件库](https://github.com/vuejs/awesome-vue)
 -  [vue-drapload上拉加载下拉刷新](https://www.npmjs.com/package/vue-drapload)
--  [vue插件集合](https://github.com/vuejs/awesome-vue)
 -  [jade-js的模板](https://segmentfault.com/a/1190000000357534#articleHeader0)
+-  [react-Bootstrap](https://react-bootstrap.github.io/)
+-  [React图表组件库-ReCharts](http://recharts.org/)
+-  [React框架MobX]()
+-  [React框架Redux:Flux 的函数式实现]()
+-  [json-server模拟服务器API](http://www.jianshu.com/p/5bb86a770e23)
+-  [lint--静态代码检查工具]()
+-  [Mocha--目前最常用的测试框架]()
+-  [Nightmare功能测试](nightmarejs.org)
 
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
@@ -135,6 +151,8 @@
 - [我是如何利用一个周末时间成为前端工程师的](http://www.oschina.net/translate/being-a-frontend-developer-for-a-weekend)
 - [Echarts在线案例](http://echarts.baidu.com/demo.html#geo-lines)
 - [微信小程序开发入门文档](http://gold.xitu.io/entry/57e8fed3816dfa005ef47439)
+- [github使用介绍](http://www.ezlippi.com/blog/2015/03/github-pages-blog.html)
+
 
 #####前端搭建工具
 - [webpack](http://webpack.github.io/)
@@ -159,6 +177,7 @@
 - [mac数据迁移-迁移助理](http://www.pc6.com/edu/80832.html)
 - [翻墙Shadowsocks](https://shadowsocks.com/client.html)
 - [HipChat](https://longdai.hipchat.com/chat)
+- [Goole本地翻墙](http://google.yubolun.com/)
 
 #####编辑软件
 - [WebStorm](http://www.jetbrains.com/webstorm/)

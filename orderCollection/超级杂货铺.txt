@@ -298,3 +298,24 @@
 
 
           用法 var str = clone('json格式的数据');
+
+十一 上拉加载下拉刷新用到的回调方法
+        function loadListData (fn){
+            $.ajax({
+               url:'',
+               type: '',
+               timeout: 5000,    //限定时间,请求超过0.5秒将error
+               success:function(res){
+                  fn(res.data);
+               }
+            })
+        }
+
+
+        //调用函数loadListData
+        function down(){
+            loadListData(function(data){
+                 //data 是  loadListData拿到的数据
+            }
+        }
+
