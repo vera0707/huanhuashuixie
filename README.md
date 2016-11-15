@@ -104,7 +104,7 @@
 -  [React框架MobX]()
 -  [React框架Redux:Flux 的函数式实现]()
 -  [json-server模拟服务器API](http://www.jianshu.com/p/5bb86a770e23)
--  [lint--静态代码检查工具]()
+-  [ESLint--静态代码检查工具](https://www.npmjs.com/package/eslint)
 -  [Mocha--目前最常用的测试框架]()
 -  [Nightmare功能测试](nightmarejs.org)
 
