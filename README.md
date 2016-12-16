@@ -110,6 +110,7 @@
 
 #####H5 和 CSS3
 - [BootStrap](http://www.bootcss.com/)
+- [Animate.css](https://daneden.github.io/animate.css/)
 - [HTML5 Boilerplate--快速搭建前端网站](http://www.bootcss.com/p/html5boilerplate/)
 - [Fla UI-扩充bootstrap的样式组件库](http://www.bootcss.com/p/flat-ui/)
 - [Normalize.css--重置样式](http://necolas.github.io/normalize.css/)
@@ -178,9 +179,12 @@
 - [翻墙Shadowsocks](https://shadowsocks.com/client.html)
 - [HipChat](https://longdai.hipchat.com/chat)
 - [Goole本地翻墙](http://google.yubolun.com/)
+- [hexo搭建博客](https://hexo.io/zh-cn/)
+- [hexo主题皮肤yilia](https://github.com/litten/hexo-theme-yilia)
 
 #####编辑软件
 - [WebStorm](http://www.jetbrains.com/webstorm/)
+- [markdown在线编辑器.md](https://pandao.github.io/editor.md/)
 
 #####前后端通道
 - [Thymeleaf](http://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html/)

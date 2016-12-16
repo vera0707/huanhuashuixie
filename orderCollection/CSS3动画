@@ -1,0 +1,231 @@
+@keyframes go-top {
+            0% {
+                transform: translate(0px,0px);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translate(0px,-15px);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(0px,0px);
+                opacity: 0.8;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                transform: scale(0);
+                opacity: 0.0;
+            }
+            60% {
+                transform: scale(1.1);
+            }
+            80% {
+                transform: scale(0.9);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes wt {
+            0% {
+                transform: scale(1);
+                opacity:0;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity:1;
+            }
+            100% {
+                transform: scale(1);
+                opacity:0;
+            }
+        }
+        @keyframes fog {
+            0% {
+                transform: scale(0.9);
+                opacity:0;
+            }
+            50% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.9);
+                opacity:0;
+            }
+        }
+        @keyframes scan {
+            0% {transform: scale(0);}
+            25% {transform: scale(0.25);}
+            50% {transform: scale(0.5);}
+            75% {transform: scale(0.75); }
+            100% {transform: scale(1);}
+        }
+        @keyframes s4-2-fly {
+            0% {top:200px;right:100px;}
+            50% {top:500px;right:350px;}
+            95% {top:400px;right:620px;}
+            100% {top:420px;right:620px;}
+        }
+        @keyframes rotate01{
+            0% {
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(-10deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            75% {
+                transform: rotate(10deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes twinkle_l {
+            0% {
+                transform: scale(0.6);
+                opacity: 0;
+            }
+            25%{
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+            50%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            80%{
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(0.6);
+                opacity: 0;
+            }
+        }
+        @keyframes arrow-right-finger1 {
+            0% {
+                transform: translate(0px,0px);
+            }
+            20% {
+                transform: translate(20px,-10px);
+            }
+            40% {
+                transform: translate(0px,0px);
+            }
+            60% {
+                transform: translate(20px,-10px);
+            }
+            80% {
+                transform: translate(0px,0px);
+            }
+            100% {
+                transform: translate(0px,0px);
+            }
+        }
+        @keyframes arrow-right-finger2 {
+            0% {
+                transform: translate(0px,0px);
+            }
+            20% {
+                transform: translate(50px,0px);
+            }
+            40% {
+                transform: translate(0px,0px);
+            }
+            60% {
+                transform: translate(50px,0px);
+            }
+            80% {
+                transform: translate(0px,0px);
+            }
+            100% {
+                transform: translate(0px,0px);
+            }
+        }
+
+        //波浪状样式[圆形]
+            @keyframes r0 {
+                        0% {
+                            box-shadow: 0 0 8px 6px rgba(26, 255, 179, 0), 0 0 0px 0px #333, 0 0 0px 0px rgba(26, 255, 179, 0);
+                        }
+                        10% {
+                            box-shadow: 0 0 8px 6px  rgb(26, 255, 179), 0 0 12px 10px #333, 0 0 12px 14px  rgb(26, 255, 179);
+                        }
+                        100% {
+                            box-shadow: 0 0 8px 6px rgba(26, 255, 179, 0), 0 0 0px 40px #333, 0 0 0px 40px rgba(26, 255, 179, 0);
+                        }
+                    }
+                //调用
+             .s {
+                        background:  rgb(26, 255, 179);
+                        -webkit-animation: r0 2s 0s ease-out infinite;
+                    }
+
+
+        //开关灯效果【巧用label】
+            html, body { height: 100%; width: 100%; overflow: hidden; margin: 0; padding: 0; }
+            * { transition: all 1s ease }
+            input[type=checkbox] { display: none }
+            input[type=checkbox] + label { background-color: #040d1c; width: 200px; height: 80px; border-radius: 50px; display: block; padding: 10px; box-shadow: inset 5px 5px 20px rgba(0,0,0,0.5); z-index: 5; position: absolute; top: calc(50% - 50px); left: calc(50% - 80px); cursor: pointer; )
+            }
+            input[ type=checkbox] + label + section { width: 100%; height: 100%; position: absolute; background-color: #0f1f3a; z-index: -1 }
+            #a { width: 80px; height: 80px; border-radius: 100px; background-color: #f0f0f0; box-shadow: 0 0 100px rgba(255,255,255,1) }
+            input[ type=checkbox]:checked + label + section { background-color: #568eef; }
+            input[ type=checkbox]:checked + label { background-color: #2a5fba; }
+            input[ type=checkbox]:checked + label #a { margin-left: calc(100% - 80px); background: #f4e94e; box-shadow: 0 0 100px rgba(249, 240, 104,1) }
+
+
+           //调用
+           <input type="checkbox" id="c" />
+           <label for="c">
+                <div id="a"></div>
+           </label>
+           <section></section>
+
+
+
+
+        //一页下划滚动 向下指示三角形
+           ① 普通版
+             .wb_arrow{
+                         display:block;
+                         border-right: 4px solid #343c99;
+                         border-top: 4px solid #343c99;
+                         height: 20px;
+                         width: 20px;
+                         margin:50px auto 0;
+                         transform: rotate(135deg);
+                         -webkit-transform: rotate(135deg);
+                     }
+           ②豪华版
+             .arrow{
+                         width: 20px;
+                         height: 4px;
+                         margin: 0 auto 7px;
+                         border-left: 4px solid transparent;
+                         border-right: 4px solid transparent;
+                         border-bottom: 4px solid #343c99;
+                         transform: rotate(45deg);
+                         transform-origin: left;
+                     }
+                     .arrow:after{
+                         content: '';
+                         display: block;
+                         width: 100%;
+                         height: 100%;
+                         border-left: 4px solid transparent;
+                         border-right: 4px solid transparent;
+                         border-top: 4px solid #343c99;
+                         position: absolute;
+                         right: -10px;
+                         top: -14px;
+                         transform: rotate(90deg);
+                         transform-origin: bottom;
+                     }

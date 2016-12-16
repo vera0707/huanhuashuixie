@@ -325,3 +325,9 @@ I got HTTP code = 0 when my proxy was blocking. My http proxy works with github,
 2，unable to access 'https://github.com/xxxx.git' unknown SSL protocol error in connection to github.com:443
 原因有人说是版本问题，更改了.git下的.config文件后解决，解决办法是将 https的url改成 git@gihub类似的SSH的这种通过存的公钥来访问是没有问题的，还可以通过命令来更改
 你应该写「git@github.com:xxx/yyy」。使用 git remote set-url origin xxx 来修改成正确的地址。或者直接编辑 .git/config 文件。
+
+
+
+报错: Git – fatal: Unable to create ‘/path/my_project/.git/index.lock’: File exists.
+解决: 可以试着删除 index.lock
+      rm -f ./.git/index.lock
