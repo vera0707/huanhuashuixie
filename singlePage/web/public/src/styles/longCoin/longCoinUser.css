@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: '微软雅黑',YaHei,tahoma,arial;
+    font-size: 14px;
+    max-width: 750px;
+    color: #666;
+    font-weight: normal;
+    margin: 0 auto;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+a,a:hover,a:active{
+    text-decoration: none;
+    -webkit-outline:none;
+    -moz-outline:none;
+    -ms-outline:none;
+    -o-outline:none;
+    outline:none;
+}
+a,img,button,input,textarea,span,div{
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    -webkit-border:none;
+    -moz-border:none;
+    -ms-border:none;
+    -o-border:none;
+    border:none;
+    text-decoration: none;
+}
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:".";
+    visibility:hidden;
+    height:0;
+}
+.clearfloat{
+    zoom:1;
+}
+.f-l{
+    float: left;
+    display: inline;
+}
+.f-r{
+    float:right;
+    display: inline;
+}
+.hide{
+    display: none;
+}
+.w50{
+    width: 50%;
+}
+.fz18{
+    font-size: 18px;
+}
+.c-5a6d9f{
+    color: #5a6d9f;
+}
+.c-f75619{
+    color: #f75619;
+}
+.c-00a753{
+    color: #00a753;
+}
+.pdr5{
+    padding-right: 5px;
+}
+.font16{
+    font-size: 16px;
+}
+.hide{
+    display: none;
+}
+.longcoin-user{
+    margin-bottom: 50px;
+}
+.longcoin-text-grey{
+    font-size: 12px;
+    color: #9f9f9f;
+}
+.longcoin-list-red{
+    margin-left: 10px;
+    color: #ff5122;
+}
+.longcoin-list-blue{
+    line-height: 70px;
+    color: #566e9f;
+}
+.longcoin-list-grey{
+    line-height: 70px;
+    color: #9f9f9f;
+}
+.longcoin-user-unlogin{
+    width: 100%;
+    position: relative;
+    -webkit-box-shadow: 0 5px 10px rgba(182,182,182,.3);
+    -moz-box-shadow: 0 5px 10px rgba(182,182,182,.3);
+    box-shadow: 0 5px 10px rgba(182,182,182,.3);
+}
+.longcoin-user-unlogin-bg{
+    display: block;
+    width: 100%;
+}
+.longcoin-user-unlogin-con{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 33%;
+    left: 0;
+    color: #561e19;
+    line-height: 22px;
+}
+.longcoin-user-login{
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+    background-color: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.longcoin-user-amount{
+    font-size: 20px;
+    font-family: Helvetica;
+    color: #f75619;
+}
+.longcoin-user-nav{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fbfaf8;
+    color: #daba77;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.longcoin-user-nav .checked{
+    color: #975019;
+    padding: 0 2px 7px;
+    border-bottom: 2px solid #975019;
+}
+.longcoin-user-list{
+    height: 70px;
+    padding: 0 5%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.longcoin-user-list-name{
+    color: #333;
+    margin: 18px 0 5px;
+}
+.longcoin-user-detail-total{
+    text-align: right;
+    line-height: 70px;
+}
+.longdcoin-user-nologin{
+    text-align: center;
+    margin-top: 120px;
+    color: #9f9f9f;
+}

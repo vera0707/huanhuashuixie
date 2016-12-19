@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>月业绩单</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+          draggable="false"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-itunes-app" content="app-id=900365369"/>
+    <meta name="keywords" content="龙贷下载，龙贷app下载，龙贷客户端下载"/>
+    <meta name="description" content=" 下载龙贷理财app（IOS版/Android版），第一时间查看最新标的，随时随地查看投资收益，首次登陆赠送5元红包和一张免费提现券。"/>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="invite">
+    <div class="clearfloat">
+        <select class="invite-select f-r">
+            <option value="1">1月</option>
+            <option value="2">2月</option>
+            <option value="3">3月</option>
+            <option value="4">4月</option>
+            <option value="5">5月</option>
+            <option value="6">6月</option>
+            <option value="7">7月</option>
+            <option value="8">8月</option>
+            <option value="9">9月</option>
+            <option value="10">10月</option>
+            <option value="11">11月</option>
+            <option value="12">12月</option>
+        </select>
+    </div>
+    <table class="invite-table">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>注册日</th>
+                <th>姓名</th>
+                <!--<th>手机号</th>-->
+                <th>发生额</th>
+                <th>获得返利</th>
+            </tr>
+        </thead>
+        <tbody id="inviteData"></tbody>
+    </table>
+    <div class="invite-rule">
+        <div>返利计算规则</div>
+        <div>1.超级邀请人获得返利=上月每个被邀请人的年化投资额×0.5%；</div>
+        <div>2.年化投资额=当月投资发生额（包括当月的投资金额和之前投资的债权待收本金）÷365×实际持有期限（如2月的实际持有期限最多28或29天，如果当月期间转让，则实际持有期限为转让日期-1）；</div>
+        <div>3.当月投资发生额大于等于500万，才可获得当月返利，如果当月未达标，则不予返利；</div>
+        <div>4.返利月结日为每月1日 ，从添加日期的下个月为第一个返利月，添加当月的返利计入第一个月；</div>
+        <div>5.超级邀请人获得12个月返利后自动结束本期活动，是否续期再另行商议；</div>
+        <div>6.不限制被邀请人的投资类型；</div>
+    </div>
+</div>
+</body>
+<div th:include="include/include :: footer"></div>
+</html>

@@ -1,0 +1,620 @@
+body {
+    font-family: '微软雅黑',YaHei,tahoma,arial;
+    margin: 0;
+    background-color: #fff;
+    color: #666;
+    font-size: 14px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+a,img,button,input,textarea,span,div{
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    -webkit-user-select: none;/*禁用手机浏览器的用户选择功能 */
+    -moz-user-select: none;
+    text-decoration: none;
+    /*pointer-events: none;*/
+}
+img { pointer-events: none; }
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:".";
+    visibility:hidden;
+    height:0;
+}
+.clearfloat{
+    zoom:1;
+}
+.f-l{
+    float: left;
+}
+.f-r{
+    float: right;
+}
+.singlesday-image{
+    display: block;
+    width: 100%;
+}
+.singlesday-lottery{
+    display: block;
+    width: 100%;
+    background-color: #da5c54;
+    color: #fff;
+}
+.singlesday-lottery-li{
+    width: 23%;
+    padding: 1%;
+}
+.singlesday-lottery-li .unchoose-image{
+    display: block;
+}
+.singlesday-lottery-li .choose-image{
+    display: none;
+}
+.singlesday-lottery-li.choose .unchoose-image{
+    display: none;
+}
+.singlesday-lottery-li.choose .choose-image{
+    display: block;
+}
+.singlesday-lottery-t{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.singlesday-lottery-times{
+    font-family: Helvetica;
+    color: #ffe647;
+    padding: 0 5px;
+}
+.singlesday-lottery-center{
+    width: 50%;
+    color: #fce3c2;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+.singlesday-lottery-btn{
+    display: none;
+    color: #b9471f;
+    background-color: #ffdf96;
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.singlesday-lottery-btn.press{
+    background-color: #ebcd85;
+}
+
+.singlesday-lottery-index{
+    width: 4px;
+    height: 4px;
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+.singlesday-lottery-index.active{
+    background-color: #fff;
+}
+.singlesday-lottery-giftlists{
+    width: 270px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.singlesday-lottery-gift{
+    color: #333;
+    line-height: 100px;
+    width: 240px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 7px;
+}
+.singlesday-lottery-gift-icon{
+    width: 100px;
+    margin-right: 10px;
+}
+.singlesday-lottery-gift.active{
+    display: block;
+}
+
+.singlesday-lottery-awards{
+    height: 150px;
+    overflow: hidden;
+    cursor: default;
+    margin: 25px 0;
+    padding-left: 4%;
+}
+.singlesday-lottery-awards-li{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+.singlesday-award{
+    background-color: #da5c54;
+    color: #9b3700;
+    padding-bottom: 30px;
+}
+.singlesday-award-top{
+    width: 94%;
+    margin: 0 auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 15px #da5c54;
+    -moz-box-shadow: 0 3px 15px #da5c54;
+    box-shadow: 0 3px 15px #da5c54;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 100;
+}
+.singlesday-award-top-l{
+    width: 20%;
+    text-align: center;
+}
+.singlesday-award-top-icon{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+.singlesday-award-top-con{
+    width: 79%;
+}
+.singlesday-award-rule{
+    color: #68413d;
+    font-size: 16px;
+    line-height: 30px;
+}
+.singlesday-award-tips{
+    color: #a15136;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 10px;
+}
+.singlesday-award-con{
+    width: 94%;
+    margin: 0 auto;
+}
+.singlesday-award-li{
+    width: 100%;
+    -webkit-box-shadow: 0 2px 10px #da5c54;
+    -moz-box-shadow: 0 2px 10px #da5c54;
+    box-shadow: 0 2px 10px #da5c54;
+    position: relative;
+    text-align: center;
+    height: 210px;
+    overflow: hidden;
+}
+.singlesday-award-li.li1{
+    z-index: 90;
+}
+.singlesday-award-li.li2{
+    z-index: 50;
+}
+.singlesday-award-li.li3{
+    z-index: 10;
+}
+.singlesday-award-li-icon{
+    width: 75px;
+    height: 75px;
+}
+.singlesday-award-li-icon2{
+    width: 40px;
+    height: 40px;
+}
+.singlesday-award-li-l{
+    color: #333;
+    width: 40%;
+    background-color: #f7e9c2;
+    padding: 20px 0;
+    height: 170px;
+    overflow: hidden;
+}
+.singlesday-award-li.li2 .singlesday-award-li-l{
+    background-color: #e0e5e8;
+}
+.singlesday-award-li.li3 .singlesday-award-li-l{
+    background-color: #f8e5d4;
+}
+.singlesday-award-li-r{
+    width: 60%;
+    background-color: #fbefee;
+    height: 210px;
+}
+.singlesday-award-li.li2 .singlesday-award-li-r{
+    width: 58%;
+}
+.singlesday-award-li.li3 .singlesday-award-li-r{
+    width: 56%;
+}
+.singlesday-award-li-front{
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+.singlesday-award-li-back{
+    display: none;
+    width: 100%;
+    height: 150px;
+}
+.singlesday-award-li-name{
+    position: relative;
+    top:-14px;
+    left: 3px;
+    color: #333;
+    font-size: 18px;
+}
+.singlesday-award-li-amount{
+
+}
+.singlesday-award-null{
+
+}
+
+.singlesday-dialog{
+    display: none;
+    width: 90%;
+    background-color: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.singlesday-dialog-t{
+    width: 100%;
+    height: 50px;
+    background-image: url("../../images/activity/singlesDay/popup_light.png");
+    background-repeat: repeat;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-top-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.singlesday-dialog-message{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+}
+.singlesday-dialog-btn{
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto 0;
+    text-align: center;
+    color: #fff;
+    background-color: #7cbb73;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.singlesday-dialog-gift{
+    width: 260px;
+    margin: 20px auto 0;
+}
+.singlesday-dialog-gift-icon{
+    width: 90px;
+    height: 90px;
+    background-image: url("../../images/activity/singlesDay/popup_color.png");
+    background-size: contain;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+.singlesday-dialog-gift-image{
+    width: 70px;
+    height: 70px;
+    background-image: url("../../images/activity/singlesDay/qiandai_a_1.png");
+    background-size: contain;
+    margin: 20px auto 0;
+}
+.singlesday-dialog-gift-image.image2{
+    background-image: url("../../images/activity/singlesDay/qiandai_a_2.png");
+}
+.singlesday-dialog-gift-image.image3{
+    background-image: url("../../images/activity/singlesDay/qiandai_a_3.png");
+}
+.singlesday-dialog-gift-image.image4{
+    background-image: url("../../images/activity/singlesDay/qiandai_a_4.png");
+}
+.singlesday-dialog-gift-image.image5{
+    background-image: url("../../images/activity/singlesDay/qiandai_a_5.png");
+}
+.singlesday-dialog-gift-image.image6{
+    background-image: url("../../images/activity/singlesDay/qiandai_a_6.png");
+}
+.singlesday-dialog-gift-image.image7{
+    background-image: url("../../images/activity/singlesDay/qiandai_a_7.png");
+}
+.singlesday-dialog-gift-image.image8{
+    background-image: url("../../images/activity/singlesDay/qiandai_a_8.png");
+}
+.singlesday-dialog-gift-image.image9{
+    background-image: url("../../images/activity/singlesDay/qiandai_a_9.png");
+}
+.singlesday-dialog-gift-con{
+    width: 150px;
+    color: #666;
+    font-size: 15px;
+    line-height:24px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.singlesday-dialog-gift-tips{
+    color: #999;
+    font-size: 12px;
+}
+.singlesday-rules-title{
+    color: #8e534f;
+    padding: 10px 15px;
+}
+.singlesday-rules{
+    color: #8e534f;
+    list-style-type: decimal;
+    padding: 0 15px 50px 40px;
+}
+.singlesday-rules li{
+    padding-bottom: 10px;
+}
+.mt80{
+    margin-top: 80px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.pdl10{
+    padding-left: 10px;
+}
+.pdl5{
+    padding-left: 5px;
+}
+.pdt15{
+    padding-top: 15px;
+}
+.pdlr_3{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.mask {
+    background: #000;
+    left: 0;
+    position: absolute;
+    top: 0;
+    opacity: .2;
+    z-index: 100;
+    filter: alpha(opacity=20);
+}
+@keyframes light {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes light{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.light-icon{
+    display: none;
+    position: absolute;
+    animation: light 3s infinite;
+    -webkit-animation: light 3s infinite;
+    width: 32%;
+    height: 32%;
+    background-image: url("../../images/activity/singlesDay/qiandai_light_01.png");
+    background-size: contain;
+    top: 9%;
+    left:5%;
+}
+.light-icon.icon1{
+    width: 32%;
+    height: 32%;
+    top: 12%;
+    left: 50%;
+    transform: rotate(31deg);
+    animation: light 2.5s infinite;
+    -webkit-animation: light 2.5s infinite;
+}
+.light-icon.icon2{
+    width: 25%;
+    height: 25%;
+    top: 40%;
+    left: 72%;
+    transform: rotate(44deg);
+    animation: light 2s infinite;
+    -webkit-animation: light 2s infinite;
+}
+.light-icon.icon3{
+    width: 25%;
+    height: 25%;
+    top: 70%;
+    left: 60%;
+    transform: rotate(29deg);
+    animation: light 1.5s infinite;
+    -webkit-animation: light 1.5s infinite;
+}
+.light-icon.icon4{
+    width: 20%;
+    height: 20%;
+    top: 66%;
+    left: 10%;
+    transform: rotate(17deg);
+    animation: light 1.75s infinite;
+    -webkit-animation: light 1.75s infinite;
+}
+.light-icon.icon5{
+    width: 20%;
+    height: 20%;
+    top: 40%;
+    left: 30%;
+    transform: rotate(46deg);
+    animation: light 2.75s infinite;
+    -webkit-animation: light 2.75s infinite;
+}
+.singlesday-lottery-li.choose{
+    position: relative;
+}
+.singlesday-lottery-null{
+    line-height: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+.singlesday-lottery-li.choose .light-icon{
+    display: inline-block;
+}
+.w80px{
+    width: 80px;
+    margin: 10px auto;
+}
+.pdl10{
+    padding-left: 10px;
+}
+.pdl5{
+    padding-left: 5px;
+}
+.c-666{
+    color: #666;
+}
+.c-9b3700{
+    color: #9b3700;
+
+}
+.singlesday-lottery-gift-wrap{
+    width:240px;
+    height: 110px;
+    overflow: hidden;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}
+@-webkit-keyframes fadeOutUp {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0)
+    }
+}
+
+.fadeOutUp {
+    -webkit-animation-name: fadeOutUp;
+    animation-name: fadeOutUp
+}
+@keyframes flipInY {
+    from {
+        -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(1000px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease;
+        animation-timing-function: ease;
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: perspective(1000px);
+        transform: perspective(1000px);
+    }
+}
+@-webkit-keyframes flipInY {
+    from {
+        -webkit-transform: perspective(1000px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(1000px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease;
+        animation-timing-function: ease;
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: perspective(1000px);
+        transform: perspective(1000px);
+    }
+}
+.flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+}
+.helvetica{
+    font-family: Helvetica;
+}

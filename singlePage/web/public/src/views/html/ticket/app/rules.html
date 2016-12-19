@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${type}==1?'加息券介绍':'规则说明' ">加息券介绍</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" draggable="false" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style>
+        body {
+            font-family: Helvetica,YaHei,tahoma,arial;
+            color: #fff;
+            margin: 0;
+            background-color: #fff;
+            font-size: 16px;
+            max-width: 750px;
+            color: #8d6640;
+            margin: 0 auto;
+        }
+        .rule-name{
+            padding-bottom: 10px;
+        }
+        .rule{
+            padding: 20px;
+            line-height: 25px;
+        }
+        .rule-li{
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="rule">
+        <div class="rule-name">规则说明：</div>
+        <div class="rule-li" th:inline="text">1.投资时勾选使用该券，即可额外获得[[${rate}]]%年化收益;</div>
+        <div class="rule-li">2.通过加息券获得的额外收益，将以返利的形式在投资回款时返还到您账户余额的返利余额中;</div>
+        <div class="rule-li">3.不可在龙聚宝、小额信用标、债权转让项目和已整体加息的散标使用；</div>
+        <div class="rule-li">4.此加息券补贴本金上限为50万元，不可与红包叠加使用;</div>
+        <div class="rule-li">5.如果投资项目在回款期间发生提前还款、退出、终止或债权转让，将不再继续享受额外的加息年化收益，当月加息返利按持有天数计算;</div>
+        <div class="rule-li">6.一张加息券仅可用于一个投资项目，不与其他加息活动同享;</div>
+        <div class="rule-li">7.龙贷在线投资（北京）有限公司在法律准许范围内有权对该规则进行解释;</div>
+    </div>
+</section>
+</body>
+</html>

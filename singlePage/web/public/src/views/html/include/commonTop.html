@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>template</title>
+
+</head>
+<body>
+
+<div th:fragment="commonTop (module)" th:assert="${!#strings.isEmpty(module)}" class="main-head clearfloat" >
+
+    <a href="/" class="inline-block main-head-logo f-l"></a>
+    <div class="main-head-title clearfloat">
+        <div class="f-l">
+            <a href="/" th:if="${module} == 'index'" class="main-head-title-text main-head-title-text-red  main-head-title-text1" data-name="one">首页</a>
+            <a href="/" th:if="${module} != 'index'" class="main-head-title-text main-head-title-text1" data-name="one">首页</a>
+
+        </div>
+        <div th:if="${session.user} != null">
+            <div id="my_finance" class="f-l ">
+                <a href="/manageFinance.do" th:if="${module} == 'finance'" class="main-head-title-text main-head-title-text-red" data-name="one">我要理财</a><span class="main-head-title-select"></span>
+
+                <a href="/manageFinance.do" th:if="${module} != 'finance'" class="main-head-title-text" data-name="one">我要理财</a><span class="main-head-title-select"></span>
+
+                <div id="my_finance_con" class="main-head-title-tb">
+                    <i class="main-head-title-icon"></i>
+                    <a class="main-head-title-tr" href="/fundPlanList.do">龙聚宝</a>
+                    <a class="main-head-title-tr" href="/finance.do">散标投资</a>
+                    <span th:if="${jieqianhuaShow} != 0">
+                        <a class="main-head-title-tr" href="/finance.do?borrowWay=8">小额信用标</a>
+                    </span>
+                    <a class="main-head-title-tr" href="/queryFrontAllDebt.do">债权转让</a>
+                </div>
+            </div>
+            <div class="f-l">
+                <a href="/borrowApplyFirstInit.do" th:if="${module} == 'borrow'" class="main-head-title-text main-head-title-text-red" data-name="two">我要融资</a>
+
+                <a href="/borrowApplyFirstInit.do" th:if="${module} != 'borrow'" class="main-head-title-text" data-name="two">我要融资</a>
+
+            </div>
+            <div id="my_longdai" class="f-l">
+                <a href="/home.do"  th:if="${module} == 'home'" class="main-head-title-text main-head-title-text-red" data-name="three">我的龙贷</a>
+                <a href="/home.do"  th:if="${module} != 'homde'" class="main-head-title-text " data-name="three">我的龙贷</a>
+
+
+                <span class="main-head-title-select"></span>
+                <div id="my_longdai_con" class="main-head-title-tb">
+                    <i class="main-head-title-icon"></i>
+                    <a class="main-head-title-tr" href="/home.do">概览</a>
+                    <a class="main-head-title-tr" href="/homeBorrowRecycleList.do">理财管理</a>
+                    <a class="main-head-title-tr" href="/queryMyPayingBorrowList.do">借款管理</a>
+                    <a class="main-head-title-tr" href="/owerInformationInit.do">账户管理</a>
+                </div>
+            </div>
+            <div class="f-l">
+                <a href="/help.do"  th:if="${module} == 'help'" class="main-head-title-text main-head-title-text-red" data-name="four">帮助中心</a>
+                <a href="/help.do"  th:if="${module} != 'help'" class="main-head-title-text" data-name="four">帮助中心</a>
+
+            </div>
+
+        </div>
+        <div th:if="${session.user} == null">
+            <div id="my_finance" class="f-l">
+                <a href="/manageFinance.do" th:if="${module} == 'finance'"  class="main-head-title-text main-head-title-text-red" data-name="one">我要理财</a>
+                <a href="/manageFinance.do" th:if="${module} != 'finance'" class="main-head-title-text " data-name="one">我要理财</a>
+                <span class="main-head-title-select"></span>
+
+                <div id="my_finance_con" class="main-head-title-tb">
+                    <i class="main-head-title-icon"></i>
+                    <a class="main-head-title-tr" href="/fundPlanList.do">龙聚宝</a>
+                    <a class="main-head-title-tr" href="/finance.do">散标投资</a>
+                    <span th:if="${jieqianhuaShow} != 0">
+                        <a class="main-head-title-tr" href="/finance.do?borrowWay=8">小额信用标</a>
+                    </span>
+                    <a class="main-head-title-tr" href="/queryFrontAllDebt.do">债权转让</a>
+                </div>
+            </div>
+            <div class="f-l">
+                <a href="/borrowApplyFirstInit.do" th:if="${module} == 'borrow'" class="main-head-title-text main-head-title-text-red" data-name="two">我要融资</a>
+                <a href="/borrowApplyFirstInit.do" th:if="${module} != 'borrow'" class="main-head-title-text " data-name="two">我要融资</a>
+
+            </div>
+            <div class="f-l">
+                <a href="/newer.do" th:if="${module} == 'newer'" class="main-head-title-text main-head-title-text-red" data-name="three">新手入门</a>
+                <a href="/newer.do" th:if="${module} != 'newer'" class="main-head-title-text " data-name="three">新手入门</a>
+
+            </div>
+            <div id="my_about" class="f-l">
+                <a href="/aboutLongdai.do" th:if="${module} == 'aboutLongdai'" class="main-head-title-text main-head-title-text-red" data-name="four">关于龙贷</a>
+                <a href="/aboutLongdai.do" th:if="${module} != 'aboutLongdai'" class="main-head-title-text" data-name="four">关于龙贷</a>
+
+                <span class="main-head-title-select"></span>
+                <div id="my_about_con" class="main-head-title-tb">
+                    <i class="main-head-title-icon"></i>
+                    <a class="main-head-title-tr" href="/aboutLongdai.do">公司简介</a>
+                    <a class="main-head-title-tr" href="/comTransparent.do">合规透明</a>
+                    <a class="main-head-title-tr" href="/honorAgreement.do">企业荣誉</a>
+                    <a class="main-head-title-tr" href="/supReport.do">资金托管</a>
+                    <a class="main-head-title-tr" href="/partners.do">合作伙伴</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+

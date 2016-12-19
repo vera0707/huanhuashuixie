@@ -1,0 +1,49 @@
+.upload-border{
+    display: inline-block;
+    width: 335px;
+    height: 40px;
+    border: 1px solid #398e55;
+    position: relative;
+    top: -1px;
+    text-align: center;
+    border-radius: 3px;
+}
+.fileinput-button{
+    padding-left: 20px;
+}
+
+.file-name{
+    display: inline-block;
+    height: 30px;
+    color: #398e55;
+    text-align: left;
+    width: 300px;
+    border:none;
+    *border:1px solid none;
+    outline: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.upload-form{
+    position: relative;
+}
+.upload-file{
+    position: absolute;
+    top: 0px;
+    left: 357px;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    width: 72px;
+    height: 34px;
+}
+.upload-file-edit{
+    position: absolute;
+    top: -78px;
+    left: 0px;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "backbone",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "^3.2.0",
+    "lodash": "^4.13.1",
+    "jquery": "^1.9.2",
+    "backbone": "^1.3.3",
+    "countup": "*"
+  },
+  "devDependencies": {},
+  "appPath": "app",
+  "moduleName": "backboneapp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}

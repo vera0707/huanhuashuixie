@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: '微软雅黑',YaHei,tahoma,arial;
+    font-size: 14px;
+    max-width: 750px;
+    color: #666;
+    font-weight: normal;
+    margin: 0 auto;
+    background-color: #fff;
+}
+a,a:hover,a:active{
+    color: #666;
+    text-decoration: none;
+    -webkit-outline:none;
+    -moz-outline:none;
+    -ms-outline:none;
+    -o-outline:none;
+    outline:none;
+}
+a,img,button,input,textarea,span,div{
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+    -webkit-border:none;
+    -moz-border:none;
+    -ms-border:none;
+    -o-border:none;
+    border:none;
+    text-decoration: none;
+}
+
+input:focus{
+    -webkit-outline:none;
+    -moz-outline:none;
+    -ms-outline:none;
+    -o-outline:none;
+    outline:none;
+}
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:".";
+    visibility:hidden;
+    height:0;
+}
+.clearfloat{
+    zoom:1;
+}
+.f-l{
+    float: left;
+    display: inline;
+}
+.f-r{
+    float:right;
+    display: inline;
+}
+.hide{
+    display: none;
+}
+.c-f75419{
+    color: #f75419;
+}
+.pdl15{
+    padding-left: 15px;
+}
+.font16{
+    font-size: 16px;
+}
+.longcoin-product{
+    padding-bottom: 100px;
+}
+.longcoin-product-top{
+    padding: 10px 15px;
+}
+.longcoin-product-image{
+    width: 50%;
+    position: relative;
+}
+.longcoin-product-image-icon{
+    display: block;
+    width: 100%;
+}
+.longcoin-product-image-amount{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    top: 20%;
+}
+.longcoin-product-image-name{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+}
+.longcoin-product-image.icon-hongbao .longcoin-product-image-amount{
+    color: #9a4034;
+}
+.longcoin-product-image.icon-hongbao .longcoin-product-image-name{
+    color: #c64949;
+}
+.longcoin-product-image.icon-tixian .longcoin-product-image-amount{
+    color: #6aad29;
+}
+.longcoin-product-image.icon-tixian .longcoin-product-image-name{
+    color: #799258;
+}
+.longcoin-product-image.icon-jiaxi .longcoin-product-image-amount{
+    color: #ff724c;
+}
+.longcoin-product-image.icon-jiaxi .longcoin-product-image-name{
+    color: #6d3936;
+}
+.longcoin-product-info{
+    width: 50%;
+    color: #333;
+    padding-top: 15px;
+}
+.longcoin-product-info-name{
+    font-size: 16px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.longcoin-product-price{
+    color: #999;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.longcoin-product-title{
+    color: #6c1c1c;
+    background-color: #eee;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 20px;
+}
+.longcoin-product-title-con{
+    border-left: 2px solid #6c1c1c;
+    padding-left: 15px;
+}
+.longcoin-product-con{
+    padding: 20px;
+    line-height: 22px;
+}
+.longcoin-product-buy{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.longcoin-product-buy-t{
+    padding-left: 20px;
+    height: 33px;
+    line-height: 33px;
+    background-color: rgba(60, 20, 20,.5);
+    color: #fff;
+}
+.longcoin-product-buy-b{
+    padding-left: 20px;
+    padding-right: 10px;
+    height: 60px;
+    background-color: #eeede8;
+    color: #666;
+}
+.longcoin-product-btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #24b26f;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.longcoin-product-buy-name{
+    font-size: 14px;
+    display: inline-block;
+    width: 30px;
+    line-height: 22px;
+    margin-top: 8px;
+    padding-right: 13px;
+}
+.longcoin-product-buy-sub,.longcoin-product-buy-add{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    background-color: #fff;
+    margin-top: 9px;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+.longcoin-product-buy-num{
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    background-color: #fff;
+    margin-top: 9px;
+    font-family: Helvetica;
+}
+.longcoin-product-useamount{
+    color: #fffcc8;
+    font-family: Helvetica;
+}

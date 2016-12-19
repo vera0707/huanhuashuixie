@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>我的龙币</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" draggable="false"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-itunes-app" content="app-id=900365369"/>
+    <link rel="stylesheet" href="../../../styles/longCoin/longCoinUser.css">
+</head>
+<body>
+    <div class="longcoin-user user-nologin hide">
+        <div class="longcoin-user-unlogin">
+            <img class="longcoin-user-unlogin-bg" src="../../../images/longCoin/beijing.png" />
+            <div class="longcoin-user-unlogin-con">
+                <div><a href="longdai://login" class="fz18 c-5a6d9f pdr5">登录</a>后可查看我的龙币</div>
+            </div>
+        </div>
+        <div class="longcoin-user-nav clearfloat">
+            <div class="f-l w50"><span class="longcoin-nav-head checked">赚龙币</span></div>
+            <div class="f-r w50"><span class="longcoin-nav-head">交易明细</span></div>
+        </div>
+        <div class="longdcoin-user-nologin user-login-status">登录后可见</div>
+    </div>
+    <div class="longcoin-user user-islogin hide">
+        <div class="longcoin-user-login">
+            <div class="font16">可用龙币</div>
+            <div class="longcoin-user-amount"></div>
+            <div class="longcoin-text-grey"></div>
+        </div>
+        <div class="longcoin-user-nav clearfloat">
+            <div class="f-l w50"><span class="longcoin-nav-head checked">赚龙币</span></div>
+            <div class="f-r w50"><span class="longcoin-nav-head">交易明细</span></div>
+        </div>
+        <div class="makeCoin">
+            <div class="make-coin-warn longdcoin-user-nologin hide">暂无数据</div>
+        </div>
+        <div class="coinDetail">
+            <div class="coin-detail-warn longdcoin-user-nologin hide">暂无数据</div>
+        </div>
+    </div>
+<div th:include="include/include :: footer"></div>
+</body>
+</html>

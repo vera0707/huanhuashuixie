@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>分享红包</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+          draggable="false"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-itunes-app" content="app-id=900365369"/>
+
+    <meta name="keywords" content="龙贷下载，龙贷app下载，龙贷客户端下载"/>
+    <meta name="description" content=" 下载龙贷理财app（IOS版/Android版），第一时间查看最新标的，随时随地查看投资收益，首次登陆赠送5元红包和一张免费提现券。"/>
+</head>
+<body>
+<div class="shareBao">
+    <img src="../../../../images/activity/redBaoShare/share_redBao_bg.png" alt="分享红包" class="w100" />
+    <div class="redBaoStep">
+
+        <div th:if="${type == '1'}">
+            <div class="w90 center">
+                <div class="shareBao-block1 clearfloat">
+                    <img src="../../../../images/activity/redBaoShare/share_redBao_phone1.png" alt="" class="shareBao-phone1" />
+                    <input type="tel" class="shareBao-input" placeholder=" 输入手机号码领取" name="shareBao_phone" />
+                </div>
+                <div class="shareBao-button unchecked">立即领取</div>
+            </div>
+        </div>
+
+        <div th:if="${type == '0'}">
+            <div class="clearfloat shareBao-finished">
+                <img src="../../../../images/activity/redBaoShare/share_redBao_coupon2.png" alt="" class="overdue-redBao f-l" />
+                <div class="f-l">红包已经被抢光,下次早点来哦~</div>
+            </div>
+        </div>
+
+        <div th:if="${type == '-1'}">
+            <div class="clearfloat shareBao-finished">
+                <img src="../../../../images/activity/redBaoShare/share_redBao_coupon2.png" alt="" class="overdue-redBao f-l" />
+                <div class="f-l">红包链接已过期~</div>
+            </div>
+        </div>
+        <a href="https://m.longdai.com/landing.do" class="konw-longdai">了解龙贷&nbsp;></a>
+    </div>
+
+    <div class="w90 center">
+        <div class="mt35 pb5 ml8_">【活动规则】</div>
+        <ul class="shareBao-rule">
+            <li>本活动发放的红包为投资抵扣红包,红包有效期15天,从领取之日算起,可用于投资龙聚宝与散标(具体详见红包规则);</li>
+            <li>未注册手机号所领红包保留15天,需注册后查看(绑定在已注册账户上则无法查看);</li>
+            <li>已注册用户所获得红包可登录龙贷官网或APP查看;</li>
+            <li>每天发放红包数量有限,领完为止;</li>
+            <li>每个领取页面的链接有效期30天,从生成之日算起;</li>
+            <li>本活动规则解释权归龙贷所有.</li>
+        </ul>
+    </div>
+</div>
+
+<div th:include="include/include :: footer"></div>
+</body>
+
+</html>

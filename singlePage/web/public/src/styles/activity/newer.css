@@ -1,0 +1,248 @@
+body {
+    font-family: '微软雅黑',YaHei,tahoma,arial;
+    color: #fff;
+    margin: 0;
+    background-color: #f9f8f5;
+    font-size: 14px;
+    max-width: 750px;
+    color: #8d6640;
+    margin: 0 auto;
+}
+a,img,button,input,textarea{
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+a,a:visited,a:focus,a:active,a:hover{
+    text-decoration: none;
+}
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:".";
+    visibility:hidden;
+    height:0;
+}
+.clearfloat{
+    zoom:1;
+}
+.f-l{
+    float: left;
+}
+.f-r{
+    float: right;
+}
+.w10{
+    width: 10%;
+}
+.w33{
+    width: 33%;
+}
+.w90{
+    display: block;
+    width: 85%;
+    padding-right: 5%;
+}
+.image-w100{
+    display: block;
+    width: 100%;
+}
+.image-w70{
+    display: block;
+    width: 70%;
+}
+.newer-list{
+    background-color: #fff;
+    margin-bottom: 15px;
+    -webkit-box-shadow:  0 5px 5px #e7e5e1;
+    -moz-box-shadow:  0 5px 5px #e7e5e1;
+    box-shadow:  0 5px 5px #e7e5e1;
+}
+.vertical-lr{
+    width: 18px;
+    margin: 10px auto 0;
+}
+.newer-title{
+    padding: 20px 0;
+}
+.newer-list.list1{
+    background-color: #bdce86;
+    color: #5e6c27;
+}
+.newer-list.list2{
+    background-color: #f3b863;
+    color: #835231;
+}
+.newer-list.list3{
+    background-color: #7fcec2;
+    color: #27686c;
+}
+.bg-fff{
+    background-color: #fff;
+}
+.newer-list-con{
+    text-align: center;
+    color: #9a827c;
+    padding: 20px 0px;
+    font-size: 14px;
+}
+.btn,.btn:focus,.btn:visited,.btn:hover,.btn:active{
+    background-color: #24b26f;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    text-decoration: none;
+}
+.relative{
+    position: relative;
+}
+.newer-more{
+    position: absolute;
+    top: 46%;
+    right: 3%;
+    width: 10px;
+    height: 10px;
+    border-top:1px solid #9a827c;
+    border-left:1px solid #9a827c;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.pdt20{
+    padding-top: 20px;
+}
+.pdb10{
+    padding-bottom: 10px;
+}
+.wen{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    text-decoration: none;
+}
+.margin-auto{
+    margin: 0 auto;
+}
+.rule{
+    padding: 0 20px 20px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.rule-li{
+    padding-bottom: 5px;
+}
+.wen-icon{
+    width: 26px;
+    position: relative;
+    left: 5px;
+    top: 8px;
+}
+.bg-999{
+    background-color: #999;
+}
+.ml10{
+    margin-left: 10px;
+}
+.mask {
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    max-width: 750px;
+}
+.dialog{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.dialog-top{
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    height: 60px;
+}
+.gift-icon{
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 120px;
+}
+.dialog-top-txt{
+    position: absolute;
+    width: 100px;
+    top: 36px;
+    left: 80px;
+    color: #666;
+    font-size: 18px;
+}
+.dialog-con{
+    color: #ff744b;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dialog-con2{
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.dialog-bottom{
+    width: 270px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0  auto;
+}
+.dialog-btn{
+    display: inline-block;
+    width: 120px;
+    margin: 0 auto;
+    background-color:#16b473;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #16b473;
+    color:#fff;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.dialog-btn2{
+    display: inline-block;
+    width: 120px;
+    margin: 0 auto;
+    background-color:#fff;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #16b473;
+    color:#16b473;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.w50{
+    width: 50%;
+}
+.ml20{
+    margin-left: 20px;
+}
+.hide{
+    display: none;
+}
+.newer-ad{
+    width: 196px;
+    height: 30px;
+    background: url('../../images/core/icon-ad.png') -53px -7px no-repeat;
+    position: relative;
+    top: -2px;
+    left: 50%;
+    margin-left: -88px;
+}

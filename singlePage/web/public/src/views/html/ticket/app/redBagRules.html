@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>红包规则详情</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" draggable="false" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <style>
+        body {
+            font-family: Helvetica,YaHei,tahoma,arial;
+            color: #fff;
+            margin: 0;
+            background-color: #fff;
+            font-size: 16px;
+            max-width: 750px;
+            color: #8d6640;
+            margin: 0 auto;
+        }
+        .rule-name{
+            padding-bottom: 10px;
+        }
+        .rule{
+            padding: 20px;
+            line-height: 25px;
+        }
+        .rule-li{
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="rule">
+        <div class="rule-name">红包规则详情：</div>
+        <div th:utext="${describe}"></div>
+    </div>
+</section>
+</body>
+</html>
