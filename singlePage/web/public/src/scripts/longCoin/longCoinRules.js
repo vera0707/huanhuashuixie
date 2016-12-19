@@ -1,1 +1,0 @@
-require("../../styles/longCoin/longCoinRules.css");
