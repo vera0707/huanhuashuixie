@@ -32,7 +32,7 @@
 - [BootCDN](http://www.bootcdn.cn/)
 - [weinre远程调试工具](http://www.tuicool.com/articles/mAzmq2)
 - [JSLint](http://www.jslint.com/)
-- [图标库](http://www.iconfont.cn/collections/)
+- [阿里巴巴图标库](http://www.iconfont.cn/collections/)
 - [flex布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool)
 - [公司后台直通车](http://git.longdai.com/longdai/longdai)
 - [WeUI-微信官方网页开发样式库](http://blog.wpjam.com/m/weui/)
