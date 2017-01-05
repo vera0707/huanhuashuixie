@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>landing效果</title>
+    <style>
+        .outer{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+        .inner{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            border: 1px solid red;
+        }
+        .inner>li{
+            display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: orange;
+        }
+        /*.inner>li:nth-child(3){*/
+            /*top: 32px;*/
+            /*left: 0;*/
+        /*}*/
+        /*.inner>li:nth-child(5){*/
+            /*top: 64px;*/
+            /*left: 32px;*/
+        /*}*/
+        /*.inner>li:nth-child(7){*/
+            /*top: 32px;*/
+            /*left: 64px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <ul class="inner">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
