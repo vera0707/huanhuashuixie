@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初级-画线</title>
+    <style>
+        div#canvas-frame {
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            height: 600px;
+            background-color: #EEEEEE;
+        }
+    </style>
+</head>
+<body onload="threeStart()">
+<div id="canvas-frame"></div>
+</body>
+<script src="build/three.js"></script>
+<script>
+    //定义渲染的方法
+    var renderer;
+    function  initThree(){
+        width = document.getElementById('canvas-frame').clientWidth;   //canvas画布的大小
+        height = document.getElementById('canvas-frame').clientHeight;
+        renderer = new THREE.WebGLRenderer({
+            antialias: true
+        });
+        renderer.setSize(width,height);   //渲染整个canvas
+        document.getElementById('canvas-frame').appendChild(renderer.domElement); //绑定到canvas元素中
+        renderer.setClearColor(0xFFFFFF,1.0);
+
+    }
+    //初始化相机
+    var camera;
+    function initCamera(){
+        camera = new THREE.PerspectiveCamera(45,width/height,1,10000);      //使用透视相机 PerspectiveCamera(fov,near,far,aspect) 还有一种是正投影相机 OrthographicCamera( left, right, top, bottom, near, far )
+        camera.position.set(0,1000,0);     //设置透视相机的位置
+        camera.up.set(0,0,1);
+        camera.lookAt({
+            x: 0,
+            y: 0,
+            z: 0
+        })
+    }
+
+    //设置场景
+    var scene;
+    function initScene(){
+        scene = new THREE.Scene();
+    }
+
+    //设置光源
+    var light;
+    function initLight(){
+        light = new THREE.DirectionalLight(0xFF0000,1.0,1);  //光有环境光 点光源 聚光灯  这个是环境光 光照均匀
+        light.position.set(100,100,200);  //设置环境光照射位置
+        scene.add(light);  //场景中加入光照
+    }
+
+    //设置物体
+    var cube;
+    //画一条线
+//    function initObject(){
+//        var geometry = new THREE.Geometry();   //几何物体(形状)  点必须放在Geometry形状中
+//        var material = new THREE.LineBasicMaterial({  //材质
+//            vertexColors: true,    // THREE.VertexColors 线条的颜色会根据顶点来计算
+//        });    //LineBasicMaterial(parameters) parameters: Color Linewidth Linecap Linejoin VertexColors Fog  but 报错???
+//
+//        var color1 = new THREE.Color(0x444444),color2 = new THREE.Color(0xFF0000);
+//
+//        var p1 = new THREE.Vector3(-100,0,100);  //设置两点位置
+//        var p2 = new THREE.Vector3(100,0,-100);
+//
+//        geometry.vertices.push(p1);   //形状中有点 vertices数组 用来存放无数的点
+//        geometry.vertices.push(p2);
+//        geometry.colors.push(color1,color2);
+//
+//        var line = new THREE.Line(geometry,material,THREE.LineSegments);  //点连接成线
+//        scene.add(line);  //场景中加入线
+//    }
+
+
+    //画网格
+    function initObject(){
+        var geometry = new THREE.Geometry();
+        geometry.vertices.push(new THREE.Vector3(-500,0,0));
+        geometry.vertices.push(new THREE.Vector3(500,0,0));
+
+
+        for(var i = 0; i <= 20; i++){
+            var line = new THREE.Line(geometry,new THREE.LineBasicMaterial({ color: 0x000000, opacity: 0.2}));
+            line.position.z = (i*50) - 500;
+            scene.add(line);
+
+            var line = new THREE.Line(geometry,new THREE.LineBasicMaterial({ color: 0x000000, opacity: 0.2}));
+            line.position.x = (i*50) - 500;
+            line.rotation.y = 90 * Math.PI / 180;
+            scene.add(line);
+        }
+    }
+
+    function threeStart(){
+        initThree();
+        initCamera();
+        initScene();
+        initLight();
+        initObject();
+        //调用关键帧动画
+        renderer.render(scene,camera);
+    }
+</script>
+</html>

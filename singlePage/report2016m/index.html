@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2016年运营报告</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" draggable="false">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            overflow: hidden;
+            -webkit-transition: opacity 400ms;
+            -moz-transition: opacity 400ms;
+            transition: opacity 400ms;
+        }
+
+        body, .onepage-wrapper, html {
+            display: block;
+            position: static;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background:  #fcfaf4;
+        }
+        .w100{
+            width: 100%;
+        }
+        .onepage-wrapper {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            padding: 0;
+            -webkit-transform-style: preserve-3d;
+        }
+
+        .onepage-wrapper .section {
+            width: 100%;
+            height: 91%;
+            margin: 0 auto;
+        }
+
+        .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+            overflow: auto;
+        }
+
+        .disabled-onepage-scroll .onepage-wrapper .section {
+            position: relative !important;
+            top: auto !important;
+            left: auto !important;
+        }
+        .disabled-onepage-scroll .onepage-wrapper {
+            -webkit-transform: none !important;
+            -moz-transform: none !important;
+            transform: none !important;
+            -ms-transform: none !important;
+            min-height: 100%;
+        }
+
+
+        .disabled-onepage-scroll .onepage-pagination {
+            display: none;
+        }
+
+        body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+            position: inherit;
+        }
+        .animated {
+            -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        .img{
+            display: block;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .page{
+            text-align: center;
+        }
+        @-webkit-keyframes upArrow {
+            0%,30%{
+                opacity: 0;
+                transform: translate(0,-8px);
+                -webkit-transform: translate(0,-8px);
+            }
+            60%{
+                opacity: 1;
+                transform: translate(0,0);
+                -webkit-transform: translate(0,0);
+            }
+            100%{
+                opacity: 0;
+                transform: translate(0,10px);
+                -webkit-transform: translate(0,10px);
+            }
+        }
+        @keyframes upArrow {
+            0%,30%{
+                opacity: 0;
+                transform: translate(0,-8px);
+                -webkit-transform: translate(0,-8px);;
+            }
+            60%{
+                opacity: 1;
+                transform: translate(0,0);
+                -webkit-transform: translate(0,0);
+            }
+            100%{
+                opacity: 0;
+                transform: translate(0,10px);
+                -webkit-transform: translate(0,10px);
+            }
+        }
+        .go-btn {
+            position: fixed;
+            bottom: 15px;
+            left: 50%;
+            width: 30px;
+            height: 30px;
+            margin-left: -15px;
+            font-size: 20px;
+            cursor: pointer;
+            overflow: hidden;
+            webkit-animation: upArrow 1.5s infinite ease-in-out;
+            -webkit-animation: upArrow 1.5s infinite ease-in-out;
+            -ms-animation: upArrow 1.5s infinite ease-in-out;
+            -moz-animation: upArrow 1.5s infinite ease-in-out;
+            -o-animation: upArrow 1.5s infinite ease-in-out;
+        }
+        @-webkit-keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+
+        .fadeInUp {
+            -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+        }
+        @-webkit-keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }
+
+        .fadeInDown {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+        }
+        header {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        .clearfloat:after{
+            display:block;
+            clear:both;
+            content:".";
+            visibility:hidden;
+            height:0;
+        }
+        .clearfloat{
+            zoom:1;
+        }
+        .f-l{
+            float: left;
+        }
+        .f-r{
+            float: right;
+        }
+        .mlongdai-wrap {
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        .mlongdai-header {
+            background-color: #c34a52;
+            color: #fffbdb;
+            position: relative;
+            width: 100%;
+            z-index: 1000;
+        }
+        .mlongdai-header-back {
+            height: 50px;
+            line-height: 50px;
+            padding-left: 5px;
+            width: 70px;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .mlongdai-header-name3 {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            width: 100%;
+            font-size: 18px;
+        }
+        .mlongdai-img-back {
+            position: relative;
+            padding-right: 5px;
+            padding-left: 5px;
+            width: 25px;
+            top: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="main dl-main">
+    <section class="page page1 active" name="name1">
+        <img class="page_container img dl-main-list dl-main-list1" src="images/H5_01.png" />
+    </section>
+    <section class="page page2" name="name2">
+        <img class="page_container img dl-main-list dl-main-list2" src="images/H5_02.png" />
+    </section>
+    <section class="page page3" name="name3">
+        <img class="page_container img dl-main-list dl-main-list3" src="images/H5_03.png" />
+    </section>
+    <section class="page page4" name="name4">
+        <img class="page_container img dl-main-list dl-main-list4" src="images/H5_04.png" />
+    </section>
+    <section class="page page5" name="name5">
+        <img class="page_container img dl-main-list dl-main-list5" src="images/H5_05.png" />
+    </section>
+    <section class="page page6" name="name6">
+        <img class="page_container img dl-main-list dl-main-list6" src="images/H5_06.png" />
+    </section>
+    <section class="page page7" name="name7">
+        <img class="page_container img dl-main-list dl-main-list7" src="images/H5_07.png" />
+    </section>
+    <section class="page page8" name="name8">
+        <img class="page_container img dl-main-list dl-main-list8" src="images/H5_08.png" />
+    </section>
+</div>
+<div class="go-btn">
+    <img src="images/arrow.png" class="w100"/>
+</div>
+<script src="javascript/jquery.min.js"></script>
+<script src="javascript/index.js"></script>
+</body>
+</html>

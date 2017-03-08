@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>概览 - 我的龙贷 - 龙贷</title>
+    <meta name="keywords" content="龙贷，P2P理财，投资理财，个人贷款">
+    <meta name="description" content="龙贷2014年3月成立于北京，是一家具备完整自主研发能力的互联网金融创新型企业。">
+    <meta name="author" content="龙贷在线投资（北京）有限公司">
+    <meta name="apple-itunes-app" content="app-id=1684535162">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="annualized-yield-svg"></div>
+<script src="../js/d3.js"></script>
+<script>
+    var ringData5 = {
+        name : ["年化收益率","笔数分布"],
+        legendWidth : 80,
+        legendSpacing : 20,
+        width : 500,
+        height : 500,
+        conClassName : "annualized-yield-svg",
+        showDetailNum : true,
+        unit : "笔",
+        data : [
+            {
+                value: 33,
+                percent: 2.35,
+                color : "#ac96bf",
+                name : "< 8%"
+            },
+            {
+                value: 106,
+                percent: 7.57,
+                color : "#fd7573",
+                name : "8 - 9%"
+            },
+            {
+                value: 251,
+                percent: 17.94,
+                color : "#fcd77d",
+                name : "9 - 10%"
+            },
+            {
+                value: 40,
+                percent: 2.85,
+                color : "#81e3c9",
+                name : "10 - 11%"
+            },
+            {
+                value: 969,
+                percent: 71.51,
+                color : "#79c0f0",
+                name : "> 11%"
+            }
+        ]
+    };
+
+    ringData5.totalNum = 1399;
+
+
+     function drowRing(ringData) {
+
+        var h = ringData.height,w = ringData.width;
+
+        if(ringData.showDetailNum == true && h < 260){
+            $("." + ringData.conClassName).addClass("pd0");
+        }
+
+        var pie = d3.layout.pie()
+                .value(function(d) { return d.value; })
+                .sort(null);
+
+        var innerRadius = h/3, outerRadius = h/2;
+        var arc = d3.svg.arc()
+                .innerRadius(innerRadius)
+                .outerRadius(outerRadius);
+
+        var ringSvg = d3.select("." + ringData.conClassName).append("svg")
+                .attr("width", function () {
+                    return h + ringData.legendWidth + ringData.legendSpacing;
+                })
+                .attr("height", function () {
+                    var newH = h;
+                    if( ringData.showDetailNum == true && h < 260 ){
+                        newH = 260;
+                    }
+                    return newH;
+                });
+
+        var innerCircle = [
+            {
+                x : outerRadius,
+                y : outerRadius,
+                r : innerRadius
+            }
+
+        ]
+
+        var circleWrap = ringSvg.selectAll(".inner-circle")
+                .data(innerCircle)
+                .enter()
+                .append("g")
+                .attr("transform", function () {
+                    var newH = h;
+                    if(ringData.showDetailNum == true && h < 260){
+                        newH = 260;
+                    }
+                    var transformY = (newH-h)/2;
+
+                    return "translate(0," + transformY + ")";
+                });
+
+        circleWrap.append("circle")
+                .attr("cx",outerRadius)
+                .attr("cy", outerRadius)
+                .attr("r", innerRadius)
+                .style('fill', "#fff")
+                .style('stroke', "#000");
+        circleWrap.selectAll(".inner-circle-text")
+                .data(ringData.name)
+                .enter()
+                .append('text')
+                .attr('x', outerRadius)
+                .attr('y', function (d,i) {
+                    return outerRadius + i*15 + 2;
+                })
+                .text(function (d,i) {
+                    return d;
+                })
+                .style("text-anchor", "middle")
+                .style("font-size", "13");
+
+
+
+        var drowRingTip = d3.select("body")
+                .append("div")
+                .attr("class","cir-tip drowRingTip")
+                .style("opacity",0.0);
+
+        var ringPath = ringSvg.datum(ringData.data).selectAll("path")
+                .data(pie)
+                .enter()
+                .append("g")
+                .attr("transform", function () {
+                    var newH = h;
+                    if(ringData.showDetailNum == true && h < 260){
+                        newH = 260;
+                    }
+                    var transformY = newH/2;
+
+                    return "translate(" + h / 2 + "," + transformY + ")";
+                })
+                .append("path")
+                .attr("fill", function(d, i) {
+
+                    return ringData.data[i].color;
+                })
+                .each(function() { this._current = {startAngle: 0, endAngle: 0}; });
+
+        ringPath.transition()
+                .attrTween("d", function(d) {
+                    var interpolate = d3.interpolate(this._current, d);
+                    this._current = interpolate(0);
+                    return function(t) {
+                        return arc(interpolate(t));
+                    };
+                })
+                .duration(2000);
+
+        ringPath.on('mousemove', function(d){
+            drowRingTip.style({
+                "opacity": 1.0
+            }).html("<span style='color:#fff'>"+d.data.name+"," + d.data.percent + "%</span>");
+
+
+            drowRingTip.style({
+                "left": (d3.event.pageX + 10) + "px",
+                "top": (d3.event.pageY + 10) + "px"
+            });
+
+        }).on('mouseout', function(d){
+            drowRingTip.style("opacity",0.0);
+        });
+
+
+        // Draw legend
+        var legendRectSize = 12;
+
+        var legend = ringSvg.selectAll('.legend')
+                .data(ringData.data)
+                .enter()
+                .append('g')
+                .attr('transform', function (d, i) {
+
+                    var newH = h;
+                    if(ringData.showDetailNum == true && h < 260){
+                        newH = 260;
+                    }
+
+                    var height = newH/(ringData.data.length + 1);
+
+
+                    // if(ringData.showDetailNum == false){
+                    //     height = 35;
+                    // }
+
+                    var legendH = 20;
+                    if(ringData.showDetailNum == true){
+                        legendH = 30;
+                    }
+                    var horz = h + ringData.legendSpacing;
+                    var vert = ((i+1) * height) - (legendH/2);
+                    // var vert = ((i) * height);
+
+                    // if( i > 2 ){
+                    //     horz = horz + 70;
+                    //     vert = (i-3) * height;
+                    // }
+
+                    return 'translate(' + horz + ',' + vert + ')';
+
+                });
+
+        legend.append('rect')
+                .attr('width', legendRectSize)
+                .attr('height', legendRectSize)
+                .style('fill', function (d, i) { return d.color; });
+
+        legend.append('text')
+                .attr('class', 'legend')
+                .attr('x', legendRectSize + 5)
+                .attr('y', 12)
+                .text(function (d) { return d.name; });
+
+
+        if(ringData.showDetailNum == true){
+            legend.append('text')
+                    .attr('class', 'legend')
+                    .attr('x', legendRectSize + 5)
+                    .attr('y', 28)
+                    .text(function (d) { return d.value + ringData.unit; })
+                    .style('fill', "#999");
+        }
+    }
+    drowRing(ringData5);
+
+</script>
+</body>
+</html>

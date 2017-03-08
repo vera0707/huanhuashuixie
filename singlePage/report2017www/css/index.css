@@ -1,0 +1,197 @@
+.operation-nav-li.active .active-icon,.operation-sub-icon,.tf-bg,.tf-icon,.tf-sub-icon {
+    background-repeat: no-repeat
+}
+
+body {
+    font: 14px/1.5 '\5FAE\8F6F\96C5\9ED1',YaHei,helvetica,tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+    background-color: #fcfaf4;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.f-l {
+    float: left
+}
+
+.f-r {
+    float: right
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: ".";
+    visibility: hidden;
+    height: 0
+}
+
+.clearfloat {
+    zoom:1
+}
+.main-container {
+    position: relative;
+    font-size: 0;
+}
+.operation-sub {
+    width: 130px;
+    top: 30%;
+    position: fixed;
+    z-index: 100;
+    display: none
+}
+
+.operation-nav {
+    list-style-type: none;
+    width: 124px;
+    height: 283px;
+    margin-top: -3px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 700
+}
+.operation-nav-li {
+    height: 43px;
+    cursor: pointer
+}
+.operation-nav-li.active {
+    color: #1b6194;
+    position: relative
+}
+
+.operation-nav-li.active .operation-nav-f {
+    background-color: #1b6194
+}
+.tf-icon,.tf-sub-icon,.tf-sub-li.active .active-icon {
+    background-image: url(../images/daohang.png)
+}
+
+.operation-nav-li.active .top5 {
+    top: 5px
+}
+
+.operation-nav-li.active .top7 {
+    top: 7px
+}
+
+.height50 {
+    height: 50px
+}
+
+.tf-con {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.tf-sub {
+    width: 150px;
+}
+
+.tf-sub-li {
+    height: 43px;
+}
+
+.tf-sub-icon {
+    width: 12px;
+    height: 300px;
+    background-position: -30px -11px;
+}
+
+.tf-icon {
+    display: inline-block;
+    width: 118px;
+    height: 20px;
+    background-position: -53px 0;
+}
+
+.tf-icon1 {
+    background-position-y: -6px;
+}
+
+.tf-icon2 {
+    background-position-y: -48px;
+}
+
+.tf-icon3 {
+    background-position-y: -91px;
+}
+
+.tf-icon4 {
+    background-position-y: -133px;
+}
+
+.tf-icon5 {
+    background-position-y: -176px;
+}
+
+.tf-icon6 {
+    background-position-y: -218px;
+}
+
+.tf-icon7 {
+    background-position-y: -262px;
+}
+
+.tf-sub-li.active .active-icon {
+    display: inline-block;
+    width: 36px;
+    height: 18px;
+    background-position: -6px -338px;
+    position: absolute;
+    left: -45px;
+    top: -5px
+}
+
+.tf-sub-li.active .tf-icon1 {
+    background-position-y: -340px
+}
+
+.tf-sub-li.active .tf-icon2 {
+    background-position-y: -382px
+}
+
+.tf-sub-li.active .tf-icon3 {
+    background-position-y: -425px
+}
+.tf-sub-li.active .tf-icon4 {
+    background-position-y: -467px
+}
+.tf-sub-li.active .tf-icon5 {
+    background-position-y: -510px
+}
+
+.tf-sub-li.active .tf-icon6 {
+    background-position-y: -552px
+}
+
+.tf-sub-li.active .tf-icon7 {
+    background-position-y: -596px
+}
+.tf-bg {
+    background-position: center top;
+}
+
+.tf-1 {
+    height: 705px;
+    background-image: url(../images/report_01.png)
+}
+
+.tf-2 {
+    height: 1440px;
+    background-image: url(../images/report_02.png)
+}
+
+.tf-3 {
+    height: 1871px;
+    background-image: url(../images/report_03.png)
+}
+
+.tf-4 {
+    height: 2064px;
+    background-image: url(../images/report_04.png)
+}
+.margin-auto {
+    margin: 0 auto
+}

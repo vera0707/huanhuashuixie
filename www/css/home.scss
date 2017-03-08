@@ -1,0 +1,36 @@
+$fontStack:    14px/1.5 '\5FAE\8F6F\96C5\9ED1',YaHei,helvetica,tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+$fontNew: '黑体', Arial;
+
+/*所有颜色集合*/
+$mainColor: #ff460d;  //小面积使用
+$linkColor: #317ff5; //按钮链接
+$bgColor: #fafafa;
+$divideColor: #eeeeee; //分割线
+$formColor: #cccccc;
+
+$h1Color: #333333;
+$h2Color: #666666;
+$contentColor: #999999;
+$lightTextColor: #a2a09e;
+
+
+/*字号*/
+$size1: 36px;
+$size2: 24px;
+$size3: 18px;
+$size4: 16px;
+$size5: 34px;
+
+/*行间距*/
+$lineSpaceSize: 10px;
+
+
+$borderSize: 1px solid #eee;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
