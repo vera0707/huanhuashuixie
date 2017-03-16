@@ -22,6 +22,19 @@
 - [2016年运营报告](http://10.10.1.86:8081/operationReport2016) - 10.10.1.86:8081/operationReport2016
 
 
+**wap页面
+  - [风险评估](http://10.10.1.86:8081/v2/about/security)  - http://10.10.1.86:8081/v2/about/security
+  - []()
+  - []()
+  - []()
+  - []()
+
+**www页面
+  - [风险评估](http://10.10.1.86:1085/carPledge.do)
+  - []()
+  - []()
+  - []()
+
 **2017年03月13号**
 	- 待解决问题
 	     （www车辆质押表详情页-还款记录)[https://www.longdai.com/financeDetail.do?id=18890761]
@@ -29,4 +42,10 @@
 	      默认请求[https://www.longdai.com/cgi-bin/user-bin/borrow/replaymentPlan]  点击回来发的请求[https://www.longdai.com/borrowDetailList.do]
 	      项目地址:longdai/longdai-web/WebRoot/src/javascript/finance-borrow-detail.js
 	      应该是与代码中type的取值和window.borrowWay取值有关??
+
+
+
+
+
+
 
