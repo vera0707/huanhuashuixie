@@ -30,6 +30,7 @@
   - [项目信息披露](https://10.10.1.86:8081/v3/contract/projectCase) - https://10.10.1.86:8081/v3/contract/projectCase
   - [邀请好友规则页](https://10.10.1.86:8081/v2/activity/invite/rules) - https://10.10.1.86:8081/v2/activity/invite/rules
   - [踊跃投标](https://10.10.1.86:1085/rebate) - https://10.10.1.86:1085/rebate
+  - [关于龙贷](https://10.10.1.86:8081/v2/about/guide) - https://10.10.1.86:8081/about/guide
 
 ** www页面
   - [风险评估](http://10.10.1.86:1085/carPledge.do)     - http://localhost:1085/carPledge.do
