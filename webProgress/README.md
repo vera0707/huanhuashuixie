@@ -26,8 +26,10 @@
   - [风险评估](https://10.10.1.86:8081/v2/about/security)  - localhost:8081/v2/about/security
   - [车辆质押标介绍](https://10.10.1.86:8081/v2/borrow/carPledge) - localhost:8081/v2/borrow/carPledge
   - [龙贷体验金介绍页](https://10.10.1.86:8081/v2/testBorrows/describe)  - localhost:8081/v2/testBorrows/describe
-  - []()
-  - []()
+  - [信息披露页](https://10.10.1.86:8081/v2/report/realTimeData) - https://10.10.1.86:8081/v2/report/realTimeData
+  - [项目信息披露](https://10.10.1.86:8081/v3/contract/projectCase) - https://10.10.1.86:8081/v3/contract/projectCase
+  - [邀请好友规则页](https://10.10.1.86:8081/v2/activity/invite/rules) - https://10.10.1.86:8081/v2/activity/invite/rules
+  - [踊跃投标](https://10.10.1.86:1085/rebate) - https://10.10.1.86:1085/rebate
 
 ** www页面
   - [风险评估](http://10.10.1.86:1085/carPledge.do)     - http://localhost:1085/carPledge.do
@@ -42,6 +44,9 @@
   - [龙贷产品](http://10.10.1.86:1085/manageFinance.do)      - http://localhost:1085/manageFinance.do
   - [风险告知书](http://10.10.1.86:1085/lenderTips.do)        - http://localhost:1085/lenderTips.do
   - [会员介绍](http://10.10.1.86:1085/lenderTips.do)         - http://localhost:1085/lenderTips.do
+  - [邀请好友](http://10.10.1.86:1085/invite.do)         - http://localhost:1085/invite.do
+  - [踊跃投标,三奖齐发](http://10.10.1.86:1085/financeAwardRules.do)         - http://localhost:1085/financeAwardRules.do
+  - [薅龙鳞](http://10.10.1.86:1085/pullOut.do)         - http://localhost:1085/pullOut.do
 
 
 **2017年03月13号**
