@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+body{
+    background-color: #fff;
+    letter-spacing: 2px;
+    font: 14px/1.5 '\5FAE\8F6F\96C5\9ED1',YaHei,helvetica,tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+    color: #333;
+    line-height: 26px;
+    text-align: justify;
+}
+.f-l {
+    float: left;
+}
+.f-r {
+    float: right;
+}
+.w120{
+    width: 120px;
+}
+.w200{
+    width: 200px;
+}
+.w256{
+    width: 256px;
+}
+.w286{
+    width: 286px;
+}
+.hide{
+    display: none;
+}
+.font30{
+    font-size: 30px;
+}
+.user-w20{
+    width: 20%;
+}
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:".";
+    visibility:hidden;
+    height:0;
+}
+.clearfloat{
+    zoom:1
+}
+.clearfloat {
+    zoom: 1;
+}
+.depository-banner{
+    width: 100%;
+    height: 357px;
+    background: url("images/banner_www.png") 50% 50% no-repeat;
+}
+.depository-container{
+    width: 980px;
+    margin: 0 auto;
+}
+.depository-icon{
+    background-image: url("images/icon.png");
+    background-repeat: no-repeat;
+}
+.depository-title{
+    width: 980px;
+    height: 40px;
+    background-position-x: 0;
+    margin: 50px 0 35px;
+}
+.depository-title.title-1{
+    background-position-y: 0;
+}
+.depository-title.title-2{
+    background-position-y: -40px;
+}
+.depository-title.title-3{
+    background-position-y: -80px;
+}
+.depository-progress{
+    width: 980px;
+    height: 320px;
+    background-position: 0 -180px;
+    margin-top: 25px;
+}
+.depository-adv{
+    width: 100%;
+    padding: 20px 0 40px;
+}
+.depository-adv-li{
+    width: 27.33%;
+    padding: 0 3%;
+}
+.depository-adv-icon{
+    width: 245px;
+    height: 188px;
+    margin: 0 auto;
+    position: relative;
+    top:0;
+}
+.depository-adv-icon:hover{
+    top: -5px;
+}
+.depository-adv-icon.icon-1{
+    background-position: -8px -500px;
+}
+.depository-adv-icon.icon-2{
+    background-position: -266px -500px;
+}
+.depository-adv-icon.icon-3{
+    background-position: -512px -510px;
+}
+.depository-adv-title{
+    color: #aa632b;
+    font-size: 22px;
+    text-align: center;
+    margin: 24px 0;
+}
+.depository-user{
+    width: 100%;
+    height: 760px;
+    background: url("images/con_bg.png") 0 0 repeat;
+    padding-top: 53px;
+}
+.depository-user-title{
+    width: 294px;
+    height: 52px;
+    background-position: -6px  -121px;
+    margin: 0 auto  35px;
+}
+.depository-user-nav{
+    width: 701px;
+    height: 58px;
+    line-height: 58px;
+    color: #b6c3ce;
+    font-size: 18px;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #b8c4cf;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    margin: 0 auto;
+}
+.depository-user-nav-li{
+    width: 350px;
+    height: 52px;
+    padding-bottom: 4px;
+    float: left;
+    cursor: pointer;
+}
+.depository-user-nav-li:first-child{
+    border-right: 1px dashed #b8c4cf;
+}
+.depository-user-nav-li.active{
+    color: #aa632b;
+    border-bottom: 3px solid #aa632b;
+}
+.depository-user-progress{
+    height: 550px;
+}
+.depository-user-con-title{
+    height: 65px;
+    line-height: 65px;
+    color: #b6c3ce;
+    font-size: 16px;
+}
+.user-con-title{
+    width: 217px;
+    height: 30px;
+    cursor: pointer;
+}
+.user-con-title:hover{
+    color: #aa632b;
+}
+.progress-icon{
+    width: 980px;
+    height: 498px;
+}
+.progress-icon.new-progress-icon1{
+    background: url("images/progress_new_1.png");
+}
+.progress-icon.new-progress-icon2{
+    background: url("images/progress_new_2.png");
+}
+.progress-icon.new-progress-icon3{
+    background: url("images/progress_new_3.png");
+}
+.progress-icon.new-progress-icon4{
+    background: url("images/progress_new_4.png");
+}
+.progress-icon.new-progress-icon5{
+    background: url("images/progress_new_5.png");
+}
+.progress-icon.old-progress-icon1{
+    background: url("images/progress_old_1.png");
+}
+.progress-icon.old-progress-icon2{
+    background: url("images/progress_old_2.png");
+}
+.progress-icon.old-progress-icon3{
+    background: url("images/progress_old_3.png");
+}
+.progress-icon.old-progress-icon4{
+    background: url("images/progress_old_4.png");
+}

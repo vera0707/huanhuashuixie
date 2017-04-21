@@ -1,0 +1,10 @@
+<template>
+    <div>
+        <div>那就这样吧</div>
+    </div>
+</template>
+<style>
+    body{
+        background-color:#ff0000;
+    }
+</style>

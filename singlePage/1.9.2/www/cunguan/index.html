@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>银行存管介绍</title>
+    <link rel="stylesheet" href="cunguan.css" />
+</head>
+<body>
+<div class="depository-banner"></div>
+<div class="depository-container">
+    <div class="depository-icon depository-title title-1"></div>
+    <div>
+        2016年8月出台的《网络借贷信息中介机构业务活动管理暂行办法》明确要求，网络借贷信息中介机构应当实行自身资金与出借人和借款人资金的隔离管理，并选择符合条件的银行业金融机构作为出借人与借款人的资金存管机构。简言之，由江西银行监管资金，龙贷平台处理交易，做到资金与交易的分离，龙贷平台无法直接接触用户资金。
+    </div>
+    <div class="depository-icon depository-progress"></div>
+    <div class="depository-icon depository-title title-2"></div>
+    <div>
+        开通银行存管账户后，龙贷平台只负责匹配借贷双方交易信息，不能动用用户资金，可以更好地降低用户资金风险。而用户在江西银行内的资金流水可证明出借人与借款人之间的真实借贷行为，受法律认可。此举可为用户提供全方位的法律支持。
+    </div>
+    <div class="depository-adv clearfloat">
+        <div class="depository-adv-li f-l">
+            <div class="depository-icon depository-adv-icon icon-1"></div>
+            <div class="depository-adv-title">交易合规</div>
+            <div>
+                龙贷积极响应国家监管政策，实现资金与交易分离。以实际行动保护用户的切实利益，在交易合规方面居于行业前列。
+            </div>
+        </div>
+        <div class="depository-adv-li f-l">
+            <div class="depository-icon depository-adv-icon icon-2"></div>
+            <div class="depository-adv-title">风险可控</div>
+            <div>用户的交易密码在江西银行设立，每次交易均需获取用户授权。银行监管整个交易流程，全方位降低用户资金风险。</div>
+        </div>
+        <div class="depository-adv-li f-l">
+            <div class="depository-icon depository-adv-icon icon-3"></div>
+            <div class="depository-adv-title">坐享收益</div>
+            <div>开通银行存管账户后，用户未投标的资金不再闲置，即时享受银行活期利息收益，按季结算，不放任何收益机会。</div>
+        </div>
+    </div>
+</div>
+<div class="depository-user">
+    <div class="depository-container">
+    <div class="depository-icon depository-user-title"></div>
+    <div class="depository-user-nav">
+        <div class="depository-user-nav-li active">
+            龙贷新用户
+        </div>
+        <div class="depository-user-nav-li">
+            <span>龙贷老用户</span>
+        </div>
+    </div>
+    <div class="depository-user-con">
+        <div class="user-new-progress hide">
+            <div class="depository-user-con-title clearfloat">
+                <div class="f-l w200"><span class="user-con-title" data-index="new-progress-icon1"><span class="font30">01 </span>免费注册</div></span>
+                <div class="f-l w200"><span class="user-con-title" data-index="new-progress-icon2"><span class="font30">02 </span>实名开户</span></div>
+                <div class="f-l w256"><span class="user-con-title" data-index="new-progress-icon3"><span class="font30">03 </span>设置交易密码</span></div>
+                <div class="f-l w200"><span class="user-con-title" data-index="new-progress-icon4"><span class="font30">04 </span>账户充值</span></div>
+                <div class="f-l w120"><span class="user-con-title" data-index="new-progress-icon5"><span class="font30">05 </span>赚取收益</span></div>
+            </div>
+            <div class="progress-icon new-progress-icon1"></div>
+        </div>
+        <div class="user-old-progress">
+            <div class="depository-user-con-title clearfloat">
+                <div class="f-l w286"><span class="user-con-title" data-index="old-progress-icon1"><span class="font30">01 </span>一键激活账户</div></span>
+                <div class="f-l w286"><span class="user-con-title" data-index="old-progress-icon2"><span class="font30">02 </span>设置交易密码</span></div>
+                <div class="f-l w286"><span class="user-con-title" data-index="old-progress-icon3"><span class="font30">03 </span>签约自动协议</span></div>
+                <div class="f-l w120"><span class="user-con-title" data-index="old-progress-icon4"><span class="font30">04 </span>赚取收益</span></div>
+            </div>
+            <div class="progress-icon old-progress-icon2"></div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../../vendor/jquery.min.js"></script>
+<script>
+
+
+    $('.user-con-title').hover(function(){
+        var showIconClass = ' ' + $(this).data('index');
+        $('.progress-icon').attr('class','progress-icon' + showIconClass);
+    },)
+</script>
+</body>
+</html>

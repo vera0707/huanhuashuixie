@@ -1,0 +1,208 @@
+body {
+    font: 14px/1.5 '\5FAE\8F6F\96C5\9ED1',YaHei,helvetica,tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+    background-color: #ececec;
+    color: #666;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+.f-l {
+    float: left;
+    display: inline;
+}
+
+.f-r {
+    float: right;
+    display: inline;
+}
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: ".";
+    visibility: hidden;
+    height: 0;
+}
+.clearfloat {
+    zoom: 1;
+}
+.none{
+    display: none;
+}
+.mt30{
+    margin-top: 30px;
+}
+.risk{
+    width: 980px;
+    height: 1000px;
+    margin: 25px auto 150px;
+    background: #fff;
+    border: 1px solid #edeff2;
+}
+.risk-title{
+    width: 800px;
+    height: 210px;
+    background: url("images/fengxianpinggu.png") 50% 50% no-repeat;
+    margin: 0 90px;
+}
+.risk-content{
+    padding: 0 75px;
+}
+.risk-list-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+.risk-animate-twinkle{
+    -webkit-animation: twinkling 1s infinite ease-in-out;
+    -o-animation: twinkling 1s infinite ease-in-out;
+    animation: twinkling 1s infinite ease-in-out;
+}
+.risk-list-li{
+    float: left;
+    color: #666;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+input[type='radio']{
+    display: none;
+    cursor: pointer;
+}
+input[type='radio']:focus, input[type='radio']:active{
+    outline: none;
+}
+input[type='radio']+label{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+input[type='radio']+label:before,input[type='radio']+label:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+}
+input[type=radio]+label:before{
+    border:1px solid #bbb;
+    background-color:transparent;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+input[type='radio']:checked + label:before {
+    -moz-box-shadow: inset 0 0 0 4px #fff;
+    -webkit-box-shadow: inset 0 0 4px #fff;
+    box-shadow: inset 0 0 0 4px #fff;
+    border:1px solid #bbb;
+    background-color:#bbb;
+}
+.risk-btn{
+    width: 335px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    background: #047ff0;
+    margin: 75px auto 0;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.risk-dialog{
+    position:  absolute;
+    top: 100px;
+    left: 500px;
+    z-index: 101;
+    text-align: center;
+    background: #fff;
+}
+.risk-dialog-result,.risk-dialog-warn{
+    padding: 25px 60px 30px;
+}
+.risk-dialog-result{
+    width: 480px;
+}
+.risk-dialog-date{
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.risk-dialog-btn-l,.risk-dialog-btn-r,.risk-dialog-warn-btn{
+    display: inline-block;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.risk-dialog-btn-l{
+    width: 198px;
+    height: 45px;
+    border: 1px solid #047ff0;
+    color: #047ff0;
+}
+.risk-dialog-btn-r{
+    width: 200px;
+    height: 47px;
+    color: #fff;
+    background: #047ff0;
+}
+.risk-dialog-warn{
+    width: 300px;
+}
+.risk-dialog-warn-btn{
+    width: 60%;
+    color: #fff;
+    background: #f0724a;
+    margin-top: 30px;
+}
+@keyframes twinkling
+{
+    0%{
+        background: #ffeee9;
+    }
+    100%{
+        background: #fff;
+    }
+}
+
+@-moz-keyframes twinkling /* Firefox */
+{
+    0%{
+        background: #ffeee9;
+    }
+    100%{
+        background: #fff;
+    }
+}
+
+@-webkit-keyframes twinkling /* Safari 和 Chrome */
+{
+    0%{
+        background: #ffeee9;
+    }
+    100%{
+        background: #fff;
+    }
+}
+
+@-o-keyframes mymove /* Opera */
+{
+    0%{
+        background: #ffeee9;
+    }
+    100%{
+        background: #fff;
+    }
+}

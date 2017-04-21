@@ -1,0 +1,234 @@
+<html class=" js csstransforms3d" lang="zh"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 3D transforms-旋转木马</title>
+    <link rel="stylesheet" type="text/css" href="http://www.htmleaf.com/pins/1412/201502062108/css/style.css">
+    <style media="screen">
+
+        .container {
+            width: 210px;
+            height: 140px;
+            position: relative;
+            margin: 50px auto 40px;
+            border: 1px solid #CCC;
+            -webkit-perspective: 1100px;
+            -moz-perspective: 1100px;
+            -o-perspective: 1100px;
+            perspective: 1100px;
+        }
+
+
+        #carousel {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .ready #carousel {
+            -webkit-transition: -webkit-transform 1s;
+            -moz-transition: -moz-transform 1s;
+            -o-transition: -o-transform 1s;
+            transition: transform 1s;
+        }
+
+        #carousel.panels-backface-invisible figure {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        #carousel figure {
+            display: block;
+            position: absolute;
+            width: 186px;
+            height: 116px;
+            left: 10px;
+            top: 10px;
+            border: 2px solid black;
+            line-height: 116px;
+            font-size: 80px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .ready #carousel figure {
+            -webkit-transition: opacity 1s, -webkit-transform 1s;
+            -moz-transition: opacity 1s, -moz-transform 1s;
+            -o-transition: opacity 1s, -o-transform 1s;
+            transition: opacity 1s, transform 1s;
+        }
+
+        #options{
+            margin-top: 200px;
+            width: 100%;
+            text-align: center;
+        }
+        #options button{padding: 0.5em 1.5em;border: 2px solid #6699cc;background: #fff;}
+    </style>
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<section class="container">
+    <div id="carousel" style="transform: translateZ(-286px) rotateY(0deg);">
+        <figure style="opacity: 1; background-color: rgba(255, 0, 0, 0.8); transform: rotateY(0deg) translateZ(286px);">1</figure>
+        <figure style="opacity: 1; background-color: rgba(255, 170, 0, 0.8); transform: rotateY(40deg) translateZ(286px);">2</figure>
+        <figure style="opacity: 1; background-color: rgba(169, 255, 0, 0.8); transform: rotateY(80deg) translateZ(286px);">3</figure>
+        <figure style="opacity: 1; background-color: rgba(0, 255, 0, 0.8); transform: rotateY(120deg) translateZ(286px);">4</figure>
+        <figure style="opacity: 1; background-color: rgba(0, 255, 169, 0.8); transform: rotateY(160deg) translateZ(286px);">5</figure>
+        <figure style="opacity: 1; background-color: rgba(0, 169, 255, 0.8); transform: rotateY(200deg) translateZ(286px);">6</figure>
+        <figure style="opacity: 1; background-color: rgba(0, 0, 255, 0.8); transform: rotateY(240deg) translateZ(286px);">7</figure>
+        <figure style="opacity: 1; background-color: rgba(170, 0, 255, 0.8); transform: rotateY(280deg) translateZ(286px);">8</figure>
+        <figure style="opacity: 1; background-color: rgba(255, 0, 169, 0.8); transform: rotateY(320deg) translateZ(286px);">9</figure>
+        <figure style="opacity: 0; transform: none;">10</figure>
+        <figure style="opacity: 0; transform: none;">11</figure>
+        <figure style="opacity: 0; transform: none;">12</figure>
+        <figure style="opacity: 0; transform: none;">13</figure>
+        <figure style="opacity: 0; transform: none;">14</figure>
+        <figure style="opacity: 0; transform: none;">15</figure>
+        <figure style="opacity: 0; transform: none;">16</figure>
+        <figure style="opacity: 0; transform: none;">17</figure>
+        <figure style="opacity: 0; transform: none;">18</figure>
+        <figure style="opacity: 0; transform: none;">19</figure>
+        <figure style="opacity: 0; transform: none;">20</figure>
+    </div>
+</section>
+
+<section id="options">
+    <p>
+        <label for="panel-count">个数</label>
+        <input id="panel-count" value="9" min="3" max="20" type="range">
+        <span class=" range-display"></span></p>
+
+    <p id="navigation">
+        <button id="previous" data-increment="-1">上一页</button>
+        <button id="next" data-increment="1">下一页</button>
+    </p>
+
+    <p>
+        <button id="toggle-axis">横竖切换</button>
+    </p>
+
+    <p>
+        <button id="toggle-backface-visibility">背面可见切换</button>
+    </p>
+
+</section>
+</div>
+
+<script src="http://www.htmleaf.com/pins/1412/201502062108/js/utils.js"></script>
+
+<script>
+    var transformProp = Modernizr.prefixed('transform');
+
+    function Carousel3D ( el ) {
+        this.element = el;
+
+        this.rotation = 0;
+        this.panelCount = 0;
+        this.totalPanelCount = this.element.children.length;
+        this.theta = 0;
+
+        this.isHorizontal = true;
+
+    }
+
+    Carousel3D.prototype.modify = function() {
+
+        var panel, angle, i;
+
+        this.panelSize = this.element[ this.isHorizontal ? 'offsetWidth' : 'offsetHeight' ];
+        this.rotateFn = this.isHorizontal ? 'rotateY' : 'rotateX';
+        this.theta = 360 / this.panelCount;
+
+        // do some trig to figure out how big the carousel
+        // is in 3D space
+        this.radius = Math.round( ( this.panelSize / 2) / Math.tan( Math.PI / this.panelCount ) );
+
+        for ( i = 0; i < this.panelCount; i++ ) {
+            panel = this.element.children[i];
+            angle = this.theta * i;
+            panel.style.opacity = 1;
+            panel.style.backgroundColor = 'hsla(' + angle + ', 100%, 50%, 0.8)';
+            // rotate panel, then push it out in 3D space
+            panel.style[ transformProp ] = this.rotateFn + '(' + angle + 'deg) translateZ(' + this.radius + 'px)';
+        }
+
+        // hide other panels
+        for (  ; i < this.totalPanelCount; i++ ) {
+            panel = this.element.children[i];
+            panel.style.opacity = 0;
+            panel.style[ transformProp ] = 'none';
+        }
+
+        // adjust rotation so panels are always flat
+        this.rotation = Math.round( this.rotation / this.theta ) * this.theta;
+
+        this.transform();
+
+    };
+
+    Carousel3D.prototype.transform = function() {
+        // push the carousel back in 3D space,
+        // and rotate it
+        this.element.style[ transformProp ] = 'translateZ(-' + this.radius + 'px) ' + this.rotateFn + '(' + this.rotation + 'deg)';
+    };
+
+
+
+    var init = function() {
+
+
+        var carousel = new Carousel3D( document.getElementById('carousel') ),
+                panelCountInput = document.getElementById('panel-count'),
+                axisButton = document.getElementById('toggle-axis'),
+                navButtons = document.querySelectorAll('#navigation button'),
+
+                onNavButtonClick = function( event ){
+                    var increment = parseInt( event.target.getAttribute('data-increment') );
+                    carousel.rotation += carousel.theta * increment * -1;
+                    carousel.transform();
+                };
+
+        // populate on startup
+        carousel.panelCount = parseInt( panelCountInput.value, 10);
+        carousel.modify();
+
+
+        axisButton.addEventListener( 'click', function(){
+            carousel.isHorizontal = !carousel.isHorizontal;
+            carousel.modify();
+        }, false);
+
+        panelCountInput.addEventListener( 'change', function( event ) {
+            carousel.panelCount = event.target.value;
+            carousel.modify();
+        }, false);
+
+        for (var i=0; i < 2; i++) {
+            navButtons[i].addEventListener( 'click', onNavButtonClick, false);
+        }
+
+        document.getElementById('toggle-backface-visibility').addEventListener( 'click', function(){
+            carousel.element.toggleClassName('panels-backface-invisible');
+        }, false);
+
+        setTimeout( function(){
+            document.body.addClassName('ready');
+        }, 0);
+
+    };
+
+    window.addEventListener( 'DOMContentLoaded', init, false);
+</script>
+<p id="disclaimer">对不起,你的浏览器不支持CSS 3D transforms。</p>
+
+</body></html>
