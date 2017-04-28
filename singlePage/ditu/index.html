@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地图效果</title>
+    <style>
+        .box{
+            position: relative;
+            width: 500px;
+            height: 200px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        .img{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        .icon{
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            background-image: url("https://www.fengmap.com/img/cebianlan.png");
+            background-repeat: no-repeat;
+            animation: upArrow 1.5s infinite  ease-in-out;
+            -webkit-animation: upArrow 1.5s infinite  ease-in-out;
+            -ms-animation: upArrow 1.5s infinite ease-in-out;
+            -moz-animation: upArrow 1.5s infinite ease-in-out;
+            -o-animation: upArrow 1.5s infinite ease-in-out;
+        }
+        .icon1{
+            bottom: 30px;
+            left: 30px;
+            background-position:  1px 2px;
+            animation-delay: 0.3s;
+            -webkit-animation-delay: 0.3s;
+            -ms-animation-delay: 0.3s;
+            -o-animation-delay: 0.3s;
+
+
+        }
+        .icon2{
+            bottom: 70px;
+            right: 160px;
+            background-position:  1px -56px;
+            animation-delay: 0.5s;
+            -webkit-animation-delay: 0.5s;
+            -ms-animation-delay: 0.5s;
+            -o-animation-delay: 0.5s;
+        }
+        .icon3{
+            bottom: 120px;
+            right: 20px;
+            background-position:  1px -175px;
+            animation-delay: 0.75s;
+            -webkit-animation-delay: 0.75s;
+            -ms-animation-delay: 0.75s;
+            -o-animation-delay: 0.75s;
+        }
+        @-webkit-keyframes upArrow {
+            0%,30%{
+                opacity: 0;
+                transform: translate(0,10px);
+                -webkit-transform: translate(0,10px);
+            }
+            60%{
+                opacity: 1;
+                transform: translate(0,0);
+                -webkit-transform: translate(0,0);
+            }
+            100%{
+                opacity: 0;
+                transform: translate(0,-8px);
+                -webkit-transform: translate(0,-8px);
+            }
+        }
+        @keyframes upArrow {
+            0%,30%{
+                opacity: 0;
+                transform: translate(0,10px);
+                -webkit-transform: translate(0,10px);;
+            }
+            60%{
+                opacity: 1;
+                transform: translate(0,0);
+                -webkit-transform: translate(0,0);
+            }
+            100%{
+                opacity: 0;
+                transform: translate(0,-8px);
+                -webkit-transform: translate(0,-8px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://www.fengmap.com/img/product/maps/3-3-b.png" alt="" class="img"/>
+        <div class="icon icon1"></div>
+        <div class="icon icon2"></div>
+        <div class="icon icon3"></div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var i = 0,
+                i1 = 30,
+                i2 = 70,
+                i3 = 120,
+                timer = null, $icon1 = $('.icon1'),
+                $icon2 = $('.icon2'),
+                $icon3 = $('.icon3');
+
+        function change(){
+            timer = setTimeout(function(){
+                if(i >= -130){
+                    $('.img').css('bottom',--i);
+                    $icon1.css('bottom', --i1);
+                    $icon2.css('bottom', --i2);
+                    $icon3.css('bottom', --i3);
+                    change();
+                }else{
+                    clearTimeout(timer);
+                }
+
+            },100)
+        };
+
+        change();
+
+
+
+
+    </script>
+</body>
+</html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>三周年预热活动</title>
+    <link rel="stylesheet" href="video-js.min.css" />
     <style>
         body,html{
             margin: 0;
@@ -15,26 +16,23 @@
             max-height: 100%;
             max-width: 100%;
         }
-        .hide{
-            display: none;
-        }
         .three-year{
             width: 100%;
             height: 2097px;
-            background: url('images/bg_line.png') 50% 50% repeat-x;
+            background: url('./images/bg_line.png') 50% 50% repeat-x;
             position: relative;
             z-index: 1;
         }
         .year-cake{
             width: 583px;
             height: 972px;
-            background: url('images/cake.png') 0 0 no-repeat;
+            background: url('./images/cake.png') 0 0 no-repeat;
             margin: 0 auto;
         }
         .year-rule{
             width: 940px;
             height: 1023px;
-            background: url("images/rule.png") 0 0 no-repeat;
+            background: url("./images/rule.png") 0 0 no-repeat;
             margin: 32px auto 0;
         }
         .year-ad{
@@ -44,12 +42,12 @@
             text-align: center;
             letter-spacing: 1px;
         }
-        .year-fire1,.year-fire2,.year-fire3,.year-tv,.year-heart1,.year-heart2,.year-heart3,.year-tape1,.year-tape2,.year-tape3,.year-tape4,.year-video-icon{
+        .year-fire1,.year-fire2,.year-fire3,.year-tv,.year-heart1,.year-heart2,.year-heart3,.year-tape1,.year-tape2,.year-tape3,.year-tape4,.vjs-big-play-button{
             width: 0;
             position: absolute;
             left: 50%;
             z-index: 2;
-            background-image: url("images/bg_der.png");
+            background-image: url("./images/bg_der.png");
             background-repeat: no-repeat;
         }
         .year-fire1{
@@ -149,27 +147,38 @@
             border-radius: 5px;
             margin-left: 250px;
         }
-        .year-video{
+        .three-video{
             width: 433px;
-            height: 291px;
+            height: 243px;
             position: absolute;
-            top: 12%;
+            top: 277px;
             left: 50%;
             z-index: 4;
             margin-left: -211px;
         }
-        .year-video-icon{
+        .vjs-big-play-button{
             width: 80px;
             height: 80px;
-            top: 16.8%;
+            top: 30%;
             z-index: 5;
             background-position: -909px -169px;
-            margin-left: -35px;
+            margin-left: -45px;
+            outline: none;
             cursor: pointer;
         }
     </style>
+
 </head>
 <body>
+<video class="video-js three-video" controls preload="auto" data-setup="{}">
+    <source src="video/three-year-1.mp4" type="video/mp4">
+    <source src="video/three-year-1.ogv" type="video/ogg" />
+    <source src="video/three-year-1.webm" type="video/webm" />
+    <object id="video-ie" type="application/x-shockwave-flash" data="video/three-year-1.flv" >
+        <param name="movie" value="fallback.swf" />
+        <param name="flashvars" value="autostart=true&amp;file=video.flv" />
+    </object>
+</video>
     <div class="three-year">
         <div class="year-activity">
             <div class="year-cake"></div>
@@ -190,42 +199,40 @@
             <div class="year-tape3"></div>
             <div class="year-tape4"></div>
         </div>
-        <video class="year-video"  name="media" preload="auto" id="media" loop="loop">
-            <source src="video/three-year-1.mp4" type="video/mp4">
-            <source src="video/three-year-1.ogv" type="video/ogg" />
-            <source src="video/three-year-1.webm" type="video/webm" />
-            - 你浏览器不支持 video 功能，请更换其他浏览器观看 -
-        </video>
-        <div class="year-video-icon"></div>
     </div>
     <script src="script/jquery.min.js"></script>
+    <script src="script/video.min.js"></script>
     <script>
-        var Media = document.getElementById("media");
-
-        console.log(Media.duration);
-        $('.year-video-icon').on('click',function(){
-            $(this).addClass('hide');
-            Media.play();
-        });
-
-        $('.year-video').on('click',function(){
-            var $videoIcon = $('.year-video-icon');
-            if($videoIcon.hasClass('hide')){
-                $videoIcon.removeClass('hide');
-                Media.pause();
-            }else{
-                return false;
-            }
-        });
-
-        $('.year-video').hover(function(){
-            if(!Media.paused){
-                Media.controls = true;
-            }
-        },function(){
-            Media.controls = false;
-        });
-
+//        var Media = document.getElementById("media");
+//
+//        $('.year-video-icon').on('click',function(){
+//            $(this).addClass('hide');
+//            Media.play();
+//        });
+//
+//        $('.year-video').on('click',function(){
+//            var $videoIcon = $('.year-video-icon');
+//            if($videoIcon.hasClass('hide')){
+//                $videoIcon.removeClass('hide');
+//                Media.pause();
+//            }else{
+//                return false;
+//            }
+//        });
+//
+//        $('.year-video').hover(function(){
+//            if(!Media.paused){
+//                Media.controls = true;
+//            }
+//        },function(){
+//            Media.controls = false;
+//        });
+//
+//        Media.addEventListener('ended',function(){
+//            alert('结束了')
+//            var $videoIcon = $('.year-video-icon');
+//            $videoIcon.addClass('hide');
+//        });
     </script>
 </body>
 </html>
