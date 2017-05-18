@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>banner</title>
+    <meta name="keywords" content="龙贷手机版，P2P出借，出借，个人贷款 "/>
+    <meta name="description" content="龙贷2014年3月成立于北京，是一家具备完整自主研发能力的互联网金融创新型企业。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" draggable="false">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-itunes-app" content="app-id=900365369">
+    <link rel="stylesheet" href="./css.css" />
+</head>
+<body>
+<div ng-banner="" class="banner-wrap ng-scope ng-isolate-scope" banner-active-num="bannerActiveNum"
+     banner-left-num="bannerLeftNum">
+    <ul class="banner-con clearfloat" style="height: 122.027px; transform: translate3d(-141110px, 0px, 0px);">
+        <li data-index="1" data-bannerlistnumber="1" data-url="/noticeDetail?id=18889039"
+            class="f-l banner-con-list active" style="left: 141110px;"><a class="banner-href" href="javascript:;"><img
+                class="banner-image"
+                src="https://m.longdai.com/dist/app/core/images/banner/shifendaozhang01.dc64305e.jpg"></a></li>
+        <li data-index="2" data-bannerlistnumber="2"
+            data-url="https://m.longdai.com/v2/report/report2016" class="f-l banner-con-list" style="left: 139610px;"><a
+                class="banner-href" href="javascript:;"><img class="banner-image"
+                                                             src="https://m.longdai.com/dist/app/core/images/banner/report_1601_h5.8db8de43.png"></a>
+        </li>
+        <li data-index="3" data-bannerlistnumber="3" data-url="/noticeDetail?id=18889061"
+            class="f-l banner-con-list" style="left: 140360px;"><a class="banner-href" href="javascript:;"><img
+                class="banner-image" src="https://m.longdai.com/dist/app/core/images/banner/weixin01.43ae624c.jpg"></a>
+        </li>
+    </ul>
+    <div class="banner-nav-wrap">
+        <ul id="banner_nav" class="banner-nav clearfloat" style="
+    transform: translate(-234px, 0px);">
+            <li class="f-l banner-nav-list active"></li>
+            <li class="f-l banner-nav-list"></li>
+            <li class="f-l banner-nav-list"></li>
+        </ul>
+    </div>
+</div>
+<script src="./jquery-1.11.3.js"></script>
+<script>
+    function link(){
+
+        var element = $('body')
+        $(".banner-con1").css('left', 0);
+        $(".banner-con2").css('left', '300%');
+
+        clearInterval(window.timer);
+
+        var width = element.width(),height = (width*286)/750;
+
+        element.find(".banner-image:first").load(function(){
+            bannerInit(width,height);
+            autoLeft();
+        });
+
+        function bannerInit(w,h){
+            element.find(".banner-con").css('height',h);
+            element.find(".banner-con-list").each(function(k,v){
+                var $this = $(this),
+                        bannerListNumber = Number($this.data("bannerlistnumber"))-1;
+                $this.css("left",w*bannerListNumber+"px");
+            });
+        }
+
+
+        function autoLeft(){
+            window.timer = setInterval(function () {
+                moveLeft(10);
+            },6000);
+
+        }
+
+        var canMoveLeft = true,canMoveRight = true;
+        function moveLeft(speed){
+
+            var elWidth = element.width(),$bannerCon = element.find(".banner-con");
+            if(canMoveLeft == false){
+                return false;
+            }
+
+            $()
+            window.bannerActiveNum++;
+
+            if(window.bannerActiveNum == 4){
+                window.bannerActiveNum = 1;
+            }
+
+
+
+            var trans = $bannerCon.css("transform"),
+                    transWidthStart = new WebKitCSSMatrix(trans).m41,
+                    transWidthEnd = transWidthStart-elWidth;
+
+
+
+            element.find(".banner-nav-list").removeClass("active");
+
+            if(scope.bannerActiveNum == 1){
+                element.find(".banner-nav-list:eq(0)").addClass("active");
+
+                var beforeLeft = Number(element.find(".banner-con-list:eq(2)").css("left").split("px")[0]) + element.width();
+                element.find(".banner-con-list:eq(0)").css({
+                    "left":beforeLeft+"px"
+                })
+            }else if(scope.bannerActiveNum == 2){
+                element.find(".banner-nav-list:eq(1)").addClass("active");
+
+                var beforeLeft = Number(element.find(".banner-con-list:eq(0)").css("left").split("px")[0]) + element.width();
+                element.find(".banner-con-list:eq(1)").css({
+                    "left":beforeLeft+"px"
+                })
+            }else if(scope.bannerActiveNum == 3){
+                element.find(".banner-nav-list:eq(2)").addClass("active");
+
+                var beforeLeft = Number(element.find(".banner-con-list:eq(1)").css("left").split("px")[0]) + element.width();
+                element.find(".banner-con-list:eq(2)").css({
+                    "left":beforeLeft+"px"
+                })
+            }
+
+            var setTimer = setInterval(function(){
+                canMoveLeft = false;
+                element.off();
+                if(transWidthStart > transWidthEnd + speed){
+                    transWidthStart = transWidthStart - speed;
+                    $bannerCon.css('-webkit-transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                    $bannerCon.css('-moz-transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                    $bannerCon.css('transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                }else{
+                    $bannerCon.css('transform',"translate3d("+transWidthEnd+"px, 0px, 0px)");
+                    clearInterval(setTimer);
+                    canMoveLeft = true;
+                    element.off();
+
+                    touch();
+                }
+            },1);
+
+        }
+        function moveRight(speed){
+            var elWidth = element.width(),$bannerCon = element.find(".banner-con");
+
+            if(canMoveRight == false){
+                return false;
+            }
+            scope.bannerActiveNum--;
+
+            if(scope.bannerActiveNum == 0){
+                scope.bannerActiveNum = 3;
+            }
+
+
+            var trans = $bannerCon.css("transform"),
+                    transWidthStart = new WebKitCSSMatrix(trans).m41,
+                    transWidthEnd = transWidthStart+elWidth;
+
+            element.find(".banner-nav-list").removeClass("active");
+
+            if(scope.bannerActiveNum == 1){
+                element.find(".banner-nav-list:eq(0)").addClass("active");
+
+                var beforeLeft = Number(element.find(".banner-con-list:eq(0)").css("left").split("px")[0]) - element.width();
+                element.find(".banner-con-list:eq(2)").css({
+                    "left":beforeLeft+"px"
+                })
+            }else if(scope.bannerActiveNum == 2){
+                element.find(".banner-nav-list:eq(1)").addClass("active");
+
+                var beforeLeft = Number(element.find(".banner-con-list:eq(1)").css("left").split("px")[0]) - element.width();
+                element.find(".banner-con-list:eq(0)").css({
+                    "left":beforeLeft+"px"
+                })
+            }else if(scope.bannerActiveNum == 3){
+                element.find(".banner-nav-list:eq(2)").addClass("active");
+
+                var beforeLeft = Number(element.find(".banner-con-list:eq(2)").css("left").split("px")[0]) - element.width();
+                element.find(".banner-con-list:eq(1)").css({
+                    "left":beforeLeft+"px"
+                })
+            }
+
+            var setTimer = setInterval(function(){
+
+                canMoveRight = false;
+                element.off();
+
+                if(transWidthStart > transWidthEnd - speed){
+                    transWidthStart = transWidthStart + speed;
+                    $bannerCon.css('-webkit-transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                    $bannerCon.css('-moz-transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                    $bannerCon.css('transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                }else{
+                    $bannerCon.css('-webkit-transform',"translate3d("+transWidthEnd+"px, 0px, 0px)");
+                    clearInterval(setTimer);
+                    canMoveRight = true;
+                    element.off();
+
+                    touch();
+                }
+            },1);
+        }
+
+        //$window.onresize = function(){
+        //    var width = element.width(),height = (width*286)/750;
+        //    bannerInit(width,height);
+        //}
+
+        function touch(){
+            var startPos={},endPos={};
+            element.on("touchstart",function(event){
+                clearInterval(window.timer);
+                //event.preventDefault();                      // 阻止触摸事件的默认动作,即阻止滚屏
+                var touch = event.originalEvent.touches[0];                // touches数组对象获得屏幕上所有的touch，取第一个touch
+                startPos = {                                 // 取第一个touch的坐标值
+                    x: touch.pageX,
+                    y: touch.pageY,
+                    time: +new Date
+                };
+            });
+            element.on("touchmove",function(event){
+                clearInterval(window.timer);
+                //event.preventDefault();                      // 阻止触摸事件的默认行为，即阻止滚屏
+                // 当屏幕有多个touch或者页面被缩放过，就不执行move操作
+                if (event.originalEvent.touches.length > 1 || event.scale && event.scale !== 1) return;
+                var touch = event.originalEvent.touches[0];
+                endPos = {
+                    x: touch.pageX - startPos.x,
+                    y: touch.pageY - startPos.y
+                };
+
+
+            });
+            element.on("touchend",function(event){
+                var duration = +new Date - startPos.time;    // 滑动的持续时间
+
+                if (Number(duration) > 100) {
+                    // 判断是左移还是右移，当偏移量大于50时执行
+                    if (endPos.x > 50) {
+                        moveRight(20);
+
+                    } else if(endPos.x < -50) {
+                        clearInterval(window.timer);
+                        moveLeft(20);
+                    }else{
+
+                        clearInterval(window.timer);
+
+                        var url = element.find(".banner-con-list.active").data("url");
+
+                        location.href = url;
+                    }
+                }
+
+                var setTimeId2 = setTimeout(function(){
+                    if (event.originalEvent.touches.length == 0){
+                        clearTimeout(setTimeId2);
+                        clearInterval(window.timer);
+                        autoLeft();
+                    };
+                },2000);
+
+
+            });
+            element.on("click",function(event){
+                //event.preventDefault();                      // 阻止触摸事件的默认行为，即阻止滚屏
+
+                clearInterval(window.timer);
+
+                var url = element.find(".banner-con-list.active").data("url");
+
+                location.href = url;
+
+            });
+        }
+
+        touch();
+    }
+    link();
+</script>
+</body>
+</html>

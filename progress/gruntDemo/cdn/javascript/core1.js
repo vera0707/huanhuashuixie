@@ -1,1 +1,0 @@
-console.log("这是core1文件");
