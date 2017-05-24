@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>banner</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+          draggable="false"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-itunes-app" content="app-id=900365369"/>
+    <meta name="keywords" content="龙贷下载，龙贷app下载，龙贷客户端下载"/>
+    <meta name="description" content=" 下载龙贷出借app（IOS版/Android版），第一时间查看最新标的，随时随地查看出借收益，首次登陆赠送5元红包和一张免费提现券。"/>
+    <style>
+        .banner-wrap{
+            width: 100%;
+            overflow: hidden;
+        }
+        .banner-con{
+            width: 100%;
+            position: relative;
+            left: 0;
+            transform: translate3d(0, 0px, 0px);
+        }
+        .banner-con-list{
+            display: block;
+            width: 100%;
+            padding-bottom: 10px;
+            position: absolute;
+        }
+        .banner-href,.banner-image{
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div ng-banner class="banner-wrap" banner-active-num="bannerActiveNum" banner-left-num="bannerLeftNum">
+    <ul class="banner-con clearfloat">
+        <li  data-bannerlistnumber="1" class="f-l banner-con-list active">
+            <a class="banner-href" href="javascript:;">
+                <img class="banner-image" src="https://m.longdai.com/dist/app/core/images/banner/weixin01.43ae624c.jpg"/>
+            </a>
+        </li>
+        <li  data-bannerlistnumber="2"  class="f-l banner-con-list">
+            <a class="banner-href" href="javascript:;">
+                <img class="banner-image" src="https://m.longdai.com/dist/app/core/images/banner/shifendaozhang01.dc64305e.jpg"/>
+            </a>
+        </li>
+        <li  data-bannerlistnumber="3" data-url="/noticeDetail?id=18889061" class="f-l banner-con-list">
+            <a class="banner-href" href="javascript:;">
+                <img class="banner-image" src="https://m.longdai.com/dist/app/core/images/banner/report_1601_h5.8db8de43.png"/>
+            </a>
+        </li>
+    </ul>
+</div>
+<script src="singlePage/1.9.2/vendor/jquery.min.js"></script>
+<script>
+    function Banner(){
+        this.bannerActiveNum = 1;
+        this.canMoveLeft = true;
+        this.canMoveRight = true;
+        this.liWidth = 0;
+        this.init();
+    }
+    $.extend(Banner.prototype,{
+        init: function(){
+            var self = this;
+            clearInterval(window.timer);
+
+            self.liWidth = $('.banner-con').width();
+            var HEIGHT = (self.liWidth*286)/750;
+
+            $(".banner-image:first").load(function(){
+                self.bannerInit(self.liWidth,HEIGHT);
+                self.autoLeft();
+            });
+
+            self.touch();
+        },
+        bannerInit: function(w,h){
+            var self = this;
+            $(".banner-con").height(h);
+            $(".banner-con-list").width(w + 'px').each(function(k,v){
+                var $this = $(this),
+                        bannerListNumber =  Number($this.data("bannerlistnumber"))-1;
+                $this.css({
+                    left:  w*bannerListNumber+"px"
+                });
+            });
+        },
+        autoLeft: function(){
+            var self = this;
+
+            window.timer = setInterval(function(){
+                self.moveLeft(10);
+            },4000);
+
+        },
+        moveLeft: function(speed){
+            var self = this,
+                    $bannerCon = $('.banner-con'),
+                    $conList = $(".banner-con-list"),
+                    $bannerWap = $('.banner-wrap');
+
+            if(self.canMoveLeft == false){
+                return false;
+            }
+            self.bannerActiveNum++;
+
+            if(self.bannerActiveNum == 4){
+                self.bannerActiveNum = 1;
+            }
+
+            var trans = $bannerCon.css("transform"),
+                    transWidthStart = new WebKitCSSMatrix(trans).m41,
+                    liWidth = self.liWidth,
+                    transWidthEnd = transWidthStart - liWidth;
+
+            if(self.bannerActiveNum == 1){
+                var beforeLeft = Number($(".banner-con-list").eq(2).css("left").split("px")[0]) + liWidth;
+                $conList.eq(0).css({"left": beforeLeft+"px"})
+            }else if(self.bannerActiveNum == 2){
+                var beforeLeft = Number($(".banner-con-list").eq(0).css("left").split("px")[0]) + liWidth;
+                $conList.eq(1).css({"left":beforeLeft+"px"})
+            }else if(self.bannerActiveNum == 3){
+                var beforeLeft = Number($(".banner-con-list").eq(1).css("left").split("px")[0]) + liWidth;
+                $conList.eq(2).css({"left":beforeLeft+"px"})
+            }
+
+            var setTimer = setInterval(function(){
+
+                self.canMoveLeft = false;
+                $bannerWap.off();
+
+                if(transWidthStart > transWidthEnd + speed){
+                    transWidthStart = transWidthStart - speed;
+                    $bannerCon.css('-webkit-transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                    $bannerCon.css('-moz-transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                    $bannerCon.css('transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                }else{
+                    $bannerCon.css('-webkit-transform',"translate3d("+transWidthEnd+"px, 0px, 0px)");
+                    clearInterval(setTimer);
+                    self.canMoveLeft = true;
+                    $bannerWap.off();
+
+                }
+            },1);
+        },
+        moveRight: function(speed){
+            var self = this,
+                    liWidth = self.liWidth,
+                    $bannerCon = $(".banner-con"),
+                    $bannerList = $(".banner-con-list"),
+                    $bannerWap = $('.banner-wrap');
+
+            if(self.canMoveRight == false){
+                return false;
+            }
+
+            self.bannerActiveNum--;
+
+            if(self.bannerActiveNum == 0){
+                self.bannerActiveNum = 3;
+            }
+
+            var trans = $bannerCon.css("transform"),
+                    transWidthStart = new WebKitCSSMatrix(trans).m41,
+                    transWidthEnd = transWidthStart + self.liWidth;
+
+
+            if(self.bannerActiveNum == 1){
+                var beforeLeft = Number($(".banner-con-list").eq(0).css("left").split("px")[0]) - liWidth;
+                $bannerList.eq(2).css({"left":beforeLeft+"px"})
+            }else if(self.bannerActiveNum == 2){
+                var beforeLeft = Number($(".banner-con-list").eq(1).css("left").split("px")[0]) - liWidth;
+                $bannerList.eq(0).css({"left":beforeLeft+"px"})
+            }else if(self.bannerActiveNum == 3){
+                var beforeLeft = Number($(".banner-con-list").eq(2).css("left").split("px")[0]) - liWidth;
+                $bannerList.eq(1).css({"left":beforeLeft+"px"})
+            }
+
+            var setTimer = setInterval(function(){
+                self.canMoveRight = false;
+                $bannerWap.off();
+
+                if(transWidthStart > transWidthEnd - speed){
+                    transWidthStart = transWidthStart + speed;
+                    $bannerCon.css('-webkit-transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                    $bannerCon.css('-moz-transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                    $bannerCon.css('transform',"translate3d("+transWidthStart+"px, 0px, 0px)");
+                }else{
+                    $bannerCon.css('-webkit-transform',"translate3d("+transWidthEnd+"px, 0px, 0px)");
+                    clearInterval(setTimer);
+                    self.canMoveRight = true;
+                    $bannerWap.off();
+
+                }
+            },1);
+        },
+        touch: function(){
+            var self = this, startPos={}, endPos={},$bannerList = $('.banner-con-list');
+
+            $bannerList.on("touchstart",function(event){
+                clearInterval(window.timer);
+//                event.preventDefault();
+                var touch = event.originalEvent.touches[0];                // touches数组对象获得屏幕上所有的touch，取第一个touch
+                startPos = {                                 // 取第一个touch的坐标值
+                    x: touch.pageX,
+                    y: touch.pageY,
+                    time: +new Date
+                };
+            });
+
+            $bannerList.on("touchmove",function(event){
+                clearInterval(window.timer);
+                //event.preventDefault();                      // 阻止触摸事件的默认行为，即阻止滚屏
+                // 当屏幕有多个touch或者页面被缩放过，就不执行move操作
+                if (event.originalEvent.touches.length > 1 || event.scale && event.scale !== 1) return;
+                var touch = event.originalEvent.touches[0];
+                endPos = {
+                    x: touch.pageX - startPos.x,
+                    y: touch.pageY - startPos.y
+                };
+
+
+            });
+            $bannerList.on("touchend",function(event){
+                var duration = +new Date - startPos.time;    // 滑动的持续时间
+
+                if (Number(duration) > 100) {
+                    // 判断是左移还是右移，当偏移量大于50时执行
+                    if (endPos.x > 50) {
+                        self.moveRight(20);
+
+                    } else if(endPos.x < -50) {
+                        clearInterval(window.timer);
+                        self.moveLeft(20);
+                    }else{
+                        clearInterval(window.timer);
+                    }
+                }
+
+                var setTimeId2 = setTimeout(function(){
+                    if (event.originalEvent.touches.length == 0){
+                        clearTimeout(setTimeId2);
+                        clearInterval(window.timer);
+                        self.autoLeft();
+                    };
+                },2000);
+            });
+        }
+    });
+
+    new Banner();
+</script>
+</body>
+</html>
