@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery-circle-progress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" draggable="false">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-itunes-app" content="app-id=900365369">
+</head>
+<body>
+<div class="circle" data-value="0.1">
+    <div class="bidding-name"></div>
+</div>
+<script src="./jquery.min.js"></script>
+<script src="circle-progress.js"></script>
+<script>
+    $('.circle').off().circleProgress({
+        size: 60,
+        emptyFill:'#eee',
+        thickness:6,
+        startAngle: -Math.PI / 2 * 1,
+        fill: {
+            gradientAngle: -Math.PI / 2 * 1,
+//            image:'./progress_round2@2x.png'
+        }
+    }).on('circle-animation-progress',function(){
+        $(this).find('.bidding-name').html('出借');
+    });
+</script>
+</body>
+</html>

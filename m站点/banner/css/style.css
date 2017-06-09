@@ -1,0 +1,46 @@
+/* MeyerWeb Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;
+}
+
+
+/* Base text styles */
+
+body{
+    padding:10px 50px 0 0;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:14px;
+    color:#232323;
+    background-color:#FFF;
+    margin:0;
+    line-height:1.8em;
+    -webkit-font-smoothing:antialiased;
+}
+h1, h2, h3, h4, h5, h6{color:#232323;margin:36px 0 10px;}
+
+
+#menu-select{margin-top:10px;text-align:center;}
+#menu-select span{display:inline-block;border:2px solid #777;border-radius:5px;padding:5px;margin:5px;width:60px;cursor:pointer;}
+#animation-effect{border:0;width:204px;height:357px;background-color:#000000;margin-top:55px;}
+#animation-effect ul li img{border:0;}
+#menu-select span:hover{background-color:#e74c3c;}
+#menu-select span.on{background-color:#e74c3c;}
+
+/* ÊÖ»ú»ÃµÆÆ¬²¿·Ö */
+#iSlider-effect-wrapper{height:517.5px;width:375px;margin:0 auto;background:url('http://www.jq22.com/demo/jQuery-jdt20160307/images/bg_1.png') no-repeat top center;background-size:100%;overflow:hidden;position:relative;}
+.iSlider-effect{height:310.5px;width:225px;overflow:hidden;position:relative;margin:0 auto;border:1px solid #000000;}
+.iSlider-effect ul{list-style:none;padding:0;margin:0;height:100%;overflow:hidden;}
+.iSlider-effect li{position:absolute;margin:0;padding:0;height:100%;overflow:hidden;display:-webkit-box;-webkit-box-pack:center;-webkit-box-align:center;list-style:none;}
+.iSlider-effect ul li img{max-width:100%;max-height:100%;margin:0;padding:0;}
+.iSlider-effect div{background-color:#ffffff;padding:3px;}

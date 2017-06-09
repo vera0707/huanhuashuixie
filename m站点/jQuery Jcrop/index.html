@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>裁剪</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="jquery.Jcrop.css">
+    <style>
+        .box{
+            width: 300px;
+            margin: 50px auto 0;
+            border: 1px solid red;
+        }
+        .box img{
+            display: block;
+            border: 1px solid blue;
+        }
+        .marginAuto{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <img id="element_id" src="http://www.jq22.com/demo/jQuery-jdt20160307/images/1.jpg" />
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="jquery.Jcrop.js"></script>
+<script>
+    $('#element_id').Jcrop({
+        addClass: 'marginAuto'
+    });
+</script>
+</body>
+</html>
