@@ -1,0 +1,87 @@
+第一章
+
+    1.软件: 系统软件 vs 应用软件
+
+    2.人与计算机做交互:使用计算机语言
+         图形化界面 vs 命令行方式
+
+    3.语言的分类:
+        第一代语言 机器语言
+        第二代语言 汇编语言
+        第三代语言 高级语言 （面向过程 -->面向对象）
+
+    4.java语言的特性:
+        ① 面向对象性
+        ② 健壮性
+        ③ 跨平台性 white once,run anywhere --JVM(JAVA虚拟机 直接作用在计算机之上 同时垃圾回收)
+
+    5.安装JDK及配置环境变量
+        1)傻瓜式安装JDK
+        2)配置path:window(在执行命令时所有搜寻的路径)环境变量
+          我们需要将JDK中的bin目录: D:\JAVA\jdk1.7.0.07\bin保存在path环境变量下
+        3)测试:在命令行窗口,任意的文件目录下,执行javac.exe或者java.exe都可以调用成功
+
+        >河床好比操作底层,jdk好比是水,java应用程序好比是船
+        注意: jdk jre jvm
+    6.如何编写并运行第一个java程序
+        [过程]编写--编译--运行
+        1)编写 : 每一个java文件都是.java结尾的源文件[HelloWord] java程序就存在于源文件中
+            class HelloWord{
+                //程序主方法 是程序的入口
+                public static void main(String[] args){
+                    //要执行的代码
+                    System.out.prinlt("Hello World");
+
+                }
+             }
+
+             1.源文件是以.java为扩展名,源文件的基本组成是类
+             2.一个源文件中最多只能有一个public类.其他类的个数不限.如果源文件包含一个public类,则文件名必须按照该类名命名
+             3.java应用程序的执行入口是main方法.它有固定的书写格式 : public static void main(String[] args){ ... }
+             4.java语言严格区分大小写
+             5.java方法由一条条语句构成,每个语句由";"结束
+             6.大括号都是成对出现的,缺一不可
+        2)编译:在源文件所在的目录下执行 执行javac.exe --生成-->诸多个.class结尾的字节码文件
+        3)运行:生成的字节码文件通过java.exe解释执行
+    7.会调试程序中出现的问题
+    8.注释: ①单行注释 // ②多行注释 /* */ 多行注释不能嵌套 ③文档注释 /** */
+    9.JDK提供的关于旗下所有的包/类的文档API
+
+
+
+
+第二章
+1.  1)关键字
+    2)保留字
+    2)标识符:凡是自己可以起名字的地方都叫标志符
+2. 命名规则 一定要遵守
+3. java中的名称命名规则 不遵守不会报错
+4. 变量
+    java中的变量按照数据类型来分类:
+        基本数据类型
+          整型: byte(1 bit) short(2 bit) int(4 bit) long(8 bit)
+          浮点型: float(4 bit) double
+          字符型: char
+          布尔型: boolean(只能取值位true false)
+5.逻辑运算符 & | && || ^ !
+    a         b       a&b     a|b     !a        a^b      a&&b     a||b
+    true     true    true     true    false    false     true     true
+    true     false   false    true    false    true      false    true
+    false    true    false    true    true     true      false    true
+    false    false   false    false   true     false     false    false
+
+    & 和 && 的区别:
+        & 不管左边是true 还是false 右边都会执行
+        && 当左边为false时,右边不运算
+    | 和 || 的区别
+         | : 当左端为true时,右侧照样做运算
+         ||: 当左端为true时,右端不再进行运算
+
+6.位运算
+    << 左移
+    >> 右移
+    >>> 无符号右移
+    & 与运算
+    | 或运算
+    ^ 异或运算
+    ~ 反码

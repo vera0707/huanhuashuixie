@@ -1,0 +1,32 @@
+
+ 创建表格
+      CREATE TABLE `table_name` (
+        ...
+      )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+      主键         PRIMARY KEY (`the_key`)
+      自增         AUTO_INCREMENT
+      不为空       NOT NULL
+      字段注释     COMMENT "注释内容"
+      取唯一值      UNIQUE KEY `key_name` (`key_name`)
+      被参照表和外码 PEFERENCES table_name(`key_name`)
+
+
+ 删除表格
+     DROP TABLE `table_name`
+
+
+
+ 修改表格
+     ALTER TABLE table_name modify 字段名称 字段类型 [完整性约束条件]
+     修改时如果不带完整性约束条件,原有的约束条件将丢失,如果想保留修改时就得带上完整性约束条件
+     例: ALTER TABLE `user10` MODIFY `email` VARCHAR(200) NOT NULL DEFAULT 'a@a.com';
+
+     将 key_1 移到key_2后面
+     ALTER TABLE `tale_name` MODIFY `key_1` CHAR(10) AFTER `key_2`
+
+     将key_1放在第一个,保留原完整性约束条件
+     ALTER TABLE `user_table` MODIFY `KEY_1` CHAR(32) NOT NULL DEFAULT '123' FIRST;
+
+
