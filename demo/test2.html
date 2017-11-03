@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打柚子游戏</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow: hidden;
+            background-color: #ccc;
+        }
+        .balloon{
+            width: 160px;
+            height: 160px;
+            background-color: #FAFA26;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transition: all linear;
+            -moz-transition: all linear;
+            -ms-transition: all linear;
+            -o-transition: all linear;
+            transition: all linear;
+
+            -webkit-box-shadow: -8px -8px 80px -8px #873940;
+            -moz-box-shadow: -8px -8px 80px -8px #873940;
+            box-shadow: -8px -8px 80px -8px #873940;
+
+
+            -webkit-border-radius: 160px 160px 64px 160px;
+            -moz-border-radius: 160px 160px 64px 160px;
+            border-radius: 160px 160px 64px 160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="balloon"></div>
+
+    <script>
+        var num = 10,
+                bZ = 160,
+                wH = window.innerHeight,
+                wW = window.innerWidth,
+                timer;
+
+        init(15);
+        move();
+
+
+        timer = setInterval(move,1000/30);
+
+        document.addEventListener('click',function(event){
+            if(event.target.className.toLowerCase() === "balloon"){
+                var ele = event.target;
+                boom.call(ele,function(){
+                    this.parentNode.removeChild(this);
+                }.bind(ele));
+
+                init(1);
+            }
+        })
+
+        function boom
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D立方体</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            background: linear-gradient(135deg,#295fff 0%,#aa333d 80%);
+            cursor: pointer;
+            height: 100%;;
+        }
+        .content{
+            margin-top: 200px;
+            perspective: 1000px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            color: #fffdf5;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+            margin: 0 auto;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: transform 1s;
+            -moz-transition: transform 1s;
+            -ms-transition: transform 1s;
+            -o-transition: transform 1s;
+            transition: transform 1s;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .box > div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #8d28ff;
+            position: absolute;
+            background: #333;
+            opacity: 0.5;
+            -webkit-transition: transform 0.4s;
+            -moz-transition: transform 0.4s;
+            -ms-transition: transform 0.4s;
+            -o-transition: transform 0.4s;
+            transition: transform 0.4s;
+        }
+        .box .out-font{
+            transform: translateZ(100px);
+        }
+        .box.active .out-font{
+            transform: translateZ(200px);
+        }
+        .box .out-back{
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+        .box.active .out-back{
+            transform: translateZ(-200px) rotateY(180deg);
+        }
+        .box .out-left{
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+        .box.active .out-left{
+            transform: translateX(-200px) rotateY(-90deg);
+        }
+        .box .out-right{
+            transform: translateX(100px) rotateY(90deg);
+        }
+        .box.active .out-right{
+            transform: translateX(200px) rotateY(90deg);
+        }
+        .box .out-top{
+            transform: translateY(-100px) rotateX(90deg);
+        }
+        .box.active .out-top{
+            transform: translateY(-200px) rotateX(90deg);
+        }
+        .box .out-bottom{
+            transform: translateY(100px) rotateX(-90deg);
+        }
+        .box.active .out-bottom{
+            transform: translateY(200px) rotateX(-90deg);
+        }
+        .box span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: #8d28ff;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+        }
+        .box .in-font{
+            transform: translateZ(50px);
+        }
+        .box .in-back{
+            transform: translateZ(-50px) rotateY(180deg);
+        }
+        .box .in-left{
+            transform: translateX(-50px) rotateY(-90deg);
+        }
+        .box .in-right{
+            transform: translateX(50px) rotateY(90deg);
+        }
+        .box .in-top{
+            transform: translateY(-50px) rotateX(90deg);
+        }
+        .box .in-bottom{
+            transform: translateY(50px) rotateX(-90deg);
+        }
+    </style>
+    
+</head>
+<body>
+    
+
+    <div class="content">
+        <div class="box">
+            <div class="out-font">前</div>
+            <div class="out-back">后</div>
+            <div class="out-left">左</div>
+            <div class="out-right">右</div>
+            <div class="out-top">上</div>
+            <div class="out-bottom">下</div>
+            
+            <span class="in-font"></span>
+            <span class="in-back"></span>
+            <span class="in-left"></span>
+            <span class="in-right"></span>
+            <span class="in-top"></span>
+            <span class="in-bottom"></span>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(function(){
+            $(".box").on("click",function(){
+                if($(this).hasClass("active")){
+                    $(this).removeClass("active");
+                }else{
+                    $(this).addClass("active")
+                }
+            });
+
+
+            var rotateY = 0,
+                rotateX = 0,
+                flag = false,
+                old_x = 0,
+                old_y = 0;
+
+
+            document.onmousedown = function(e){
+                flag = true;
+                old_x = e.pageX;
+                old_y = e.pageY;
+            }
+
+            document.onmouseup = function(){
+                flag = false;
+            }
+
+            document.onmousemove = function(e){
+                if(flag){
+                    var _x = e.pageX - old_x;
+                    var _y = e.pageY - old_y;
+
+                    rotateX += _x/70;
+                    rotateY += _y/70;
+
+                    $(".box").css({
+                        transition: 'linear',
+                        transform: 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)'
+                    });
+                }
+            }
+
+        });
+    </script>
+
+</body>
+</html>
