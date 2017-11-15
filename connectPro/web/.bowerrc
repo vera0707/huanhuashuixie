@@ -1,0 +1,12 @@
+{
+  "directory" : "/public/vendor",
+  "json"      : "",
+  "endpoint"  : "",
+  "searchpath"  : "",
+  "shorthand_resolver" : "",
+  "devDependencies": {
+    "sweetalert": "*",
+    "jquery": "*",
+    "bootstrap": "*"
+  }
+}

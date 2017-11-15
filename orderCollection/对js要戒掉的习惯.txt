@@ -29,3 +29,9 @@
     const arr = `<div> 内容 </div>
 
                 <img src="" alt="" /> ${name}`;
+
+
+
+4.封装console
+
+    const log = console.log.bind(console)
