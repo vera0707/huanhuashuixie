@@ -1,0 +1,14 @@
+{
+  "name": "webroot",
+  "version": "1.0.0",
+  "description": "学生管理系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "管理系统"
+  ],
+  "author": "谢雨轩",
+  "license": "ISC"
+}

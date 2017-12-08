@@ -1,0 +1,37 @@
+
+1. 循环语句简写
+
+    let arr = [5,3,6];
+
+    for(let i of arr){     =>等于 let i = 0; i < arr.length;i++
+        ......
+    }
+
+
+
+2.十进制数
+
+    for(let i = 0;i < 1e3; i++){   =>1e3 等于 1000
+        ......
+    }
+
+
+3.多行字符串
+
+    const arr = "<div>"
+                +"内容</div>"
+                +"<img src= alt="" />"
+
+
+    等于:
+
+    const name = '你的名字';
+    const arr = `<div> 内容 </div>
+
+                <img src="" alt="" /> ${name}`;
+
+
+
+4.封装console
+
+    const log = console.log.bind(console)
