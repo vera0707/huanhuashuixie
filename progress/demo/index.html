@@ -283,14 +283,36 @@
                     this.index ++;
                     this.index = this.index%2;
                 }
+            };
+
+            this.shoot = function(){
+                this.time++;
+                if(this.time%20 == 0){
+                    var bullet = new Bullet(BULLET);
+                    bullets[bullets.length] = bullet;
+                }
+            };
+
+
+            this.bang = function(){
+                this.life--;
+                // 我方飞机执行爆破动画
+                this.down = true;
+                // 将数组的角标切换的爆破动画的第一张
+                this.index = this.length;
             }
         };
 
-        this.shoot = function(){
-            this.time++;
-            if(this.time%20 == 0){
-                var bullet = new Bullet(BULLET);
 
+        function Bullet(config){
+            Compant.call(this,config);
+            // 定义子弹的坐标值
+
+            this.x = hero.x + hero.width/2 + this.width;
+            this.y = hero.y - hero.height - 10;
+
+            this.step = function(){
+                this.y -= 2;
             }
         }
     }
