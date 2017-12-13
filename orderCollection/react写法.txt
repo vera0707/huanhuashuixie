@@ -1,0 +1,96 @@
+1.写法一 ...的props传值写法
+
+    function App1() {
+        return <Greeting firstName="Ben" lastName="Hector" />;
+    }
+
+    function App2() {
+        const props = {firstName: 'Ben', lastName: 'Hector'};
+        return <Greeting {...props} />;
+    }
+
+
+2.写法二 在单页面定义多个组件时可以这样写
+
+    const MyComponents = {
+        DatePicker: function DatePicker(props) {
+            return <div>Imagine a {props.color} datepicker here.</div>;
+        }
+    }
+
+    function BlueDatePicker() {
+        return <MyComponents.DatePicker color="blue" />;
+    }
+
+
+
+3.写法三 灵活选择子组件
+
+    import React from 'react';
+    import { PhotoStory, VideoStory } from './stories';
+
+    const components = {
+        photo: PhotoStory,
+        video: VideoStory
+    };
+
+    function Story(props) {
+        // 正确！JSX 标签名可以为大写开头的变量。
+        const SpecificStory = components[props.storyType];
+        return <SpecificStory story={props.story} />;
+    }
+
+
+
+4.写法四 个人误解,总是包裹一个元素
+
+
+    class Text extends React.Component{
+        render(){
+            // 不需要使用额外的元素包裹数组中的元素
+            return [
+                // 不要忘记 key :)
+                <li key="A">First item</li>,
+                <li key="B">Second item</li>,
+                <li key="C">Third item</li>,
+            ];
+        }
+    }
+
+
+5.写法五 渲染多个列表
+
+
+    function Item(props) {
+        return <li>{props.message}</li>;
+    }
+
+    function TodoList() {
+        const todos = ['finish doc', 'submit pr', 'nag dan to review'];
+        return (
+            <ul>
+                {todos.map((message) => <Item key={message} message={message} />)}
+            </ul>
+        );
+    }
+
+
+
+
+6.写法六 只会在showHeader为true时渲染Header
+
+
+function text(){
+    return (
+        <div>
+            {showHeader && <Header />}
+            <Content />
+        </div>
+    )
+}
+
+
+
+
+
+
