@@ -41,6 +41,7 @@
     1.封装性
         通过私有化类的成员变量,通过公共的get和set方法调用和修改
         还可以对类的其他结构进行"封装"
+
         权限修饰符 public protected 缺省 private
     2.继承性
         通过一个雷A继承另一个类,就可以获取类B中的结构（主要的:属性 方法 构造器)
@@ -60,3 +61,32 @@
     6.interface 表示一个接口 与类并列的一个解构
         类与接口通过实现发生关系
     7.package import...
+7.对象
+    1.对象的存储 ①数组 （基本数据类型 & 引用数据类型）② 集合（引用数据类型）
+        > 数组存储数据的弊端
+    2.集合框架
+            Collection接口 方法: add addAll size clear isEmpty remove removeAll retainAll equals contains containsAll iterator toArray
+                List:元素有序,可重复的集合
+                    ArraryList(主要的实现类)
+                    LinkedList
+                    Vector
+                Set:元素无序,不可重复的集合 常用方法都是Collection定义的
+                    HashSet
+                    LinkedHashSet
+                    TreeSet
+            Map接口
+                具有映射关系 key-value对 的集合
+                    HashMap / LinkedHashMap / TreeMap / Hashtable(子类 Properties)
+    3.添加进List集合中的元素（或对象）所在的类一定到重写equals()方法;
+    4.set存储的元素是无须的 不可重复的
+        1.无序性 != 随机性
+          无序性指的是元素在底层存储的位置是无序的
+        2.不可重复性
+          当向set中添加进相同的元素的时候,后面的这个不能添加进去
+
+          说明:要求添加进set中的元素所在的类,一定要重写equals()和hashCode()方法
+
+          set中的元素如何存储的呢?使用了哈希算法
+
+          当向set中添加元素时,首先调用此对象所在类的hashCode()方法,计算此对象的哈希值,用哈希值决定了此对喜欢那个在Set中的存储位置.
+          若此位置之前没有对象存储,则这个对象直接存储此位置.若此位置已有对象存储,再通过equals()方法比较两个对象是否相同.如果相同,后一个对象就不再添加进来

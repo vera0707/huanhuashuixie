@@ -1,0 +1,26 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "搭建一个webpack的项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "server": "webpack-dev-server --open",
+    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.0.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.1.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.11",
+    "postcss-loader": "^2.1.5",
+    "uglifyjs-webpack-plugin": "^1.2.5"
+  }
+}

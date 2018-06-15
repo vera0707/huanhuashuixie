@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>矩形边框</title>
+    <style>
+        .box{
+
+            width: 500px;
+            height: 350px;
+            background-image: url(https://upload-images.jianshu.io/upload_images/5994325-208c89ce03e8dea9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/500);
+            margin: 50px auto;
+            clip-path: polygon(15px 0,  calc(100% - 15px) 0,
+            100% 15px,  100% calc(100% - 15px),
+            calc(100% - 15px) 100%, 15px 100%,
+            0 calc(100% - 15px), 0 15px);
+
+            transform: perspective(90px) rotateX(5deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>

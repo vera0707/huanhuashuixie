@@ -1,0 +1,12 @@
+{
+  "short_name": "桌面快捷",
+  "name": "点我点我",
+  "icon": [
+    {
+      "src": "15856998.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "index.html"
+}

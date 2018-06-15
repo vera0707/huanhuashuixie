@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小猫叫</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .img{
+            width: 100%;
+            clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+            transition: 1s clip-path;
+        }
+
+        .img:hover{
+            clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <img src="http://mvimg10.meitudata.com/59f1b0dc966cb5233.jpg!thumb480" alt="" class="img" />
+    </div>
+
+</body>
+</html>

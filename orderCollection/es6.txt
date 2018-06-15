@@ -1,0 +1,702 @@
+一.数组的解构赋值
+   1. 交换变量的值
+
+        let x = 1; y = 2;
+        [x,y] = [y,x];
+
+   2. 从函数返回多个值
+
+        function example(){
+            return [1,2,3];
+        }
+
+        let [a,b,c] = example();
+
+
+        function example(){
+            return {
+                foo: 1,
+                bar: 2
+            }
+        }
+
+        let {foo,bar} = example();
+
+   3. 函数参数的定义
+
+        * 参数是一组有次序的值
+        function f([x,y,z]){...}
+        f([1,2,3]);
+
+        * 参数是一组无次序的值
+        function([x,y,x]){...}
+        f({z:3,y:2,x:1});
+
+   4. 提取json
+
+        let jsonData = {
+            id: 42,
+            status: "ok",
+            data: [867,5309]
+        };
+
+        let {id,status,data} = jsonData;
+
+   5. 函数参数的默认值
+
+       jQuery.ajax = function(url,{
+           async = true,
+           beforeSend = function(){},
+           cache = true,
+           complete = function(){},
+           crossDomain = false,
+           global = true,
+           ......
+       }){
+           ......
+       }
+
+   6. 遍历 Map 结构
+
+        const map = new Map();
+        map.set('first','hello');
+        map.set('second','world');
+
+        for(let [key,value] of map){
+            console.log(key + ' is ' + value);
+        }
+
+
+        *取键名
+        for(let [key] of map){ ... }
+
+        *取键值
+        for(let [value] of map){ ... }
+
+   7. 输入模块的指定方法
+
+        const { SourceMapConsumer, SourceNode } = require("source-map");
+
+
+
+二. 函数的扩展
+
+    1. 无参数抛出异常
+
+       function throwIfMissing(){
+            throw new Error('Missing parameter');
+       }
+
+       function foo(mustBeProvided = throwIfMissing()){
+            return mustBeProvided;
+       }
+
+       foo();
+
+
+    2. reset参数
+
+        function add(...values){
+            let sum = 0;
+
+            for(var val of values){
+                sum += val;
+            }
+
+            return sum;
+        }
+
+        add(2,5,3);
+
+    3. 严格模式
+
+        只要函数参数使用了默认值、解构赋值、或者扩展运算符，那么函数内部就不能显式设定为严格模式，否则会报错
+
+    4. name属性
+
+        const bar = function foo(){}
+
+        bar.name == "foo";
+
+
+    5. 箭头函数
+
+        var f = v => v;
+
+        var f = () => 5;
+
+        var sum = (num1,num2) => num1 + num2;
+
+        let getTempItem = id => ({id: id,name: "Temp"});
+
+        let fn = () => void doesNotReturn;
+
+        const full = (first,last) => first + ' ' + last;
+
+        [1,2,3].map( x=> x*x );
+
+        let result = values.sort((a,b) => a-b);
+
+        const numbers = (...num) => num;
+
+        const headAndTail = (head,...tail) => [head,tail];
+
+
+        几个使用注意点:
+
+            (1) 函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
+            (2) 不可以当成构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。
+            (3) 不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用reset参数代替。
+            (4) 不可以使用yield命令，因此箭头函数不能用作Generator函数。
+
+
+    6. 双冒号运算符
+
+        运算符左边的变量作为运算符右边函数的上下文环境，绑定到右边的函数上面
+
+        foo::bar       ==    bar.bind(foo);
+
+        foo::bar(...arguments)     ==    bar.apply(foo,arguments);
+
+        var log = console.log.bind(log);
+
+
+    7. 尾调用优化
+
+        尾调用: 某个函数的最后一步是调用另一个函数.
+
+        尾递归: 函数调用自身，称为递归。如果尾调用自身，就称为尾递归。
+
+
+
+三. 对象的扩展
+
+    1. 简写
+
+        const person = {
+            name: '张三',
+            birth,
+            hello(){ ... }
+        }
+
+    2. Object.assign()
+
+        将源对象的所有可枚举属性，复制到目标对象
+
+        const target = {a : 1};
+        const source1 = { b : 2}
+        const source2 = { b : 3}
+
+        Object.assign(target,source1,source2)
+        target   --> {a:1, b:2, c:3}
+
+
+        第一个参数是目标对象，后面的参数都是源对象
+
+    3. 属性的遍历
+
+        for...in
+            循环遍历对象资自身和继承的可枚举属性
+
+        Object.keys(obj)
+            返回一个数组，包括对象自身的(不含继承的)所有可枚举属性的键名
+
+        Object.getOwnPropertyNames(obj)
+            返回一个数组，包含对象自身的所有属性的键名
+
+        Object.getOwnPropertySymbols(obj)
+            返回一个数组，包含对象自身的所有Symbol属性的键名
+
+        Reflect.ownKeys(obj)
+            返回一个数组，包含对象自身的所有键名，不管键名是Symbol或字符串，也不算是否可枚举
+            可以将对象转成真正的Map解构
+                const obj = { foo: 'baz',baz: 42 };
+                const map = new Map(Object.entries(obj));
+                map
+
+
+    4. super关键字
+        指向当年对象的原型对象,只能用作对象的方法中
+
+
+四. Symbol
+    表示独一无二的值
+    原始数据类型： 数值、字符串、对象、布尔值、undefined、null、symbol
+
+    1.消除魔术字符串
+        const shapeType = {
+            triangle: Symbol()
+        }
+
+        function getArea(){
+            let area = 0;
+            switch(shape){
+                case shapeType.triangle:
+                    area = .5 * options.width * options.height;
+                    break;
+            }
+            return area;
+        }
+
+        getArea(shapeType.triangle,{width: 100, height: 100});
+
+    2.脚本文件避免覆盖
+
+        const FOO_KEY = Symbol.for("foo");
+
+        function A(){
+            this.foo = 'hello';
+        }
+
+        if(!global[FOO_KEY]){
+            global[FOO_KEY] = new A();
+        }
+
+        module.exports = global[FOO_KEY]
+
+        上述可以保证global[FOO_KEY]不会被无意间覆盖，但还是可以被改写
+
+        global[Symbol.for('foo')] = {foo : 'world'};
+        const a = require('./mod.js');   --->引入文件
+
+
+五. Set和Map数据结构
+
+    1.set  类似于数组,没有重复的值
+
+        const set = new Set([1,2,3,4,4]);
+        [...set]  --> 1,2,3,4
+
+        方法：
+            add(value):  添加某个值，返回Set结构本身.不会发生类型转换
+                const set = new Set([1,1,2,3]);
+                set.add("1");
+                [...set]   ---> 1,2,3,"1"
+
+            delete(value): 删除某个值，返回一个布尔值，表示删除是否成功
+            has(value): 返回一个布尔值，表示该值是否为set的成员
+            clear(): 清除所有成员，没有返回值
+            keys():   返回键名的遍历器
+            values(): 返回键值的遍历器
+            entries(): 返回键值对的遍历器
+            forEach(): 使用回调函数遍历的每个成员
+
+        方法去重
+                let arr = [3,5,2,3,6,3];
+                let unique = [new Set(arr)];   //[3,5,2,6]
+
+
+    2.Map  值—值结构
+
+        const m = new Map();
+        const o = {p : 'Hello World'};
+
+        m.set(o,'content');
+        m.get(o);
+
+        m.has(o);  //true
+        m.delete(o);
+        m.has(o); //false
+
+
+        实例属性
+            size()
+
+                const map = new Map();
+                map.set('foo',true);
+                map.set('bar',false);
+
+                map.size();       ---> 2
+
+
+            set(key,value)    返回当前的map对象
+
+                const m = new Map()
+                    .set('edition',6)
+                    .set(262,'standard')
+                    .set(undefined,'nah');
+
+            get(key)   --没有key 返回undefined
+            has(key)
+            delete(key)   --删除失败返回false
+            clear()  --清除所有成员，没有返回值
+            keys()：返回键名的遍历器。
+            values()：返回键值的遍历器。
+            entries()：返回所有成员的遍历器。
+            forEach()：遍历 Map 的所有成员。
+
+
+
+        与其他数据结构的相互转换
+
+            Map转为数组
+
+                const map = new Map()
+                   .set(true,7)
+                   .set({foo:3} : ['abc']);
+
+                [...map]
+
+            数组转为Map
+                new Map([
+                    [true,7],
+                    [{foo:3} : ['abc']]
+                ])
+
+            Map转为对象
+
+                如果所有的map的键都是字符串，它可以转为对象
+                function strMapToObj(strMap){
+                    let obj = Object.create(null);
+                    for(let [k,v] of strMap){
+                        obj[k] = v;
+                    }
+                    return obj;
+                }
+
+                const myMap = new Map()
+                    .set('yes',true)
+                    .set('no',false);
+                strMapToObj(myMap);
+
+
+            对象转为Map
+
+                function objToStrMap(obj){
+                    let strMap = new Map();
+                    for(let k of Object.keys(obj)){
+                        strMap.set(k,obj[k]);
+                    }
+                    return strMap;
+                }
+
+                objToStrMap({yes: true, no: false});
+
+
+            Map转为Json
+
+                function strMapToJson(strMap){
+                    return JSON.stringify(strMapToObj(strMap));
+                }
+
+                let myMap = new Map().set('yes',true).set('no',false);
+                strMapToJson(myMap);
+
+            Json转Map
+
+                function jsonToStrMap(jsonStr){
+                    return objToStrMap(JSON.parse(jsonStr));
+                }
+
+                jsonToStrMap('{"yes": true, "no": false}');
+
+
+
+六. Proxy
+
+    1.get(target,property,receiver)
+        target -- 目标对象
+        property   -- 属性名
+        receiver -- proxy实例本身，可选
+
+    2.set(obj, prop, value, receiver)
+        obj    --  目标对象
+        prop   --  属性名
+        value  --  属性值
+        receiver  --  proxy实例本身，可选
+
+
+    3.apply(target,ctx,args)
+        target  --  目标对象
+        ctx     --  目标对象的上下文对象(this)
+        args    --  目标对象的参数数组
+
+    4.has()
+
+        用来拦截HasProperty操作
+
+    5.construct(target,args)
+        用于拦截new命令
+        target   --  目标对象
+        args     --  构建函数的参数对象
+
+
+
+八. Promise对象
+        Promise内部的错误不会影响外部的代码执行
+
+        1.加载图片
+            const preloadImage = function(path){
+                return new Promise(function(resolve,reject){
+                    const image = new Image();
+                    image.onload = resolve;
+                    image.onerror = reject;
+                    image.src = path;
+                })
+            }
+
+        2.Generator 函数与 Promise 的结合
+
+            function gerFoo(){
+                return new Promise(function(resolve,reject){
+                    resolve('foo');
+                });
+            }
+
+            const g = function* (){
+                try{
+                    const foo = yield getFoo();
+                    console.log(foo);
+                }catch(e){
+                    console.log(e);
+                }
+            }
+
+            function run(generator){
+                const it = generator();
+
+                function go(result){
+                    if(result.done) return result.value;
+
+                    return result.value.then(function(value){
+                        return go(it.next(value));
+                    },function(error){
+                        return go(it.throw(error));
+                    })
+                }
+
+                go(it.next());
+            }
+
+            run(g);
+
+
+
+九.Iterator 和 for...of循环
+
+    1.解构赋值
+
+        let set = new Set().add('a').add('b').add('c');
+
+        let [x,y] = set;
+
+        let [first,...reset] = set;
+
+    2.扩展运算符
+
+        var str = 'hello';
+        [...str]    // ['h','e','l','l','o']
+
+
+        let arr = ['b','c'];
+        ['a',...arr,'d'];   // ['a','b','c','d']
+
+
+    3.yield
+
+        let generator = function* (){
+            yield 1;
+            yield* [2,3,4];
+            yield 5;
+        }
+
+        var iterator = generator();
+
+        iterator.next() // { value: 1, done: false }
+        iterator.next() // { value: 2, done: false }
+        iterator.next() // { value: 3, done: false }
+        iterator.next() // { value: 4, done: false }
+        iterator.next() // { value: 5, done: false }
+        iterator.next() // { value: undefined, done: true }
+
+
+
+十. Generator函数的语法
+
+    特征：
+        1. function关键字与函数名之间有一个星号
+        2. 函数体内部使用yield表达式，定义不同的内部状态
+
+    function* helloWorldGenerator(){
+        yield 'hello';
+        yield 'world';
+        return 'ending';
+    }
+
+
+    yield 表达式
+       1. 遇到yield表达式，就暂停执行后面的操作，并将紧跟在yield后面的表达式的值，作为返回的对象的value值
+       2. 下一次调用next方法时，将继续往下执行，直到遇到下一个yield表达式
+       3. 如果没有遇到新的yield表达式，就一直运行到函数结束,直到return语句为止，并将return语句后面的表达式的值，作为返回的对象的value属性值
+       4. 如果该函数没有return语句，则返回的对象的value属性值为undefined
+
+        yield表达式后面的表达式，只有当调用next方法、内部指针指向该语句时才会执行。因此等于为javaScript提供了手动的"惰性求值"
+
+
+        function* gen(){
+            yield 123 + 456;
+        }
+
+
+
+    应用
+        1. 异步操作的同步化表达
+            改写回调函数
+
+            function* loadUI(){
+                showLoadingScreen();
+                yield loadUIDataAsynchronously();
+                hideLoadingScreen();
+            }
+
+            var loader = loadUI();
+            loader.next();
+            loader.next();
+
+
+            function* main(){
+                var result = yield request("http://some/url");
+                var resp = JSON.parse(result);
+                console.log(resp.value);
+            }
+
+            function request(url){
+                makeAjaxCall(url,function(response){
+                    it.next(response);
+                })
+            }
+
+            var it = main();
+            it.next();
+
+
+            function* numbers(){
+                let file = new FileReader("number.txt");
+                try{
+                    while(!file.eof){
+                        yield parseInt(file.readLine(),10);
+                    }
+                }finally{
+                    file.close();
+                }
+            }
+
+
+
+        2.控制流管理
+            Promise.resolve(step1)
+                .then(step2)
+                .then(step3)
+                .then(step4)
+                .then(function(value4){
+
+                },function(error){
+
+                })
+                .done();
+
+
+十一. async 函数
+
+    const asyncReadFile = async function(){
+        const f1 = await readFile('/etc/fstab');
+        const f2 = await readFile('/ect/shells');
+
+        console.log(f1.toString());
+        console.log(f2.toString());
+    }
+
+    await function getStockPriceByName(name){
+        const symbol = await getStockSymbol(name);
+        const symbol = await getStockPrice(symbol);
+        return stockPrice;
+    }
+
+    getStockPriceByName('goog').then(function(result){
+        console.log(result);
+    })
+
+
+
+
+   async function timeout(ms){
+      await new Promise((resolve) => {
+         setTimeOut(resolve,ms);
+      })
+   }
+
+   async function asyncPrint(value,ms){
+     await timeout(ms);
+     console.log(value);
+   }
+
+   asyncPrint('hello world',50);
+
+
+   按顺序完成异步操作
+
+   function logInOrder(urls){
+      const textPromise = urls.map(url => {
+        return fetch(url).then(response => response.text());
+      })
+   }
+
+   textPromise.reduce((chain.textPromise) => {
+       return chain.then(() => textPromise)
+         .then(text => console.log(text));
+   },Promise.resolve());
+
+
+
+
+十二. Class 的基本语法
+    Class 内部只有静态方法，没有静态属性
+
+    class Point{
+       constructor(x,y){
+            this.x = x;
+            this.y = y;
+       }
+       toString(){
+         return "(" + this.x + ', ' + this.y + ")";
+       }
+    }
+
+    var point =  new Point();
+    point.toString();
+
+    Object.asset(Point.prototype,{
+        func1(){},
+        func2(){}
+    })
+
+
+    function Person(name){
+        if(new.target !== undefined){
+            this.name = name;
+        }else{
+            new Error("必须使用 new 命令生成实例");
+        }
+    }
+
+    let person = new Person();   //true
+    let notAPerson = Person.call(person,'张三'); //false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

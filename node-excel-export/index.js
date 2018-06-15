@@ -7,37 +7,35 @@ app.get('/excel', function(req, res){
     var conf = {};
     conf.stylesXmlFile = "styles.xml";
     conf.cols = [{
-        caption: '编号',    //行名称
+        caption: '督导号',    //行名称
         type:'number',       //类型
         width: 15,   //宽度
         beforeCellWrite:function(row, cellData){  //处理数据
             return cellData; //数据大写
         }
-    },{
-        caption: '姓名',
-        type:'string',
-        width: 20,
-        beforeCellWrite:function(row, cellData,eOpt){  //处理数据
-
-            if(cellData == ""){
-                return "查无此人";
-            }
-            return cellData;
-        }
-    },{
-        caption: '日期',
-        type:'string',
-        width: 25
     }];
-    conf.rows = [
-        [1, "华晨宇","2014-04-15 00:00:00"],
-        [2, "","2014-04-15 00:00:00"],
-        [3, "汪苏泷","2014-04-17 00:00:00"],
-        [4, "罗一笑","2014-04-18 00:00:00"]
-    ];
+
+    var row = [];
+
+    for(var i = 0;i < 700;i++){
+        row.push( [parseInt(Math.random()*(3-1) +1)]  );
+    }
+
+    for(var y = 700;y < 1500;y++){
+        row.push( [parseInt(Math.random()*(6-1) +1)] );
+    }
+
+    for(var z = 1500;z < 4000;z++){
+        row.push( [parseInt(Math.random()*(10-1) +1)] );
+    }
+
+
+    // console.log(row);
+    conf.rows = row;
+
     var result = nodeExcel.execute(conf);
     res.setHeader('Content-Type', 'application/vnd.openxmlformats');
-    res.setHeader("Content-Disposition", "attachment; filename=" + "userDate.xlsx");
+    res.setHeader("Content-Disposition", "attachment; filename=" + "dudaohao.xlsx");
     res.end(result, 'binary');
 });
 
