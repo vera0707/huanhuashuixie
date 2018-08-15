@@ -1,50 +1,49 @@
-const path = require("path");
-const glob = require('glob');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-//const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const PurifyCSSPlugin = require('purifycss-webpack');
-const RuleConfig = require('./webpack.rule.js');
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
-	entry: ['./src/index.js'],
-	output:{
-		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].bundle.js'
-	},
-	devServer: {
-		contentBase: path.resolve(__dirname,'dist'),
-		host: 'localhost',
-		port: '8090',
-		open: true,
-		hot: true
-	},
-	module: RuleConfig,
-	//devtool: 'source-map',
-	plugins:[
-		//new UglifyJsPlugin(),
-		new webpack.HotModuleReplacementPlugin(),
-		new CleanWebpackPlugin(['dist']),
-		new HtmlWebpackPlugin({
-				//chunks: ['index'],
-                //filename: 'index.html',
-		        template: './src/index.html',
-				title: '首页'
-		}),
-		//new MiniCssExtractPlugin({
-		//	// Options similar to the same options in webpackOptions.output
-		//	// both options are optional
-		//	filename: "[name].css"
-		//})
-		new ExtractTextPlugin('css/index.css'),
-		new PurifyCSSPlugin({
-			paths: glob.sync(path.join(__dirname, 'src/*.html'))
-		}),
-		new webpack.ProvidePlugin({
-
-		})
-	]
+    entry: __dirname + "/app/main.js",
+    output: {
+        path: __dirname + "/build",
+        filename: "bundle-[hash].js",
+    },
+    devtool: 'none',
+    devServer: {
+        contentBase: "./public",
+        historyApiFallback: true,
+        inline: true,
+        hot: true
+    },
+    module: {
+        rules: [{
+            test: /(\.jsx|\.js)$/,
+            use: {
+                loader: "babel-loader"
+            },
+            exclude: /node_modules/
+        },{
+            test: /\.css$/,
+            use: ExtractTextPlugin.extract({
+                fallback: "style-loader",
+                use: [{
+                    loader: "css-loader",
+                    options: {
+                        modules: true,
+                        localIdentName: '[name]__[local]--[hash:base64:5]'
+                    }
+                },{
+                    loader: "postcss-loader"
+                }]
+            })
+        }]
+    },
+    plugins:[
+        new HtmlWebpackPlugin({
+            template: __dirname + "/app/index.tmpl.html" //new 一个这个插件的实例，并传入相关的参数
+        }),
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new ExtractTextPlugin("style.css")
+    ]
 };

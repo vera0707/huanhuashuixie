@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>平行四边形</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 14px;
+            text-align: center;
+            color: #fff;
+            margin: 0 auto;
+            position: relative;
+        }
+        .box:before{
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background: #278dbf;
+            transform: skew(-45deg);
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box">about</div>
+
+</body>
+</html>

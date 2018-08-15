@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弧形圆角</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            color: #FFF;
+            text-align: center;
+            background: #58a;
+            padding: 10px 15px;
+            margin: 50px auto;
+
+            background: #58a;
+
+            background: radial-gradient(circle at top left,transparent 15px,#58a 0) top left,
+                        radial-gradient(circle at top right,transparent 15px,#58a 0) top right,
+                        radial-gradient(circle at bottom left,transparent 15px, #58a 0) bottom left,
+                        radial-gradient(circle at bottom right,transparent 15px, #58a 0) bottom right;
+
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">ABOUT</div>
+
+</body>
+</html>

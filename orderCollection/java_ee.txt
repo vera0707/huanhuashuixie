@@ -201,4 +201,182 @@
             此常量不能使用默认初始化
             可以显示赋值
             一旦赋值以后,不能再修改
-17. 抽象类
+17. 抽象类 abstract class
+    1. 不可被实例化
+    2. 抽象类有构造器 【凡是类 都有构造器]
+    3. 抽象方法没有方法体
+        抽象方法相当于只保留方法的功能,而具体的执行交给抽象类的子类,由子类重写此抽象方法
+    4. 抽象方法所在的类一定是抽象类
+    5. 抽象类中可以没有抽象方法
+    6. 若子类继承抽象类,并重写了所有抽象方法,则此类是一个实体类,及可以实体化
+    7. abstract不能用来修饰属性 构造器 private final static
+18. 设计模式
+    1.解决的问题:如何只让设计的类只能创建一个对象
+    2.如何实现:饿汉式 懒汉式
+19. java异常
+    1.Error
+        程序中不进行处理
+    2.Exception
+        要求在编写程序时,就要考虑到对这些异常的处理
+        ①包含
+            1.空指针访问
+            2.试图读取不存在的文件
+            3.网络连接中断
+        ②分类
+            1.编译时异常:在编译期间出现的异常
+            2.执行时异常:在运行期间出现异常
+              常见的运行异常
+                1. 数组下表越界 ArrayIndexOutOfBoundsException
+                2. 算数异常  ArithmeticException
+                3. 类型转换异常 ClassCastException
+                4. 空指针异常 NullPointerException
+
+        当执行一个程序时,如果出现异常,那么异常之后的代码就不再执行!
+    3. Java提供的抓抛模型
+        1.抛 当我们执行代码时,一旦出现异常,就会在异常的代码处生成一个对应的异常的对象,并讲此对象抛出
+             一旦抛出此异常类的对象,程序就终止运行
+             此异常类的对象抛出方法的调用者
+        2.抓 抓住上一步抛出来的异常类的对象 如何抓?异常处理方式
+             java提供了两种方式用来处理一个异常的对象
+             处理方式一
+                try{}catch(){}finally{}
+20.java集合
+    1.存储对象可以考虑 ①数组 ② 对象
+    2.数组存对象的特点
+        1.弊端
+            ① 一旦创建 长度不可变
+            ② 真实的数组存放的对象个数是不可知的
+
+    3.
+        Collection接口
+            List:元素有序,可重复的集合
+                ArraryList(主要的实现类)
+                LinkedList
+                Vector
+            Set:元素无序,不可重复的集合
+                HashSet
+                LinkedHashSet
+                TreeSet
+                    向TreeSet中添加的元素必须是同一个类的
+                    可以按照添加进集合中的元素的指定的顺序遍历.像String 包装类等默认按照从小到大的顺序遍历
+                    当向TreeSet中添加Person类的对象时,依据此方法,确定按照哪个属性排列
+                    当向TreeSet添加自定义对象时,有两种排序方式
+                        自然排序 要求自定义实现java.lang.comparable接口并重写其compareTo(Object obj)
+                                在此方法中,指明按照自定义的哪个属性进行排序
+
+        Map接口
+            具有映射关系 key-value对 的集合
+                HashMap
+                LinkedHashMap
+                TreeMap
+                Hashtable(子类 Properties)
+    4.List常用方法
+        增 add
+        删 remove
+        改 set
+        查 get
+        插 add（index,value)
+        长度 size
+        其他
+            indexOf: 返回obj在集合中首次出现的位置 没有返回-1
+            lastIndexOf: 返回obj在集合中最后一次出现的位置 没有返回-1
+            subList（formIndex,toIndex）: 返回从fromIndex到toIndex的一个子list --左闭右开
+    5.Map
+        1.接口
+            HashMap -- 主要实现类
+                 2.方法
+                    1.key是由set来存放的,不可重复.value是用Collection来存放的,可重复
+                      一个key-value对,是一个Entry,所有的Entry是用set存放的,也是不可重复的
+                    put(key,value) == 添加数据
+                    size() == 长度
+                    remove(Object key) ==删除
+                    putAll(Map t)  ==添加多个
+                    clear() ==清空
+                    get(Object key) ==获取指定key的value值
+                    containsKey(Object key) ==查询
+                    containValue(Object value) == 查询
+            LinkedHashMap
+            TreeMap
+            HashTable
+                --Properties
+    6.Collections  操作Collection 和 Map 的工具类
+        - reverse(List),反转list中的元素
+        - shuffle(List),对list集合元素进行随机排序
+        - sort(List,Comparator),根据指定的Comoarator 产生的顺序 对List集合元素进行排序
+        - swap(List,int,int),将指定list集合中的i处的元素和j处的元素进行交换
+20.泛型
+    1.使用
+        1.在集合中使用泛型
+        2.自定义泛型、泛型接口、泛型方法
+        3.泛型与继承的关系
+        4.通配符
+    2.继承泛型类型或泛型接口时，可以指名泛型的类型
+21.枚举
+    1.如何自定义枚举类
+    2.如何使用enum关键字定义枚举类
+        1.常用方法
+        2.r如何让枚举类实现接口
+22.注解
+    1.JDK提供的常用注解
+       三个基本的注解
+        @Override - 限定重写父类方法,该注释只能用于方法
+        @Deprecated - 用于表达某个程序元素（类，方法等）已过时
+        @SuppressWarnings - 抑制编译器警告
+    2.自定义注解
+    3.元注解
+        JDK的元Annotation用于修饰其他Annotation定义
+        JDK5.0提供了专门在注解上的注解类型，分别是
+            Retention
+                - 该Annotation可保留时间
+            Target
+            Documented
+            Inherited
+23.java.io.File类
+    1.凡是与输入、输出相关的类、接口都定义在java.io包下
+    2.File是一个类，可以有构造器创建其对象.此对象对应着一个文件(.txt .avi .doc .ppt .mp3 .jpg)或文件目录
+    3.File类是与平台无关的
+    4.File中的方法,仅涉及如何创建 删除 重命名等.涉及文件内容的，File是无能为力的 只能IO解决
+    5.File类的对象作为IO流的具体类的构造器形参
+24. IO的体系
+     1.流的分类
+        按照流向不同 ： 输入流 输出流
+        按照处理数据的单位的不同 ： 字节流 字符流
+        按照角色的不同 ： 节点流（直接作用于文件的） 处理流
+
+     2.抽象基类              节点流(文件流)             缓冲流
+         InputStream         FileInputStream         BufferedInputStream
+         OutputStream        FileOutputStream        BufferedOutPutStream
+         Reader              FileReader              BufferedReader
+         Writer              FileWriter              BufferedWrite
+
+     3.输入流对应的文件一定要存在，否则抛出异常
+       输出流对应的文件可以不存在，执行过程中自动创建
+     4.使用FileReader FileWrite可以实现文件的复制，对于非文本文件(视频文件 音频文件 图片等)，只能使用字节流
+     5.转换流：InputStreamReader OutStreamWriter
+       编码：字符串 --> 字节数组
+       解码：字节数组 --> 字符串
+     6.对象的序列化
+        允许把内存中的java对象转化为平台无关的二进制流，从而允许把这种二进制流持久的保存在磁盘上，或通过网络奖这种二进制传输到另一个网络节点。当其他程序获取了这种二进制流，就可以恢复成原来的java对象
+25.多线程
+    1.进程：是程序执行一次的过程，或正在运营的一个程序
+      线程：进程可进一步细化为线程，是一个程序内部的一条执行路径
+    2.Thread
+        start()：启动线程并执行相应的run()方法
+        run()：子线程要执行的代码放入run()方法中
+
+26.常用类
+    字符相关的
+        String
+        StringBuffer
+        StringBuilder
+    时间相关的
+        System
+        Date
+        SimpleDateFormat
+        Calemder
+    计算相关的
+        Math
+        BigInterger
+        BigDecimal
+
+    1.String 

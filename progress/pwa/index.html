@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server Worker</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div>尝试WPA...</div>
+    <img src="./userImage.jpg" alt="" style="width: 50px;margin-top: 50px;" />
+    <script>
+    
+        function askPermission(){
+            return new Promise(function(resolve,reject){
+                var permissionResult = Notification.requestPermission(function(result){
+                    resolve(result);
+                })
+
+                if(permissionResult){
+                    permissionResult.then(resolve,reject);
+                }
+               
+            })
+            .then(function(permissionResult){
+                if(permissionResult !== 'granted'){
+                    console.log("用户没有授权，真是尴尬了");
+                }else{
+                    alert("获得了用户授权");
+                }
+            })
+        }
+        askPermission();
+    </script>
+
+</body>
+</html>

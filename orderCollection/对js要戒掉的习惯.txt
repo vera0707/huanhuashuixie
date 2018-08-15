@@ -35,3 +35,21 @@
 4.封装console
 
     const log = console.log.bind(console)
+
+
+5.使用Object.assign方法
+
+
+6.参数判断
+
+    以前
+        function f1(obj) {
+          obj.key = 1;
+        }
+
+    现在
+        function f2(obj) {
+          const key = Object.prototype.hasOwnProperty.call(obj, 'key') ? obj.key : 1;
+        }
+
+
