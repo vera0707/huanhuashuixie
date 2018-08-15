@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="/public/main.css" />
+    <style>
+        body{
+            font-size: 14px;
+            background: rgba(0,0,0,.3);
+        }
+        .hide{
+            display: none;
+        }
+        .btn{
+            width: 60%;
+            height: 40px;
+            line-height:40px;
+            text-align: center;
+            color: #FFF;
+            background: orange;
+            margin: 30px auto 0;
+        }
+        .note{
+            color: #999;
+            margin-top: 5px;
+            text-align: right;
+        }
+        .link-active{
+            color: blue;
+            cursor: pointer;
+        }
+        .warn{
+            line-height: 24px;
+            color: orange;
+            text-align: center;
+            padding: 20px 10px 10px;
+        }
+        .input{
+            width: 80%;
+            height: 16px;
+            padding: 5px 8px;
+            border: 1px solid #eee;
+            outline: none;
+            border-radius: 5px;
+            margin: 0 auto 20px;
+        }
+        .con{
+            width: 350px;
+            margin: 30px auto 0;
+        }
+        .con-box{
+            width: 100%;
+            border: 1px solid orange;
+            padding: 20px;
+            background: #FFF;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Dropdown <span class="caret"></span>
+                </a>
+            </li>
+        </ul>
+        {% if userInfo._id  %}
+            <div class="con-box" id="welcome">
+                <span class="username"></span>
+                {% if userInfo.isAdmin %}
+                <span>您好,管理员 <a href="/admin" class="link-active">进入管理页面</a></span>
+                {% else %}
+                您好,欢迎来到我的博客!
+                {% endif %}
+                <div class="note link-active logout">退出</div>
+                <div class="warn"></div>
+            </div>
+        {% else %}
+        <div class="con-box" id="register">
+            <input type="text" class="input" placeholder="请输入用户名" name="username" />
+            <input type="password" class="input" placeholder="请输入密码" name="password" />
+            <input type="password"  class="input" placeholder="请再次输入密码" name="repassword" />
+            <div class="btn register_btn">注册</div>
+            <div class="note">点击 <span class="link-active toLogin">登录</span></div>
+            <div class="warn"></div>
+        </div>
+
+        <div class="con-box hide" id="login">
+            <input type="text" class="input" placeholder="请输入用户名" name="username" />
+            <input type="password" class="input" placeholder="请输入密码" name="password" />
+            <div class="btn login_btn">登录</div>
+            <span class="note">点击 <span class="link-active toRegister">注册</span></span>
+            <div class="warn"></div>
+        </div>
+
+        {%endif%}
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var $registerBox = $("#register");
+        var $loginBox = $("#login");
+        var $welcome = $("#welcome");
+
+
+        $(".toRegister").on('click',function(){
+            $loginBox.hide();
+            $registerBox.show();
+        });
+
+        $(".toLogin").on('click',function(){
+            $loginBox.show();
+            $registerBox.hide();
+        });
+
+        $(".register_btn").on('click',function(){
+            var that = this;
+            $.ajax({
+                url: '/api/user/register',
+                type: 'POST',
+                data: {
+                    username : $("#register input[name=username]").val(),
+                    password:  $("#register input[name=password]").val(),
+                    repassword : $("#register input[name=repassword]").val()
+                },
+                dataType: 'json',
+                success: function(res){
+                    if(res.code == 200){
+                        $loginBox.show();
+                        $registerBox.hide();
+                    }else{
+                        $registerBox.find('.warn').html(res.message);
+                    }
+                },
+                error: function(){
+                    $registerBox.find('.warn').html("服务器傲娇了");
+                }
+            })
+        });
+
+        $(".login_btn").on('click',function(result){
+            var that = this;
+            $.ajax({
+                url: '/api/user/login',
+                type: 'POST',
+                data:{
+                    username : $("#login input[name=username]").val(),
+                    password:  $("#login input[name=password]").val(),
+                },
+                dataType: 'json',
+                success: function(res){
+                    if(res.code == 200){
+                        window.location.reload();
+                    }else{
+                        $loginBox.find('.warn').html(res.message);
+                    }
+                },
+                error:function(res){
+                    $loginBox.find('.warn').html("服务器傲娇了");
+                }
+            })
+        });
+
+        $(".logout").on('click',function(){
+            var that = this;
+            $.ajax({
+                url: '/api/user/logout',
+                type: 'get',
+                data: {},
+                success: function(res){
+                    if(res.code == 200){
+                        window.location.reload();
+                    }else{
+                        $welcome.find('.warn').html(res.message);
+                    }
+                },
+                error: function(){
+                    $welcome.find('.warn').html("服务器傲娇了");
+                }
+            })
+        })
+
+    </script>
+</body>
+</html>
