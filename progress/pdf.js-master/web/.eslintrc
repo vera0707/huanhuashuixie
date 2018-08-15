@@ -1,0 +1,17 @@
+{
+  "extends": [
+    ../.eslintrc
+  ],
+
+  "rules": {
+    // Variables
+    "no-restricted-globals": ["error",
+      "ReadableStream",
+      "URL",
+      "WritableStream",
+    ],
+
+    // ECMAScript 6
+    "no-var": "error",
+  },
+}

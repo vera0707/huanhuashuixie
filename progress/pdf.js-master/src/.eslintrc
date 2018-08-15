@@ -1,0 +1,14 @@
+{
+  "extends": [
+    ../.eslintrc
+  ],
+
+  "rules": {
+    // Variables
+    "no-restricted-globals": ["error",
+      "ReadableStream",
+      "URL",
+      "WritableStream",
+    ],
+  },
+}
