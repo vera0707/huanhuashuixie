@@ -1,0 +1,269 @@
+
+  1.CSS隐藏元素的几种方法（至少说出三种）
+
+    Opacity[透明度]:  元素本身依然占据它自己的位置并对网页的布局起作用。它也将响应用户交互;
+    Visibility[可见性]:与 opacity 唯一不同的是它不会响应任何用户交互。此外，元素在读屏软件中也会被隐藏;
+    Display[元素显示方式]:display 设为 none 任何对该元素直接打用户交互操作都不可能生效。此外，读屏软件也不会读到元素的内容。这种方式产生的效果就像元素完全不存在;
+    Position[定位]: 不会影响布局，能让元素保持可以操作;
+    Clip-path[裁剪-这个冷僻了]:clip-path 属性还没有在 IE 或者 Edge 下被完全支持。如果要在你的 clip-path 中使用外部的 SVG 文件，浏览器支持度还要低;
+
+  2.介绍一下CSS的盒子模型(必会)
+
+    有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;
+    盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).
+
+  3.操作数组的四种方法pop() push() unshift() shift()分别如何操作数组的(必会)
+
+    Push()尾部添加
+    pop()尾部删除
+    Unshift()头部添加
+    shift()头部删除
+
+  4.简述同步和异步的区别(必会)
+
+    同步是阻塞模式，异步是非阻塞模式。
+    同步就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，直到收到返回信息才继续执行下去；
+    异步是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率。
+
+  5.请说出三种减低页面加载时间的方法[没有唯一答案,答案很多,看他能给出几套方案]
+
+    压缩css、js文件,压缩图片
+    合并js、css文件，减少http请求
+    外部js、css文件放在最底下
+    减少dom操作，尽可能用变量替代不必要的dom操作
+
+  6.你做的页面在哪些流览器测试过?这些浏览器的内核分别是什么?(必会)
+
+    Ie(Ie内核 - Trident)
+    火狐 -（Gecko）
+    谷歌 - Blink(基于webkit，Google与Opera Software共同开发)
+    opear - (以前是presto内核，Opera现已改用Google Chrome的Blink内核)
+
+  7.标签上title与alt属性的区别是什么?(必会)
+
+    Alt 当图片不显示是 用文字代表。
+    Title 为该属性提供信息
+
+  8.描述css reset的作用和用途。(必会)
+
+    Reset重置浏览器的css默认属性 浏览器的品种不同，样式不同，然后重置，让他们统一
+
+  9.你起本地服务器的方法是什么?(至少一种 答案不唯一)
+
+    node
+    python
+    http-server
+    ......
+
+  10.例举3种强制类型转换和2种隐式类型转换?(必会)
+
+     强制（parseInt,parseFloat,number）
+     隐式（== – ===）
+
+  11.”==”和“===”的不同(必会)
+
+     前者会自动转换类型
+     后者不会
+
+  12.什么是同源策略(必会)
+
+     一段脚本只能读取来自于同一来源的窗口和文档的属性，这里的同一来源指的是主机名、协议和端口号的组合
+
+  13.请描述一下cookies，sessionStorage和localStorage的区别？(至少大概了解)
+
+     sessionStorage和localStorage是HTML5 Web Storage API提供的，可以方便的在web请求之间保存数据。有了本地数据，就可以避免数据在浏览器和服务器间不必要地来回传递。sessionStorage、localStorage、cookie都是在浏览器端存储的数据，其中sessionStorage的概念很特别，引入了一个“浏览器窗口”的概念。sessionStorage是在同源的同窗口（或tab）中，始终存在的数据。也就是说只要这个浏览器窗口没有关闭，即使刷新页面或进入同源另一页面，数据仍然存在。关闭窗口后，sessionStorage即被销毁。同时“独立”打开的不同窗口，即使是同一页面，sessionStorage对象也是不同的cookies会发送到服务器端。其余两个不会。Microsoft指出InternetExplorer8增加cookie限制为每个域名50个，但IE7似乎也允许每个域名50个cookie。
+     Firefox每个域名cookie限制为50个。
+     Opera每个域名cookie限制为30个。
+     Firefox和Safari允许cookie多达4097个字节，包括名（name）、值（value）和等号。
+     Opera允许cookie多达4096个字节，包括：名（name）、值（value）和等号。
+     InternetExplorer允许cookie多达4095个字节，包括：名（name）、值（value）和等号。
+
+  14.你所了解到的Web攻击技术[第一点必答]
+
+       （1）XSS（Cross-Site Scripting，跨站脚本攻击）：指通过存在安全漏洞的Web网站注册用户的浏览器内运行非法的HTML标签或者JavaScript进行的一种攻击。
+       （2）SQL注入攻击
+       （3）CSRF（Cross-Site Request Forgeries，跨站点请求伪造）：指攻击者通过设置好的陷阱，强制对已完成的认证用户进行非预期的个人信息或设定信息等某些状态更新。
+
+  15.你知道的meta标签类型(没有列全,能回答出四个以上即可)
+
+     声明文档使用的字符编码 - charset
+     声明文档的兼容模式 -  http-equiv content
+     SEO 优化
+        description
+        keywords
+        author
+        robots
+     网页禁用设备
+        电话
+        邮箱
+        ...
+     为移动设备添加 viewport - name content
+     条件注释判断IE浏览器  <!--[if lt IE 7 ]> <![endif]-->
+     IOS设备设置(设置appId 图标等)
+     ......
+
+  16.HTTP协议请求类型有哪些(回答两个以上即可)
+
+      get
+      post
+      head
+      put
+      delete
+      connect
+      options
+      trace
+
+  17.ajax最大的特点是什么。(必答)
+
+         ajax可以实现动态不刷新（局部刷新）,就是能在不更新整个页面的前提下维护数据。
+         这使得Web应用程序更为迅捷地回应用户动作，并避免了在网络上发送那些没有改变过的信息。
+
+  18.ajax请求的时候get 和post方式的区别?(必答)
+        get请求参数再url后面 post请求参数放在虚拟载体里面
+        get请求有大小限制
+        get主要从数据库读取数据,post是向数据库发送数据,post传递的数据更安全
+
+  19.HTTP状态码代表的含义(必答200 404 和 500)
+
+       200 - 请求成功
+       301 - 资源（网页等）被永久转移到其它URL
+       404 - 请求的资源（网页等）不存在
+       500 - 内部服务器错误
+
+  20.了解的几种模型框架(至少了解一种)
+
+       MVC（Model-View-Controller）
+       MVP（Model-View-Presenter）
+       MVVM（Model-View-ViewModel）
+
+  21.箭头有哪些新特点？(会写不会答亦可)
+
+       不需要function关键字来创建函数
+       省略return关键字
+       继承当前上下文的 this 关键字
+
+  22.es6中promise 只有2个状态，成功和失败，怎么让一个函数无论成功和失败都能被调用？(可不答)
+
+       使用Promise.all()方法
+
+  23.你知道的console除了.log还有哪些?(了解1种以上)
+
+        console.assert
+        console.count
+        console.dir
+        console.error
+        console.group
+        console.info
+        console.table
+        console.profile
+        console.time
+        console.trace
+        console.warn
+
+  24.遍历一个数组,能写出几种方法(至少3种)
+
+        1.for循环
+        2.foreach循环
+        3.for...in循环
+        4.map方法
+        5.while
+        6.for...of循环
+        7.filter
+        8.reduce
+
+  25.如何判断用户输入的内容为正整数?(必答 方法多种)
+        假定用户输入内容为value
+        方法一 :
+           Number.isNaN(value) -- 判断是否为数字
+           value > 0 -- 是否大于0
+           Number.parseInt(value) == value  -- 是否含有小数
+        方法二:
+          /^\+?[1-9][0-9]*$/.test(value)  -- 正则判断
+
+  26.svg和canvas的区别(区别清即可)
+
+       Canvas
+           依赖分辨率
+           不支持事件处理器
+           弱的文本渲染能力
+           能够以 .png 或 .jpg 格式保存结果图像
+           最适合图像密集型的游戏，其中的许多对象会被频繁重绘
+       SVG
+           不依赖分辨率
+           支持事件处理器
+           最适合带有大型渲染区域的应用程序（比如谷歌地图）
+           复杂度高会减慢渲染速度（任何过度使用 DOM 的应用都不快）
+           不适合游戏应用
+
+  27.使用过sass或less么?如何应用到你的项目中的?若未使用谈谈对它们的了解(必答)
+
+  28.HTML5.2带来了哪些技术更新?(选答 可能还未了解,有了解最好)
+
+      1.新增了dialog标签,并提供了open close等交互方法
+      2.css网站布局-Grid(网格布局)
+      3.超快的Web应用打包器 - Parcel
+        无需配置,开箱即用
+      4.PWA - 渐进式网络应用
+
+  29.包依赖安装工具有哪些(最少一种 正常两种)
+
+        npm Bower Yeoman
+
+  30.常用的前端打包工具有哪个[至少三个]
+
+        grunt
+        gulp
+        webpack
+        browserify
+        Require.js
+        Brunchu
+        ......
+
+  31.当下流行的前端框架都有哪些,你更喜欢哪个?谈谈你对它的认识(必答,都知道)
+
+        react
+        vue
+        angularJS
+
+  32.常见的布局方式有哪些(至少五个)
+
+        固定布局
+        流式布局
+        弹性布局
+        浮动布局
+        伸缩布局
+        定位布局
+        响应式布局
+        通过使用margin和padding元素
+        (栅格布局 网格布局)
+
+  33.如何看待小程序
+
+  34.经常去哪些论坛?(应有两个以上)
+
+        博客园
+        v2ex
+        掘金
+        推酷
+        web骇客
+        掘金
+        前端网
+        ......
+
+  35.有个人博客么?有的都在记录哪些东西,多久更新一次?(有博客的留下博客地址)
+
+  36.遇到问题是,都是怎样解决的?
+
+        谷歌(说百度的给扣分)
+        论坛
+        QQ群
+        请教同事
+        ......
+
+  37.用过哪些插件(三个以上)
+
+  38.怎么看待前端发展
+
+  39.接下来你想要掌握的技术是?
+
+  40.日常如何做到规范编码的?
